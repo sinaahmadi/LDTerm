@@ -38,6 +38,24 @@ def extract_altLabel(labels):
             altLabels[article].append(altLabel)
     return altLabels
 # =========================================
+# Extract naTerm
+# =========================================
+# Given a JSON file, extract altLabel and create a dicitonary {article_URL:[altLabel, ...]}
+
+def extract_naTerm(terms):
+    naTerms = dict()
+    for item in terms['results']['bindings']:
+        article = item['article']['value']
+        if 'naTerm' in item.keys():
+            naTerm = item['naTerm']['value']
+        else:
+            naTerm = ""
+        if article not in naTerms:
+            naTerms[article] = [naTerm]
+        else:
+            naTerms[article].append(naTerm)
+    return naTerms
+# =========================================
 # Retrieving from Wikidata
 # =========================================
 def wikidata_retriever(term, lang):
@@ -59,7 +77,7 @@ def wikidata_retriever(term, lang):
       ?article schema:about wd:WDTMID;
                schema:inLanguage ?lang;
                schema:name ?name.
-      FILTER(?lang in ('es', 'de', 'nl', 'en'))  
+      FILTER(?lang in ('es', 'de', 'nl'))  
       OPTIONAL {
         wd:WDTMID schema:description ?desc.
         FILTER (lang(?name) = lang(?desc))
@@ -72,7 +90,7 @@ def wikidata_retriever(term, lang):
       ?article schema:about wd:WDTMID;
                schema:inLanguage ?lang;
                schema:name ?name.
-      FILTER(?lang in ('es', 'de', 'nl', 'en'))  
+      FILTER(?lang in ('es', 'de', 'nl'))  
       OPTIONAL {
         wd:WDTMID skos:altLabel ?altLabel.
         FILTER (lang(?name) = lang(?altLabel))
@@ -80,6 +98,18 @@ def wikidata_retriever(term, lang):
     }ORDER BY ?lang
     """
 
+    naTerm_query = """
+    SELECT DISTINCT ?article ?naTerm WHERE {
+      ?article schema:about wd:WDTMID;
+               schema:inLanguage ?lang;
+               schema:name ?name.
+      FILTER(?lang in ('es', 'de', 'nl'))  
+      OPTIONAL {
+        ?naTerm wdt:P279 wd:WDTMID;
+      }
+    }ORDER BY ?lang
+    
+    """
     Wikidata_dataset = dict()
     subjects = {"policy": "Q1156854", "leave of absence": "Q13561011", "sources of law": "Q846882", "rights policy": "Q2135597", "comparative law": "Q741338", "sociology of law ": "Q847034",
                 "legal doctrine": "Q1192543", "area of law": "Q1756157", "law": "Q7748", "legal science": "Q382995",
@@ -115,6 +145,12 @@ def wikidata_retriever(term, lang):
             r = requests.get(url, params={'format': 'json', 'query': query})
             altLabel_response = r.json()
             altLabel_dict = extract_altLabel(altLabel_response)
+
+            #patricia tries to retrieve naTerm
+            query = naTerm_query.replace("WDTMID", item_id)
+            r = requests.get(url, params={'format': 'json', 'query': query})
+            naTerm_response = r.json()
+            naTerm_dict = extract_naTerm(naTerm_response)
                            
             # Extract data
             retrieved = list()
@@ -126,7 +162,7 @@ def wikidata_retriever(term, lang):
                     desc = item['desc']['value']
                 else:
                     desc = ""
-                retrieved.append({"article": article, "lang": lang, "name": name, "desc": desc, "altLabel": altLabel_dict[article]})
+                retrieved.append({"article": article, "lang": lang, "name": name, "desc": desc, "altLabel": altLabel_dict[article], "naTerm": naTerm_dict[article]})
 
             subj = list(retrieved_subjects.keys())[list(retrieved_subjects.values()).index(True)]
             retrieved_data = {"WDTMID": item_id, "SBJCT": subj, "translations": retrieved}
@@ -166,7 +202,7 @@ br_template = """
         skos:broader <https://www.wikidata.org/wiki/WDBRTMID>; 
 """
 
-nr_template = """
+naTerm_template = """
         skos:narrower <https://www.wikidata.org/wiki/WDNRTMID> .
 """
 re_template = """
@@ -203,7 +239,7 @@ reconceptlab_temp = """
 # he quitado el zip. no faltaría un return?
 # =========================================
 def skos_converter(entry, wiki_data):
-    name_lang, desc_lang, altLabel_lang = list(), list(), list()
+    name_lang, desc_lang, altLabel_lang, naTerm_lang = list(), list(), list(), list()
     translations = wiki_data["translations"]
     for i in translations:
         name_lang.append( "\"" + i["name"] + "\"" + "@" + i["lang"] )
@@ -217,7 +253,9 @@ def skos_converter(entry, wiki_data):
                     ll = "\"" + lbl + "\"" + "@" + i["lang"]
                     if ll not in altLabel_lang:
                         altLabel_lang.append(ll)
-
+        if i["naTerm"]:
+            for ntrm in i["naTerm"]:
+                naTerm = ntrm
     header = concept_template.replace("CONCAT", ", ".join(name_lang)).replace("WDTMID", 
         wiki_data["WDTMID"]).replace("SCTMID", TERM_ID_MAP[entry])
     if ", ".join(desc_lang):
@@ -231,13 +269,20 @@ def skos_converter(entry, wiki_data):
         if len(body):
             body = body[:-2] + "."
 
-    return header + body + alternative_labels
+    if ", ":
+        narrow_terms = naTerm_template.replace("WDNRTMID", naTerm)
+    else:
+        narrow_terms = ""
+        if len(body):
+            body = body[:-2] + "."
+
+    return header + body + alternative_labels + narrow_terms
 # =========================================
 # main
 # =========================================
 ## List of words
 source_language = "english"
-source_file_dir = "original_datasets/100term.csv"
+source_file_dir = "original_datasets/6term.csv"
 source_file = open(source_file_dir, "r")
 terms = [t for t in source_file.read().split("\n")][0:10]
 # print(terms)
