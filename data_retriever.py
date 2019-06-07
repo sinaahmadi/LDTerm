@@ -42,19 +42,19 @@ def extract_altLabel(labels):
 # =========================================
 # Given a JSON file, extract altLabel and create a dicitonary {article_URL:[altLabel, ...]}
 
-def extract_naTerm(terms):
-    naTerms = dict()
-    for item in terms['results']['bindings']:
-        article = item['article']['value']
-        if 'naTerm' in item.keys():
-            naTerm = item['naTerm']['value']
-        else:
-            naTerm = ""
-        if article not in naTerms:
-            naTerms[article] = [naTerm]
-        else:
-            naTerms[article].append(naTerm)
-    return naTerms
+# def extract_naTerm(terms):
+    # naTerms = dict()
+    # for item in terms['results']['bindings']:
+    #     article = item['article']['value']
+    #     if 'naTerm' in item.keys():
+    #         naTerm = item['naTerm']['value']
+    #     else:
+    #         naTerm = ""
+    #     if article not in naTerms:
+    #         naTerms[article] = [naTerm]
+    #     else:
+    #         naTerms[article].append(naTerm)
+    # return naTerms
 # =========================================
 # Retrieving from Wikidata
 # =========================================
@@ -77,7 +77,7 @@ def wikidata_retriever(term, lang):
       ?article schema:about wd:WDTMID;
                schema:inLanguage ?lang;
                schema:name ?name.
-      FILTER(?lang in ('es', 'de', 'nl'))  
+      FILTER(?lang in ('es', 'de', 'nl', 'en'))  
       OPTIONAL {
         wd:WDTMID schema:description ?desc.
         FILTER (lang(?name) = lang(?desc))
@@ -90,7 +90,7 @@ def wikidata_retriever(term, lang):
       ?article schema:about wd:WDTMID;
                schema:inLanguage ?lang;
                schema:name ?name.
-      FILTER(?lang in ('es', 'de', 'nl'))  
+      FILTER(?lang in ('es', 'de', 'nl', 'en'))  
       OPTIONAL {
         wd:WDTMID skos:altLabel ?altLabel.
         FILTER (lang(?name) = lang(?altLabel))
@@ -111,7 +111,7 @@ def wikidata_retriever(term, lang):
     
     """
     Wikidata_dataset = dict()
-    subjects = {"policy": "Q1156854", "leave of absence": "Q13561011", "sources of law": "Q846882", "rights policy": "Q2135597", "comparative law": "Q741338", "sociology of law ": "Q847034",
+    subjects = {"legal instrument": "Q1428955", "common law": "Q30216", "statutory law": "Q7766927", "statute": "Q820655", "legislation": "Q49371", "code of law": "Q922203", "economic value": "Q868257", "employee benefit": "Q678774", "quality": "Q1207505", "political philosophy": "Q179805", "social status": "Q189970", "work": "Q6958747", "job": "Q192581", "philosophy of law": "Q126842", "policy": "Q1156854", "leave of absence": "Q13561011", "sources of law": "Q846882", "rights policy": "Q2135597", "comparative law": "Q741338", "sociology of law ": "Q847034",
                 "legal doctrine": "Q1192543", "area of law": "Q1756157", "law": "Q7748", "legal science": "Q382995",
                 "social issue": "Q1920219", "jurisprudence": "Q4932206", "rule": "Q1151067", "Economy": "Q159810",
                 "Economics": "Q8134", "labour law": "Q628967", "human action": "Q451967", "legal concept": "Q2135465"}
@@ -119,6 +119,8 @@ def wikidata_retriever(term, lang):
 
     print(term)
     query = retrieve_query.replace("TERM", term).replace("LANG", lang)
+    SRCTERM = "\"" + term + "\"" + "@" + lang
+    #print(SRCTERM) We have to save this in the skos as well
     r = requests.get(url, params={'format': 'json', 'query': query})
     data = r.json()
 
@@ -147,11 +149,11 @@ def wikidata_retriever(term, lang):
             altLabel_dict = extract_altLabel(altLabel_response)
 
             #patricia tries to retrieve naTerm
-            query = naTerm_query.replace("WDTMID", item_id)
-            r = requests.get(url, params={'format': 'json', 'query': query})
-            naTerm_response = r.json()
-            naTerm_dict = extract_naTerm(naTerm_response)
-                           
+            # query = naTerm_query.replace("WDTMID", item_id)
+            # r = requests.get(url, params={'format': 'json', 'query': query})
+            # naTerm_response = r.json()
+            # naTerm_dict = extract_naTerm(naTerm_response)
+            #
             # Extract data
             retrieved = list()
             for item in data['results']['bindings']:
@@ -162,7 +164,8 @@ def wikidata_retriever(term, lang):
                     desc = item['desc']['value']
                 else:
                     desc = ""
-                retrieved.append({"article": article, "lang": lang, "name": name, "desc": desc, "altLabel": altLabel_dict[article], "naTerm": naTerm_dict[article]})
+                retrieved.append({"article": article, "lang": lang, "name": name, "desc": desc, "altLabel": altLabel_dict[article]})
+                #"naTerm": naTerm_dict[article]
 
             subj = list(retrieved_subjects.keys())[list(retrieved_subjects.values()).index(True)]
             retrieved_data = {"WDTMID": item_id, "SBJCT": subj, "translations": retrieved}
@@ -236,10 +239,10 @@ reconceptlab_temp = """
 
 # =========================================
 # Creation of SKOS model with the collected Wikidata_dataset
-# he quitado el zip. no faltaría un return?
+# he quitado el zip. no faltaría un return?  naTerm_lang
 # =========================================
 def skos_converter(entry, wiki_data):
-    name_lang, desc_lang, altLabel_lang, naTerm_lang = list(), list(), list(), list()
+    name_lang, desc_lang, altLabel_lang= list(), list(), list(),
     translations = wiki_data["translations"]
     for i in translations:
         name_lang.append( "\"" + i["name"] + "\"" + "@" + i["lang"] )
@@ -253,9 +256,9 @@ def skos_converter(entry, wiki_data):
                     ll = "\"" + lbl + "\"" + "@" + i["lang"]
                     if ll not in altLabel_lang:
                         altLabel_lang.append(ll)
-        if i["naTerm"]:
-            for ntrm in i["naTerm"]:
-                naTerm = ntrm
+        # if i["naTerm"]:
+        #     for ntrm in i["naTerm"]:
+        #         naTerm = ntrm
     header = concept_template.replace("CONCAT", ", ".join(name_lang)).replace("WDTMID", 
         wiki_data["WDTMID"]).replace("SCTMID", TERM_ID_MAP[entry])
     if ", ".join(desc_lang):
@@ -269,22 +272,24 @@ def skos_converter(entry, wiki_data):
         if len(body):
             body = body[:-2] + "."
 
-    if ", ":
-        narrow_terms = naTerm_template.replace("WDNRTMID", naTerm)
-    else:
-        narrow_terms = ""
-        if len(body):
-            body = body[:-2] + "."
+    # if ", ":
+    #     narrow_terms = naTerm_template.replace("WDNRTMID", naTerm)
+    # else:
+    #     narrow_terms = ""
+    #     if len(body):
+    #         body = body[:-2] + "."
 
-    return header + body + alternative_labels + narrow_terms
+    #+ narrow_terms
+
+    return header + body + alternative_labels
 # =========================================
 # main
-# =========================================
+# =========================================xx
 ## List of words
 source_language = "english"
-source_file_dir = "original_datasets/6term.csv"
+source_file_dir = "original_datasets/100term.csv"
 source_file = open(source_file_dir, "r")
-terms = [t for t in source_file.read().split("\n")][0:10]
+terms = [t for t in source_file.read().split("\n")]
 # print(terms)
 
 # Giving an ID to each term and saving the dict in a csv file
@@ -306,7 +311,7 @@ with open(output_file_name, "a") as output_file:
 not_found = list()
 for entry in terms:
     retrieved_data = wikidata_retriever(entry, lang=source_language[0:2])
-    # print(retrieved_data)
+   # print(retrieved_data)
     if len(retrieved_data):
         skos_text = skos_converter(entry, retrieved_data)
         with open(output_file_name, "a") as output_file:
