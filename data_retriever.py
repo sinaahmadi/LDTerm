@@ -6,7 +6,6 @@ Created on Mon May  13 16:45:08 2019
 """
 import requests
 from random import randint
-
 # =========================================
 # Clean text by removing noisy characters
 # =========================================
@@ -21,40 +20,23 @@ def sctmid_creator():
     SCTMID = "LT" + str(numb)
     return SCTMID
 # =========================================
-# Extract altLabel
+# Extract multiLabel
 # =========================================
-# Given a JSON file, extract altLabel and create a dicitonary {article_URL:[altLabel, ...]}
-def extract_altLabel(labels):
-    altLabels = dict()
+# Given a JSON file, extract multiple values for one entry and create a dicitonary {article_URL:[altLabel, ...]}
+# altLabel or naTerm
+def extract_multiLabel(labels, key):
+    multiLabels = dict()
     for item in labels['results']['bindings']:
         article = item['article']['value']
-        if 'altLabel' in item.keys():
-            altLabel = item['altLabel']['value']
+        if key in item.keys():
+            label = item[key]['value']
         else:
-            altLabel = ""
-        if article not in altLabels:
-            altLabels[article] = [altLabel]
+            label = ""
+        if article not in multiLabels:
+            multiLabels[article] = [label]
         else:
-            altLabels[article].append(altLabel)
-    return altLabels
-# =========================================
-# Extract naTerm
-# =========================================
-# Given a JSON file, extract altLabel and create a dicitonary {article_URL:[altLabel, ...]}
-
-# def extract_naTerm(terms):
-    # naTerms = dict()
-    # for item in terms['results']['bindings']:
-    #     article = item['article']['value']
-    #     if 'naTerm' in item.keys():
-    #         naTerm = item['naTerm']['value']
-    #     else:
-    #         naTerm = ""
-    #     if article not in naTerms:
-    #         naTerms[article] = [naTerm]
-    #     else:
-    #         naTerms[article].append(naTerm)
-    # return naTerms
+            multiLabels[article].append(label)
+    return multiLabels
 # =========================================
 # Retrieving from Wikidata
 # =========================================
@@ -110,6 +92,18 @@ def wikidata_retriever(term, lang):
     }ORDER BY ?lang
     
     """
+
+    brTerm_query="""
+    SELECT DISTINCT ?article ?brTerm WHERE {
+      ?article schema:about wd:WDTMID;
+               schema:inLanguage ?lang;
+               schema:name ?name.
+      FILTER(?lang in ('es', 'de', 'nl'))  
+      OPTIONAL {
+        wd:WDTMID wdt:P279 ?brTerm;          
+      }
+    }ORDER BY ?lang
+    """
     Wikidata_dataset = dict()
     subjects = {"legal instrument": "Q1428955", "common law": "Q30216", "statutory law": "Q7766927", "statute": "Q820655", "legislation": "Q49371", "code of law": "Q922203", "economic value": "Q868257", "employee benefit": "Q678774", "quality": "Q1207505", "political philosophy": "Q179805", "social status": "Q189970", "work": "Q6958747", "job": "Q192581", "philosophy of law": "Q126842", "policy": "Q1156854", "leave of absence": "Q13561011", "sources of law": "Q846882", "rights policy": "Q2135597", "comparative law": "Q741338", "sociology of law ": "Q847034",
                 "legal doctrine": "Q1192543", "area of law": "Q1756157", "law": "Q7748", "legal science": "Q382995",
@@ -141,31 +135,48 @@ def wikidata_retriever(term, lang):
             query = original_query.replace("WDTMID", item_id)
             r = requests.get(url, params={'format': 'json', 'query': query})
             data = r.json()
-            # print(query)
+            # print(data)
 
+            # Alternative labels
             query = altLabel_query.replace("WDTMID", item_id)
             r = requests.get(url, params={'format': 'json', 'query': query})
             altLabel_response = r.json()
-            altLabel_dict = extract_altLabel(altLabel_response)
+            altLabel_dict = extract_multiLabel(altLabel_response, "altLabel")
+            # print(altLabel_dict)
 
-            #patricia tries to retrieve naTerm
-            # query = naTerm_query.replace("WDTMID", item_id)
-            # r = requests.get(url, params={'format': 'json', 'query': query})
-            # naTerm_response = r.json()
-            # naTerm_dict = extract_naTerm(naTerm_response)
-            #
+            # Narrower terms
+            query = naTerm_query.replace("WDTMID", item_id)
+            r = requests.get(url, params={'format': 'json', 'query': query})
+            naTerm_response = r.json()
+            naTerm_dict = extract_multiLabel(naTerm_response, "naTerm")
+            # print(naTerm_dict)
+
+            # Broader terms
+            query = brTerm_query.replace("WDTMID", item_id)
+            r = requests.get(url, params={'format': 'json', 'query': query})
+            brTerm_response = r.json()
+            brTerm_dict = extract_multiLabel(brTerm_response, "brTerm")
+            # print(brTerm_dict)         
+
             # Extract data
             retrieved = list()
             for item in data['results']['bindings']:
                 article = item['article']['value']
                 lang = item['lang']['value']
                 name = item['name']['value']
+                altL, naTeL, brTeL = "", "", ""
                 if "desc" in item.keys():
                     desc = item['desc']['value']
                 else:
                     desc = ""
-                retrieved.append({"article": article, "lang": lang, "name": name, "desc": desc, "altLabel": altLabel_dict[article]})
-                #"naTerm": naTerm_dict[article]
+                if article in altLabel_dict.keys():
+                    altL = altLabel_dict[article]
+                if article in naTerm_dict.keys():
+                    naTeL = naTerm_dict[article]
+                if article in brTerm_dict.keys():
+                    brTeL = brTerm_dict[article]
+                retrieved.append({"article": article, "lang": lang, "name": name, "desc": desc, 
+                    "altLabel": altL, "naTerm": naTeL, "brTerm": brTeL})
 
             subj = list(retrieved_subjects.keys())[list(retrieved_subjects.values()).index(True)]
             retrieved_data = {"WDTMID": item_id, "SBJCT": subj, "translations": retrieved}
@@ -198,15 +209,15 @@ desc_template = """
 """
 
 alt_template = """
-        skos:altLabel CONCAT2 .
+        skos:altLabel CONCAT2 ;
 """
 
 br_template = """
-        skos:broader <https://www.wikidata.org/wiki/WDBRTMID>; 
+        skos:broader WDBRTMID ; 
 """
 
 naTerm_template = """
-        skos:narrower <https://www.wikidata.org/wiki/WDNRTMID> .
+        skos:narrower WDNRTMID ;
 """
 re_template = """
         skos:related <https://www.wikidata.org/wiki/WDRLTMID>; 
@@ -242,7 +253,7 @@ reconceptlab_temp = """
 # he quitado el zip. no faltaría un return?  naTerm_lang
 # =========================================
 def skos_converter(entry, wiki_data):
-    name_lang, desc_lang, altLabel_lang= list(), list(), list(),
+    name_lang, desc_lang, altLabel_lang, narrower_terms, broader_terms = list(), list(), list(), list(), list()
     translations = wiki_data["translations"]
     for i in translations:
         name_lang.append( "\"" + i["name"] + "\"" + "@" + i["lang"] )
@@ -250,38 +261,51 @@ def skos_converter(entry, wiki_data):
             dl = "\"" + i["desc"] + "\"" + "@" + i["lang"]
             if dl not in desc_lang:
                 desc_lang.append(dl)
+
         if i["altLabel"]:
             for lbl in i["altLabel"]:
                 if len(lbl):
                     ll = "\"" + lbl + "\"" + "@" + i["lang"]
                     if ll not in altLabel_lang:
                         altLabel_lang.append(ll)
-        # if i["naTerm"]:
-        #     for ntrm in i["naTerm"]:
-        #         naTerm = ntrm
+
+        if i["naTerm"]:
+            for ntrm in i["naTerm"]:
+                ntrm = "<" + ntrm + ">"
+                if len(ntrm) and ntrm not in narrower_terms:
+                        narrower_terms.append(ntrm)
+
+        if i["brTerm"]:
+            for btrm in i["brTerm"]:
+                btrm = "<" + btrm + ">"
+                if len(btrm) and btrm not in broader_terms:
+                        broader_terms.append(btrm)
+
     header = concept_template.replace("CONCAT", ", ".join(name_lang)).replace("WDTMID", 
         wiki_data["WDTMID"]).replace("SCTMID", TERM_ID_MAP[entry])
+
     if ", ".join(desc_lang):
         body = desc_template.replace("CONCAT1", ", ".join(desc_lang))
     else:
         body = ""
+
     if ", ".join(altLabel_lang):
         alternative_labels = alt_template.replace("CONCAT2", ", ".join(altLabel_lang))
     else:
         alternative_labels = ""
-        if len(body):
-            body = body[:-2] + "."
 
-    # if ", ":
-    #     narrow_terms = naTerm_template.replace("WDNRTMID", naTerm)
-    # else:
-    #     narrow_terms = ""
-    #     if len(body):
-    #         body = body[:-2] + "."
+    # remove empty elements (NEXT STEP)
+    if ", ".join(narrower_terms):
+        narrower_concepts = naTerm_template.replace("WDNRTMID", ", ".join(narrower_terms))
+    else:
+        narrower_concepts = ""
 
-    #+ narrow_terms
+    if ", ".join(broader_terms):
+        broader_concepts = br_template.replace("WDBRTMID", ", ".join(broader_terms))
+    else:
+        broader_concepts = ""
 
-    return header + body + alternative_labels
+    return str(header + body + alternative_labels + narrower_concepts + broader_concepts)[:-3] + "."
 # =========================================
 # main
 # =========================================xx
@@ -289,7 +313,7 @@ def skos_converter(entry, wiki_data):
 source_language = "english"
 source_file_dir = "original_datasets/100term.csv"
 source_file = open(source_file_dir, "r")
-terms = [t for t in source_file.read().split("\n")]
+terms = [t for t in source_file.read().split("\n")][0:10]
 # print(terms)
 
 # Giving an ID to each term and saving the dict in a csv file
@@ -311,7 +335,7 @@ with open(output_file_name, "a") as output_file:
 not_found = list()
 for entry in terms:
     retrieved_data = wikidata_retriever(entry, lang=source_language[0:2])
-   # print(retrieved_data)
+    # print(retrieved_data)
     if len(retrieved_data):
         skos_text = skos_converter(entry, retrieved_data)
         with open(output_file_name, "a") as output_file:
@@ -326,7 +350,8 @@ with open(not_found_file_name, "w") as output_file:
 
 
 
-
+# Ignore category
+# Remove duplicates
 
 
 
