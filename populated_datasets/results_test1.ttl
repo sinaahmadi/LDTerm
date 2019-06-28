@@ -1,4 +1,3 @@
-
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix iso639: <http://lexvo.org/id/iso639-1/> .
@@ -8,7 +7,7 @@
 
 
 
-    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8214590> a skos:Concept ;
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8400225> a skos:Concept ;
         skos:closeMatch <https://www.wikidata.org/wiki/Q169207> ;
         skos:prefLabel "Diskriminierung"@de, "Discrimination"@en, "Discrimination"@en, "Discriminación"@es, "Discriminatie"@nl, "Categorie:Discriminatie"@nl ;
 
@@ -21,7 +20,7 @@
         skos:broader <http://www.wikidata.org/entity/Q9332>, <http://www.wikidata.org/entity/Q160232>, <http://www.wikidata.org/entity/Q1920219> .
 
 
-    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1834586> a skos:Concept ;
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2078909> a skos:Concept ;
         skos:closeMatch <https://www.wikidata.org/wiki/Q441328> ;
         skos:prefLabel "Mutterschaftsurlaub"@de, "Zwangerschaps- en bevallingsverlof"@nl ;
 
@@ -32,7 +31,7 @@
         skos:broader <http://www.wikidata.org/entity/Q328566> .
 
 
-    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1194226> a skos:Concept ;
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7379042> a skos:Concept ;
         skos:closeMatch <https://www.wikidata.org/wiki/Q546113> ;
         skos:prefLabel "Public Policy"@de, "Public policy"@en, "Public policy"@en, "Políticas públicas"@es ;
 
@@ -44,8 +43,7 @@
 
         skos:broader <http://www.wikidata.org/entity/Q1156854> .
 
-
-    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1017837> a skos:Concept ;
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6671580> a skos:Concept ;
         skos:closeMatch <https://www.wikidata.org/wiki/Q11022655> ;
         skos:prefLabel "Fallrecht"@de, "Case law"@en, "Jurisprudencia"@es, "Jurisprudentie"@nl ;
 
@@ -54,9 +52,7 @@
         skos:narrower <> ;
 
         skos:broader <http://www.wikidata.org/entity/Q846882> .
-
-
-    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2872196> a skos:Concept ;
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3045362> a skos:Concept ;
         skos:closeMatch <https://www.wikidata.org/wiki/Q33126993> ;
         skos:prefLabel "Appellanten"@de ;
 
@@ -66,23 +62,6 @@
 
         skos:broader <> .
 
-
-    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4651909> a skos:Concept ;
-        skos:closeMatch <https://www.wikidata.org/wiki/Q7169289> ;
-        skos:prefLabel "Permanent residence"@en ;
-
-        skos:description "Wikipedia disambiguation page"@e.
-
-
-    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8418911> a skos:Concept ;
-        skos:closeMatch <https://www.wikidata.org/wiki/Q3240539> ;
-        skos:prefLabel "Harassment"@en, "Hostigamiento"@es ;
-
-        skos:description "wide range of behaviours of an offensive nature"@en, "amplia gama de comportamientos ofensivos"@es;
-
-        skos:altLabel "harass"@en, "acoso"@es ;
-
-        skos:narrower <http://www.wikidata.org/entity/Q163942>, <http://www.wikidata.org/entity/Q240126>, <http://www.wikidata.org/entity/Q3858303>, <http://www.wikidata.org/entity/Q5654274>, <http://www.wikidata.org/entity/Q7132716>, <http://www.wikidata.org/entity/Q11386999>, <http://www.wikidata.org/entity/Q29097457> ;
-
-        skos:broader <http://www.wikidata.org/entity/Q1920219>, <http://www.wikidata.org/entity/Q3769299> .
-
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7116704> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/P569> ;
+        skos:prefLabel .

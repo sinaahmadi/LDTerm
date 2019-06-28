@@ -1,0 +1,439 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iso639: <http://lexvo.org/id/iso639-1/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix : <#> .
+
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8400225> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q169207> ;
+        skos:prefLabel "Diskriminierung"@de, "Discrimination"@en, "Discrimination"@en, "Discriminación"@es, "Discriminatie"@nl, "Categorie:Discriminatie"@nl ;
+
+        skos:description "Verhalten gegenüber einer bestimmten Gruppe von Menschen"@de, "prejudicial treatment based on membership in a certain group"@en, "comportamiento perjudicial respecto a un grupo específico de personas"@es;
+
+        skos:altLabel "Antidiskriminierung"@de, "Diskriminieren"@de, "Gesellschaftliche Diskriminierung"@de, "Religiöse Diskriminierung"@de, "Soziale Diskriminierung"@de, "Discriminacion"@es, "Discriminacion de genero"@es, "Discriminacion de género"@es, "Discriminación de genero"@es, "Discriminación de género"@es, "Discriminacion social"@es, "Discriminación social"@es, "Discriminador"@es, "Discriminatorio"@es, "Discrimatie"@nl, "Discriminatiewetgeving"@nl, "Discrimineren"@nl, "Gediscrimineerd"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q7533438>, <http://www.wikidata.org/entity/Q11311549>, <http://www.wikidata.org/entity/Q11446451>, <http://www.wikidata.org/entity/Q16242983>, <http://www.wikidata.org/entity/Q22126538>, <http://www.wikidata.org/entity/Q28001435>, <http://www.wikidata.org/entity/Q53610342>, <http://www.wikidata.org/entity/Q56697518>, <http://www.wikidata.org/entity/Q49649>, <http://www.wikidata.org/entity/Q93200>, <http://www.wikidata.org/entity/Q214244>, <http://www.wikidata.org/entity/Q383316>, <http://www.wikidata.org/entity/Q438946>, <http://www.wikidata.org/entity/Q976277>, <http://www.wikidata.org/entity/Q1137326>, <http://www.wikidata.org/entity/Q1463434>, <http://www.wikidata.org/entity/Q1587631>, <http://www.wikidata.org/entity/Q2029282>, <http://www.wikidata.org/entity/Q2352121>, <http://www.wikidata.org/entity/Q2606784>, <http://www.wikidata.org/entity/Q2797937>, <http://www.wikidata.org/entity/Q2916372>, <http://www.wikidata.org/entity/Q3216180>, <http://www.wikidata.org/entity/Q4162330>, <http://www.wikidata.org/entity/Q4162333>, <http://www.wikidata.org/entity/Q4162334>, <http://www.wikidata.org/entity/Q5282081>, <http://www.wikidata.org/entity/Q5282083>, <http://www.wikidata.org/entity/Q5282086>, <http://www.wikidata.org/entity/Q5333457>, <http://www.wikidata.org/entity/Q5532888>, <http://www.wikidata.org/entity/Q5916202>, <http://www.wikidata.org/entity/Q7239889> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q9332>, <http://www.wikidata.org/entity/Q160232>, <http://www.wikidata.org/entity/Q1920219> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2078909> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q441328> ;
+        skos:prefLabel "Mutterschaftsurlaub"@de, "Zwangerschaps- en bevallingsverlof"@nl ;
+
+        skos:altLabel "Schwangerschaftsurlaub"@de, "bevallingsverlof"@nl, "moederschapsrust"@nl, "moederschapsverlof"@nl, "nabevallingsrust"@nl, "voorbevallingsrust"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q2993245>, <http://www.wikidata.org/entity/Q41667733> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q328566> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7379042> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q546113> ;
+        skos:prefLabel "Public Policy"@de, "Public policy"@en, "Public policy"@en, "Políticas públicas"@es ;
+
+        skos:description "principled guide to action taken by the administrative executive branches of the state with regard to a class of issues"@en, "políticas"@es;
+
+        skos:altLabel "Staatstätigkeit"@de, "government policy"@en, "state policy"@en, "politicas publicas"@es ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q86757>, <http://www.wikidata.org/entity/Q161500>, <http://www.wikidata.org/entity/Q178564>, <http://www.wikidata.org/entity/Q329499>, <http://www.wikidata.org/entity/Q582577>, <http://www.wikidata.org/entity/Q610018>, <http://www.wikidata.org/entity/Q956002>, <http://www.wikidata.org/entity/Q1260003>, <http://www.wikidata.org/entity/Q1573035>, <http://www.wikidata.org/entity/Q5418327>, <http://www.wikidata.org/entity/Q7572612>, <http://www.wikidata.org/entity/Q7858691>, <http://www.wikidata.org/entity/Q7923600>, <http://www.wikidata.org/entity/Q7980969>, <http://www.wikidata.org/entity/Q12059623>, <http://www.wikidata.org/entity/Q15064326>, <http://www.wikidata.org/entity/Q17082008>, <http://www.wikidata.org/entity/Q29091078>, <http://www.wikidata.org/entity/Q59687191> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q1156854> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6671580> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q11022655> ;
+        skos:prefLabel "Fallrecht"@de, "Case law"@en, "Jurisprudencia"@es, "Jurisprudentie"@nl ;
+
+        skos:description "kasuistische Rechtsordnung ohne Kodifikation"@de, "set of past rulings by tribunals that meet their respective jurisdictions' rules to be cited as precedent"@en, "conjunto de resoluciones judiciales emitidas en un mismo sentido por los órganos judiciales de un ordenamiento jurídico determinado"@es;
+
+        skos:narrower <> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q846882> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3045362> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q33126993> ;
+        skos:prefLabel "Appellanten"@de ;
+
+        skos:description "Wikimedia-Begriffsklärungsseite"@de;
+
+        skos:narrower <> ;
+
+        skos:broader <> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4973803> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q7169289> ;
+        skos:prefLabel "Permanent residence"@en ;
+
+        skos:description "Wikipedia disambiguation page"@e.
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2136605> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q3240539> ;
+        skos:prefLabel "Harassment"@en, "Hostigamiento"@es ;
+
+        skos:description "wide range of behaviours of an offensive nature"@en, "amplia gama de comportamientos ofensivos"@es;
+
+        skos:altLabel "harass"@en, "acoso"@es ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q163942>, <http://www.wikidata.org/entity/Q240126>, <http://www.wikidata.org/entity/Q3858303>, <http://www.wikidata.org/entity/Q5654274>, <http://www.wikidata.org/entity/Q7132716>, <http://www.wikidata.org/entity/Q11386999>, <http://www.wikidata.org/entity/Q29097457> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q1920219>, <http://www.wikidata.org/entity/Q3769299> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3908707> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q4394526> ;
+        skos:prefLabel "Völkerrecht"@de, "International law"@en, "International law"@en, "Derecho internacional"@es, "Derecho internacional público"@es, "Internationaal recht"@nl ;
+
+        skos:description "Rechtsordnung, durch die die Beziehungen zwischen den Völkerrechtssubjekten (meist Staaten) geregelt werden"@de, "regulations governing international relations"@en, "conjunto de normas jurídicas y principios, destinado a regular las relaciones externas entre Estados y/o otras entidades (también con calidad de ser sujeto de derecho internacional)."@es;
+
+        skos:altLabel "Allgemeines Völkerrecht"@de, "Internationales Recht"@de, "International Law, Law of Nations"@en, "Derecho internacional publico"@es, "Derecho internacional público"@es, "Internationaal publiekrecht"@nl, "Volkenrecht"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q1055905>, <http://www.wikidata.org/entity/Q1937518>, <http://www.wikidata.org/entity/Q3039602>, <http://www.wikidata.org/entity/Q3656191>, <http://www.wikidata.org/entity/Q6406743>, <http://www.wikidata.org/entity/Q59836353> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q7748>, <http://www.wikidata.org/entity/Q858700>, <http://www.wikidata.org/entity/Q1047113> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8090492> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q703534> ;
+        skos:prefLabel "Arbeitnehmer"@de, "Werknemer"@nl ;
+
+        skos:description "Person, die bei einem Arbeitgeber arbeitet"@de;
+
+        skos:altLabel "Mitarbeiter"@de, "Beschäftigte"@de, "Arbeitnehmerin"@de, "Dienstnehmer"@de, "Beschäftigter"@de, "medewerker"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q212238>, <http://www.wikidata.org/entity/Q999897>, <http://www.wikidata.org/entity/Q1021663>, <http://www.wikidata.org/entity/Q1090219>, <http://www.wikidata.org/entity/Q1631244>, <http://www.wikidata.org/entity/Q2109535>, <http://www.wikidata.org/entity/Q2550689>, <http://www.wikidata.org/entity/Q2596222>, <http://www.wikidata.org/entity/Q3066508>, <http://www.wikidata.org/entity/Q3151057>, <http://www.wikidata.org/entity/Q3505362>, <http://www.wikidata.org/entity/Q3796928>, <http://www.wikidata.org/entity/Q5160981>, <http://www.wikidata.org/entity/Q7234072>, <http://www.wikidata.org/entity/Q12074795>, <http://www.wikidata.org/entity/Q38927093>, <http://www.wikidata.org/entity/Q55070649>, <http://www.wikidata.org/entity/Q60243684> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q327055>, <http://www.wikidata.org/entity/Q852998> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1350479> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q7063001> ;
+        skos:prefLabel "Notice"@en ;
+
+        skos:description "official notification of legal process"@e.
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6487599> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q5009984> ;
+        skos:prefLabel "Wikivoyage:Löschregeln"@de, "Wikiquote:Löschregeln"@de, "Wikipedia:Löschregeln"@de, "Wikinews:Löschregeln"@de, "Meta:Deletion policy"@en, "Wiktionary:Page deletion guidelines"@en, "Wikivoyage:Deletion policy"@en, "Wikiversity:Deletions"@en, "Wikisource:Deletion policy"@en, "Wikiquote:Deletion policy"@en, "Wikipedia:Deletion policy"@en, "Wikinews:Criteria for deletion"@en, "Wikibooks:Deletion policy"@en, "Commons:Deletion policy"@en, "Wikidata:Deletion policy"@en, "Project:Deletion"@en, "Wikcionario:Política de borrado"@es, "Wikiviajes:Política de borrado"@es, "Wikiversidad:Política de borrado"@es, "Wikisource:Políticas de borrado"@es, "Wikipedia:Política de borrado"@es, "Wikilibros:Política de borrado"@es, "Wikivoyage:Richtlijnen voor verwijderen"@nl ;
+
+        skos:description "overall policy about deletion (including speedy deletion, proposed deletion, and discussed deletion)"@en, "Wikimedia-projectpagina"@nl;
+
+        skos:altLabel "Project:Deletion policy"@en, "Wikipedia:Deletion policy"@en, "Wikiviajes:Política de borrado"@es ;
+
+        skos:narrower <> ;
+
+        skos:broader <> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5306023> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q489322> ;
+        skos:prefLabel "Dismissal (Cricket)"@de, "Dismissal (cricket)"@en ;
+
+        skos:description "out in the game of cricket"@en;
+
+        skos:altLabel "out"@en ;
+
+        skos:narrower <> ;
+
+        skos:broader <> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6846751> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q12569864> ;
+        skos:prefLabel "Wirtschaftseinheit"@de, "Economic entity"@en ;
+
+        skos:description "am arbeitsteiligen Wirtschaftsprozess beteiligte, in sich geschlossene und somit nach außen abgegrenzte, organisierte Marktpartei"@de, "person or organization participating in economic activity"@en;
+
+        skos:altLabel "Wirtschaftssubjekt"@de ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q45574934> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q35120> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7231869> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q179222> ;
+        skos:prefLabel "Ertragsteuer"@de, "Income tax"@en, "Impuesto sobre la renta"@es, "Inkomstenbelasting"@nl ;
+
+        skos:description "Oberbegriff für Einkommen-, Körperschaft- und Gewerbesteuer"@de, "tax imposed on individuals or entities (taxpayers) that varies with respective income or profits (taxable income)."@en, "impuesto que grava la utilidad de las personas, empresas, u otras entidades legales"@es;
+
+        skos:altLabel "Einkommenssteuer"@de, "Ertragssteuer"@de, "Ertragsteuer"@de, "Periodizitätsprinzip"@de, "income taxation"@en, "ISR"@es, "impuesto a la renta"@es, "impuesto a las ganancias"@es, "impuesto de la renta"@es, "belastbaar inkomen"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q1308200>, <http://www.wikidata.org/entity/Q4736466>, <http://www.wikidata.org/entity/Q5914631>, <http://www.wikidata.org/entity/Q7248309>, <http://www.wikidata.org/entity/Q10397464>, <http://www.wikidata.org/entity/Q11820207> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q926871> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3012486> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q60918> ;
+        skos:prefLabel "Offizierspatent"@de, "Commission (document)"@en ;
+
+        skos:description "document which appoints a person to a military force as an officer or a named person to high office"@en;
+
+        skos:altLabel "Offizierbrief"@de, "Offiziersbrevet"@de ;
+
+        skos:narrower <> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q49848> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2955615> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q13479560> ;
+        skos:prefLabel "Schlichtung"@de, "Conciliation"@en, "Conciliación (Derecho)"@es, "Conciliatie"@nl ;
+
+        skos:description "die außergerichtliche Beilegung eines Rechtsstreites zwischen streitenden Parteien"@de, "alternative dispute resolution (ADR) process"@en, "medio alternativo para solucionar conflictos"@es;
+
+        skos:altLabel "conciliacion"@es ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q231655> ;
+
+        skos:broader <> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5295931> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q814245> ;
+        skos:prefLabel "Befristetes Arbeitsverhältnis"@de, "Fixed-term employment contract"@en ;
+
+        skos:description "employment contract"@en;
+
+        skos:altLabel "Befristung (Arbeitsverhältnis)"@de, "Befristungskontrolle"@de, "Entfristungsklage"@de ;
+
+        skos:narrower <> ;
+
+        skos:broader <> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9879637> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q1047513> ;
+        skos:prefLabel "Cashflow"@de, "Cash flow"@en, "Cash flow"@en, "Flujo de caja"@es, "Kasstroom"@nl ;
+
+        skos:description "wirtschaftliche Messgröße"@de, "movement of money into or out of a business, project, or financial product"@en;
+
+        skos:altLabel "Cash Drain"@de, "Cash flow"@de, "Cash Flow"@de, "Cash-Drain"@de, "Cash-Flow"@de, "Free Cash Flow"@de, "Free Cash-Flow"@de, "Freier Cash Flow"@de, "Freier Cashflow"@de, "Kapitalfluss"@de, "Kassenzufluss"@de, "Konzern-Kapitalflussrechnung"@de, "Zahlungsüberschuss"@de, "Cash flow"@es, "Flujo de Caja"@es, "Net operating cash flow"@es, "Net Operating Cash Flow"@es, "NOPCAF"@es, "Cash flow"@nl ;
+
+        skos:narrower <> ;
+
+        skos:broader <> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8119822> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q2839009> ;
+        skos:prefLabel "Anschuldigung"@de, "Allegation"@en ;
+
+        skos:description "statement of a fact in a pleading, that will be attempted to be proven"@en;
+
+        skos:altLabel "Anschuldigung"@de ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q4731243> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q2684591> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3243830> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q703087> ;
+        skos:prefLabel "Rückstellung"@de, "Provision (accounting)"@en, "Voorzieningen (boekhouden)"@nl ;
+
+        skos:description "account which records a present liability of an entity"@en, "boekhouden"@nl;
+
+        skos:altLabel "Accruals"@de, "Aufwandsrückstellung"@de, "Aufwandsrückstellungen"@de, "Rückstellungen"@de, "Rueckstellung"@de, "Schuldrückstellung"@de ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q1664668> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q546972> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5527669> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q329777> ;
+        skos:prefLabel "Berufung (Recht)"@de, "Appeals"@en, "Appeal"@en, "Recurso de apelación"@es, "Hoger beroep"@nl ;
+
+        skos:description "resort to a superior court to review the decision of an inferior court or administrative agency"@en, "gang naar een bovenliggend rechtsorgaan om het besluit van een lagere rechtbank te doen herzien"@nl;
+
+        skos:altLabel "Berufungsbehörde"@de, "appellate process"@en, "appellate"@en, "court appeal"@en, "apelable"@es, "apelacion"@es, "apelaciones"@es, "apelado"@es, "apelante"@es, "apelar"@es, "recurso de Apelacion"@es, "recurso de apelación"@es, "appel"@nl, "appèl"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q3620854>, <http://www.wikidata.org/entity/Q4780981>, <http://www.wikidata.org/entity/Q11249540>, <http://www.wikidata.org/entity/Q42873535>, <http://www.wikidata.org/entity/Q48832765> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q1301203> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6737510> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q1221208> ;
+        skos:prefLabel "Dienstvertrag (Deutschland)"@de, "Employment contract"@en, "Contrato individual de trabajo"@es, "Arbeidsovereenkomst"@nl ;
+
+        skos:description "Dienstvertrag"@de, "agreement between employer and employee on terms of work and compensation"@en, "contrato de empleo"@es;
+
+        skos:altLabel "Dienstleistungsvertrag"@de, "employment agreement"@en, "Contratacion temporal"@es, "Contratación temporal"@es, "Contrato de trabajo (individual)"@es, "Contrato temporal"@es, "Derecho individual del trabajo"@es, "Derecho Individual del Trabajo"@es, "Derecho laboral individual"@es, "Trabajador temporal"@es, "Trabajadores temporales"@es, "arbeidscontract"@nl, "werkovereenkomst"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q187115>, <http://www.wikidata.org/entity/Q465778>, <http://www.wikidata.org/entity/Q2209434>, <http://www.wikidata.org/entity/Q7858783>, <http://www.wikidata.org/entity/Q11104487> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q93288> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7480092> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q277436> ;
+        skos:prefLabel "Bankfeiertag"@de, "Bank holiday"@en, "Bank holiday"@es, "Bank holiday"@nl ;
+
+        skos:description "Tage, an denen Kreditinstitute keine Bankgeschäfte abwickeln"@de, "type of public holiday in certain countries, closing many banks, schools and workplaces"@en, "feriado público"@es;
+
+        skos:altLabel "Bank Holiday"@de, "Bankenfeiertag"@de, "Spring Bank Holiday"@de, "Summer Bank Holiday"@de, "Bank holiday"@es, "Bank holidays"@nl ;
+
+        skos:narrower <> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q1197685> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3532988> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q1030121> ;
+        skos:prefLabel "Gerichtshof"@de, "Court of Justice"@en ;
+
+        skos:description "Wikimedia-Begriffsklärungsseite"@de, "Wikipedia disambiguation page"@en;
+
+        skos:narrower <> ;
+
+        skos:broader <> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1770694> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q2063826> ;
+        skos:prefLabel "Election deposit"@en ;
+
+        skos:description "in politics"@e.
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6433589> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q645883> ;
+        skos:prefLabel "Operation (Militär)"@de, "Military operation"@en, "Operación militar"@es, "Militaire operatie"@nl ;
+
+        skos:description "koordinierte militärische Handlungen"@de, "coordinated military actions of a state in response to a developing situation"@en, "acción armada y coordinada por parte de un Estado en respuesta a una situación en desarrollo"@es;
+
+        skos:altLabel "Militäroperation"@de, "Militärische Operation"@de, "Offensivoperation"@de, "Operative Ebene"@de, "Operative Führung"@de, "Operative Führungsebene"@de, "mission"@en, "Operaciones militares"@es, "operatie"@nl, "gevechtsoperatie"@nl, "legermissie"@nl, "legeroperatie"@nl, "militaire actie"@nl, "militaire missie"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q17149403>, <http://www.wikidata.org/entity/Q23036198>, <http://www.wikidata.org/entity/Q29913079>, <http://www.wikidata.org/entity/Q44005284>, <http://www.wikidata.org/entity/Q188686>, <http://www.wikidata.org/entity/Q251741>, <http://www.wikidata.org/entity/Q256905>, <http://www.wikidata.org/entity/Q273976>, <http://www.wikidata.org/entity/Q328475>, <http://www.wikidata.org/entity/Q357104>, <http://www.wikidata.org/entity/Q360632>, <http://www.wikidata.org/entity/Q476807>, <http://www.wikidata.org/entity/Q539241>, <http://www.wikidata.org/entity/Q582956>, <http://www.wikidata.org/entity/Q646740>, <http://www.wikidata.org/entity/Q678146>, <http://www.wikidata.org/entity/Q818545>, <http://www.wikidata.org/entity/Q831663>, <http://www.wikidata.org/entity/Q898242>, <http://www.wikidata.org/entity/Q1060062>, <http://www.wikidata.org/entity/Q1070938>, <http://www.wikidata.org/entity/Q1384277>, <http://www.wikidata.org/entity/Q1456466>, <http://www.wikidata.org/entity/Q1546073>, <http://www.wikidata.org/entity/Q1609633>, <http://www.wikidata.org/entity/Q1760704>, <http://www.wikidata.org/entity/Q1884278>, <http://www.wikidata.org/entity/Q2001676>, <http://www.wikidata.org/entity/Q2280140>, <http://www.wikidata.org/entity/Q3354777>, <http://www.wikidata.org/entity/Q3354924>, <http://www.wikidata.org/entity/Q3735153>, <http://www.wikidata.org/entity/Q6878284>, <http://www.wikidata.org/entity/Q11558718>, <http://www.wikidata.org/entity/Q12055541>, <http://www.wikidata.org/entity/Q15104954>, <http://www.wikidata.org/entity/Q16467788>, <http://www.wikidata.org/entity/Q17051901> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q180684>, <http://www.wikidata.org/entity/Q650711>, <http://www.wikidata.org/entity/Q1656682> .
+
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5118628> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q352450> ;
+        skos:prefLabel "Agentur"@de ;
+
+        skos:description "professionelle Dienstleistung"@de;
+
+        skos:narrower <http://www.wikidata.org/entity/Q1144447>, <http://www.wikidata.org/entity/Q1341230>, <http://www.wikidata.org/entity/Q6864113>, <http://www.wikidata.org/entity/Q11722943>, <http://www.wikidata.org/entity/Q12018442>, <http://www.wikidata.org/entity/Q13434535>, <http://www.wikidata.org/entity/Q17175443> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q3402645> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5598940> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q163887> ;
+        skos:prefLabel "Tarifvertrag"@de, "Collective agreement"@en, "Contrato colectivo de trabajo"@es, "Collectieve arbeidsovereenkomst"@nl ;
+
+        skos:description "Vertragliche Regelung der Arbeitsverhältnisse zwischen Arbeitgebern und Arbeitnehmern"@de, "agreement between employers and employees"@en;
+
+        skos:altLabel "Rahmentarifvertrag"@de, "Tarifrecht"@de, "Tarifvertragsrecht"@de, "collective bargaining agreement"@en, "collective contract"@en, "Contrato de trabajo"@es, "Convencion colectiva de trabajo"@es, "Convención colectiva de trabajo"@es, "Convenio Colectivo"@es, "Convenio Colectivo de Trabajo"@es, "Convenio laboral"@es, "Convenios Colectivos"@es, "Cao"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q256641>, <http://www.wikidata.org/entity/Q1701209>, <http://www.wikidata.org/entity/Q31367299> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q93288> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7658065> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q2679151> ;
+        skos:prefLabel "Zorgplan"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q2743610> ;
+
+        skos:broader <> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7167002> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q1646605> ;
+        skos:prefLabel "Mitgliedstaat"@de, "Member state"@en ;
+
+        skos:description "state that is a member of an international organisation"@en;
+
+        skos:narrower <http://www.wikidata.org/entity/Q160016>, <http://www.wikidata.org/entity/Q185441>, <http://www.wikidata.org/entity/Q595841>, <http://www.wikidata.org/entity/Q628363>, <http://www.wikidata.org/entity/Q1757823>, <http://www.wikidata.org/entity/Q2745501>, <http://www.wikidata.org/entity/Q3055369>, <http://www.wikidata.org/entity/Q6316828>, <http://www.wikidata.org/entity/Q6505795>, <http://www.wikidata.org/entity/Q6814224>, <http://www.wikidata.org/entity/Q6814225>, <http://www.wikidata.org/entity/Q6814228>, <http://www.wikidata.org/entity/Q6814229>, <http://www.wikidata.org/entity/Q6814230>, <http://www.wikidata.org/entity/Q6814231>, <http://www.wikidata.org/entity/Q6814232>, <http://www.wikidata.org/entity/Q6814233>, <http://www.wikidata.org/entity/Q6814234>, <http://www.wikidata.org/entity/Q6814236>, <http://www.wikidata.org/entity/Q6814237>, <http://www.wikidata.org/entity/Q6814239>, <http://www.wikidata.org/entity/Q6814241>, <http://www.wikidata.org/entity/Q6814242>, <http://www.wikidata.org/entity/Q6814244>, <http://www.wikidata.org/entity/Q6814245>, <http://www.wikidata.org/entity/Q17093009>, <http://www.wikidata.org/entity/Q20982723> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q7275>, <http://www.wikidata.org/entity/Q9200127> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2136605> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q3240539> ;
+        skos:prefLabel "Harassment"@en, "Hostigamiento"@es ;
+
+        skos:description "wide range of behaviours of an offensive nature"@en, "amplia gama de comportamientos ofensivos"@es;
+
+        skos:altLabel "harass"@en, "acoso"@es ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q163942>, <http://www.wikidata.org/entity/Q240126>, <http://www.wikidata.org/entity/Q3858303>, <http://www.wikidata.org/entity/Q5654274>, <http://www.wikidata.org/entity/Q7132716>, <http://www.wikidata.org/entity/Q11386999>, <http://www.wikidata.org/entity/Q29097457> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q1920219>, <http://www.wikidata.org/entity/Q3769299> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6253276> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q1218236> ;
+        skos:prefLabel "Liability"@en ;
+
+        skos:description "Wikimedia disambiguation page"@e.
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4154902> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q5176610> ;
+        skos:prefLabel "Counsel (journal)"@en ;
+
+        skos:description "monthly Journal of the Bar of England and Wales"@e.
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9066970> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q231043> ;
+        skos:prefLabel "Zustimmung"@de, "Category:Consent"@en, "Consent"@en, "Consent"@en, "Consentimiento"@es ;
+
+        skos:description "expression granting permission; indication of agreement with a proposal; acknowledgement that an item meets requirements"@en, "expresión otorgando permiso; indicación de acuerdo con una propuesta; reconocimiento de que un artículo cumple con los requisitos"@es;
+
+        skos:altLabel "permission"@en, "sanction"@en, "approval"@en, "saying yes"@en, "authorization"@en ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q193170>, <http://www.wikidata.org/entity/Q764527>, <http://www.wikidata.org/entity/Q2823451>, <http://www.wikidata.org/entity/Q2994426>, <http://www.wikidata.org/entity/Q7269961>, <http://www.wikidata.org/entity/Q51728733>, <http://www.wikidata.org/entity/Q56515356>, <http://www.wikidata.org/entity/Q57699905>, <http://www.wikidata.org/entity/Q62642942> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q451967>, <http://www.wikidata.org/entity/Q628523> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5584554> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q326498> ;
+        skos:prefLabel "Wettbewerbsrecht"@de, "Competition law"@en, "Derecho de la competencia"@es, "Mededingingsrecht"@nl ;
+
+        skos:description "law that promotes or seeks to maintain market competition by regulating anti-competitive conduct by companies"@en, "disposiciones legislativas y reglamentarias orientadas a garantizar el respeto a la libertad de comercio y de la industria, en una economía de libre mercado"@es;
+
+        skos:altLabel "Antitrust"@es, "Derecho de competencia"@es, "Derecho de competir"@es, "Derecho para competir"@es, "Regulacion antimonopolio"@es, "Antitrust"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q1660020>, <http://www.wikidata.org/entity/Q1805439>, <http://www.wikidata.org/entity/Q3258259> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q7748> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6475724> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q6881762> ;
+        skos:prefLabel "Mitigation (law)"@en ;
+
+        skos:description "in law, the principle that a party who suffers loss must take action to minimize the amount of loss"@e.
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3977194> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q630642> ;
+        skos:prefLabel "Convention (Métro Paris)"@de, "Convention (Paris Métro)"@en, "Category:Convention (Paris Metro)"@en, "Estación de Convention"@es, "Convention (metrostation)"@nl ;
+
+        skos:description "Station der Métro Paris"@de, "Paris Métro station"@en, "estación del metro de París"@es, "metrostation in Parijs"@nl;
+
+        skos:altLabel "Estacion de Convention"@es ;
+
+        skos:narrower <> ;
+
+        skos:broader <> .
+

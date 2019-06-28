@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8400225">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q169207"/>
+    <skos:prefLabel xml:lang="de">Diskriminierung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Discrimination</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Discriminación</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Discriminatie</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Categorie:Discriminatie</skos:prefLabel>
+    <skos:description xml:lang="de">Verhalten gegenüber einer bestimmten Gruppe von Menschen</skos:description>
+    <skos:description xml:lang="en">prejudicial treatment based on membership in a certain group</skos:description>
+    <skos:description xml:lang="es">comportamiento perjudicial respecto a un grupo específico de personas</skos:description>
+    <skos:altLabel xml:lang="de">Antidiskriminierung</skos:altLabel>
+    <skos:altLabel xml:lang="de">Diskriminieren</skos:altLabel>
+    <skos:altLabel xml:lang="de">Gesellschaftliche Diskriminierung</skos:altLabel>
+    <skos:altLabel xml:lang="de">Religiöse Diskriminierung</skos:altLabel>
+    <skos:altLabel xml:lang="de">Soziale Diskriminierung</skos:altLabel>
+    <skos:altLabel xml:lang="es">Discriminacion</skos:altLabel>
+    <skos:altLabel xml:lang="es">Discriminacion de genero</skos:altLabel>
+    <skos:altLabel xml:lang="es">Discriminacion de género</skos:altLabel>
+    <skos:altLabel xml:lang="es">Discriminación de genero</skos:altLabel>
+    <skos:altLabel xml:lang="es">Discriminación de género</skos:altLabel>
+    <skos:altLabel xml:lang="es">Discriminacion social</skos:altLabel>
+    <skos:altLabel xml:lang="es">Discriminación social</skos:altLabel>
+    <skos:altLabel xml:lang="es">Discriminador</skos:altLabel>
+    <skos:altLabel xml:lang="es">Discriminatorio</skos:altLabel>
+    <skos:altLabel xml:lang="nl">Discrimatie</skos:altLabel>
+    <skos:altLabel xml:lang="nl">Discriminatiewetgeving</skos:altLabel>
+    <skos:altLabel xml:lang="nl">Discrimineren</skos:altLabel>
+    <skos:altLabel xml:lang="nl">Gediscrimineerd</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q7533438"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q11311549"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q11446451"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q16242983"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q22126538"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q28001435"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q53610342"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q56697518"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q49649"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q93200"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q214244"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q383316"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q438946"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q976277"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1137326"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1463434"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1587631"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2029282"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2352121"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2606784"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2797937"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2916372"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3216180"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q4162330"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q4162333"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q4162334"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q5282081"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q5282083"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q5282086"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q5333457"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q5532888"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q5916202"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q7239889"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q9332"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q160232"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q1920219"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2078909">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q441328"/>
+    <skos:prefLabel xml:lang="de">Mutterschaftsurlaub</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Zwangerschaps- en bevallingsverlof</skos:prefLabel>
+    <skos:altLabel xml:lang="de">Schwangerschaftsurlaub</skos:altLabel>
+    <skos:altLabel xml:lang="nl">bevallingsverlof</skos:altLabel>
+    <skos:altLabel xml:lang="nl">moederschapsrust</skos:altLabel>
+    <skos:altLabel xml:lang="nl">moederschapsverlof</skos:altLabel>
+    <skos:altLabel xml:lang="nl">nabevallingsrust</skos:altLabel>
+    <skos:altLabel xml:lang="nl">voorbevallingsrust</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2993245"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q41667733"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q328566"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7379042">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q546113"/>
+    <skos:prefLabel xml:lang="de">Public Policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Public policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Políticas públicas</skos:prefLabel>
+    <skos:description xml:lang="en">principled guide to action taken by the administrative executive branches of the state with regard to a class of issues</skos:description>
+    <skos:description xml:lang="es">políticas</skos:description>
+    <skos:altLabel xml:lang="de">Staatstätigkeit</skos:altLabel>
+    <skos:altLabel xml:lang="en">government policy</skos:altLabel>
+    <skos:altLabel xml:lang="en">state policy</skos:altLabel>
+    <skos:altLabel xml:lang="es">politicas publicas</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q86757"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q161500"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q178564"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q329499"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q582577"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q610018"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q956002"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1260003"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1573035"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q5418327"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q7572612"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q7858691"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q7923600"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q7980969"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q12059623"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q15064326"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q17082008"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q29091078"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q59687191"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q1156854"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6671580">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q11022655"/>
+    <skos:prefLabel xml:lang="de">Fallrecht</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Case law</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Jurisprudencia</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Jurisprudentie</skos:prefLabel>
+    <skos:description xml:lang="de">kasuistische Rechtsordnung ohne Kodifikation</skos:description>
+    <skos:description xml:lang="en">set of past rulings by tribunals that meet their respective jurisdictions' rules to be cited as precedent</skos:description>
+    <skos:description xml:lang="es">conjunto de resoluciones judiciales emitidas en un mismo sentido por los órganos judiciales de un ordenamiento jurídico determinado</skos:description>
+    <skos:narrower rdf:resource="http://njh.me/"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q846882"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3045362">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q33126993"/>
+    <skos:prefLabel xml:lang="de">Appellanten</skos:prefLabel>
+    <skos:description xml:lang="de">Wikimedia-Begriffsklärungsseite</skos:description>
+    <skos:narrower rdf:resource="http://njh.me/"/>
+    <skos:broader rdf:resource="http://njh.me/"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4973803">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q7169289"/>
+    <skos:prefLabel xml:lang="en">Permanent residence</skos:prefLabel>
+    <skos:description xml:lang="e">Wikipedia disambiguation page</skos:description>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2136605">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q3240539"/>
+    <skos:prefLabel xml:lang="en">Harassment</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Hostigamiento</skos:prefLabel>
+    <skos:description xml:lang="en">wide range of behaviours of an offensive nature</skos:description>
+    <skos:description xml:lang="es">amplia gama de comportamientos ofensivos</skos:description>
+    <skos:altLabel xml:lang="en">harass</skos:altLabel>
+    <skos:altLabel xml:lang="es">acoso</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q163942"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q240126"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3858303"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q5654274"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q7132716"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q11386999"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q29097457"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q1920219"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q3769299"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7116704">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/P569"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></skos:prefLabel>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5090484">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/P2130"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></skos:prefLabel>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3908707">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q4394526"/>
+    <skos:prefLabel xml:lang="de">Völkerrecht</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">International law</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Derecho internacional</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Derecho internacional público</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Internationaal recht</skos:prefLabel>
+    <skos:description xml:lang="de">Rechtsordnung, durch die die Beziehungen zwischen den Völkerrechtssubjekten (meist Staaten) geregelt werden</skos:description>
+    <skos:description xml:lang="en">regulations governing international relations</skos:description>
+    <skos:description xml:lang="es">conjunto de normas jurídicas y principios, destinado a regular las relaciones externas entre Estados y/o otras entidades (también con calidad de ser sujeto de derecho internacional).</skos:description>
+    <skos:altLabel xml:lang="de">Allgemeines Völkerrecht</skos:altLabel>
+    <skos:altLabel xml:lang="de">Internationales Recht</skos:altLabel>
+    <skos:altLabel xml:lang="en">International Law, Law of Nations</skos:altLabel>
+    <skos:altLabel xml:lang="es">Derecho internacional publico</skos:altLabel>
+    <skos:altLabel xml:lang="es">Derecho internacional público</skos:altLabel>
+    <skos:altLabel xml:lang="nl">Internationaal publiekrecht</skos:altLabel>
+    <skos:altLabel xml:lang="nl">Volkenrecht</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1055905"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1937518"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3039602"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3656191"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6406743"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q59836353"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q7748"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q858700"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q1047113"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8090492">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q703534"/>
+    <skos:prefLabel xml:lang="de">Arbeitnehmer</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Werknemer</skos:prefLabel>
+    <skos:description xml:lang="de">Person, die bei einem Arbeitgeber arbeitet</skos:description>
+    <skos:altLabel xml:lang="de">Mitarbeiter</skos:altLabel>
+    <skos:altLabel xml:lang="de">Beschäftigte</skos:altLabel>
+    <skos:altLabel xml:lang="de">Arbeitnehmerin</skos:altLabel>
+    <skos:altLabel xml:lang="de">Dienstnehmer</skos:altLabel>
+    <skos:altLabel xml:lang="de">Beschäftigter</skos:altLabel>
+    <skos:altLabel xml:lang="nl">medewerker</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q212238"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q999897"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1021663"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1090219"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1631244"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2109535"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2550689"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2596222"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3066508"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3151057"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3505362"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3796928"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q5160981"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q7234072"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q12074795"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q38927093"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q55070649"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q60243684"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q327055"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q852998"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1350479">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q7063001"/>
+    <skos:prefLabel xml:lang="en">Notice</skos:prefLabel>
+    <skos:description xml:lang="e">official notification of legal process</skos:description>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6487599">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q5009984"/>
+    <skos:prefLabel xml:lang="de">Wikivoyage:Löschregeln</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Wikiquote:Löschregeln</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Wikipedia:Löschregeln</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Wikinews:Löschregeln</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Meta:Deletion policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wiktionary:Page deletion guidelines</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wikivoyage:Deletion policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wikiversity:Deletions</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wikisource:Deletion policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wikiquote:Deletion policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wikipedia:Deletion policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wikinews:Criteria for deletion</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wikibooks:Deletion policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Commons:Deletion policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wikidata:Deletion policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Project:Deletion</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Wikcionario:Política de borrado</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Wikiviajes:Política de borrado</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Wikiversidad:Política de borrado</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Wikisource:Políticas de borrado</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Wikipedia:Política de borrado</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Wikilibros:Política de borrado</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Wikivoyage:Richtlijnen voor verwijderen</skos:prefLabel>
+    <skos:description xml:lang="en">overall policy about deletion (including speedy deletion, proposed deletion, and discussed deletion)</skos:description>
+    <skos:description xml:lang="nl">Wikimedia-projectpagina</skos:description>
+    <skos:altLabel xml:lang="en">Project:Deletion policy</skos:altLabel>
+    <skos:altLabel xml:lang="en">Wikipedia:Deletion policy</skos:altLabel>
+    <skos:altLabel xml:lang="es">Wikiviajes:Política de borrado</skos:altLabel>
+    <skos:narrower rdf:resource="http://njh.me/"/>
+    <skos:broader rdf:resource="http://njh.me/"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5306023">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q489322"/>
+    <skos:prefLabel xml:lang="de">Dismissal (Cricket)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Dismissal (cricket)</skos:prefLabel>
+    <skos:description xml:lang="en">out in the game of cricket</skos:description>
+    <skos:altLabel xml:lang="en">out</skos:altLabel>
+    <skos:narrower rdf:resource="http://njh.me/"/>
+    <skos:broader rdf:resource="http://njh.me/"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6846751">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q12569864"/>
+    <skos:prefLabel xml:lang="de">Wirtschaftseinheit</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Economic entity</skos:prefLabel>
+    <skos:description xml:lang="de">am arbeitsteiligen Wirtschaftsprozess beteiligte, in sich geschlossene und somit nach außen abgegrenzte, organisierte Marktpartei</skos:description>
+    <skos:description xml:lang="en">person or organization participating in economic activity</skos:description>
+    <skos:altLabel xml:lang="de">Wirtschaftssubjekt</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q45574934"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q35120"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4706137">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/P169"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></skos:prefLabel>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7231869">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q179222"/>
+    <skos:prefLabel xml:lang="de">Ertragsteuer</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Income tax</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Impuesto sobre la renta</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Inkomstenbelasting</skos:prefLabel>
+    <skos:description xml:lang="de">Oberbegriff für Einkommen-, Körperschaft- und Gewerbesteuer</skos:description>
+    <skos:description xml:lang="en">tax imposed on individuals or entities (taxpayers) that varies with respective income or profits (taxable income).</skos:description>
+    <skos:description xml:lang="es">impuesto que grava la utilidad de las personas, empresas, u otras entidades legales</skos:description>
+    <skos:altLabel xml:lang="de">Einkommenssteuer</skos:altLabel>
+    <skos:altLabel xml:lang="de">Ertragssteuer</skos:altLabel>
+    <skos:altLabel xml:lang="de">Ertragsteuer</skos:altLabel>
+    <skos:altLabel xml:lang="de">Periodizitätsprinzip</skos:altLabel>
+    <skos:altLabel xml:lang="en">income taxation</skos:altLabel>
+    <skos:altLabel xml:lang="es">ISR</skos:altLabel>
+    <skos:altLabel xml:lang="es">impuesto a la renta</skos:altLabel>
+    <skos:altLabel xml:lang="es">impuesto a las ganancias</skos:altLabel>
+    <skos:altLabel xml:lang="es">impuesto de la renta</skos:altLabel>
+    <skos:altLabel xml:lang="nl">belastbaar inkomen</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1308200"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q4736466"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q5914631"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q7248309"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q10397464"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q11820207"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q926871"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3012486">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q60918"/>
+    <skos:prefLabel xml:lang="de">Offizierspatent</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Commission (document)</skos:prefLabel>
+    <skos:description xml:lang="en">document which appoints a person to a military force as an officer or a named person to high office</skos:description>
+    <skos:altLabel xml:lang="de">Offizierbrief</skos:altLabel>
+    <skos:altLabel xml:lang="de">Offiziersbrevet</skos:altLabel>
+    <skos:narrower rdf:resource="http://njh.me/"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q49848"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2955615">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q13479560"/>
+    <skos:prefLabel xml:lang="de">Schlichtung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Conciliation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Conciliación (Derecho)</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Conciliatie</skos:prefLabel>
+    <skos:description xml:lang="de">die außergerichtliche Beilegung eines Rechtsstreites zwischen streitenden Parteien</skos:description>
+    <skos:description xml:lang="en">alternative dispute resolution (ADR) process</skos:description>
+    <skos:description xml:lang="es">medio alternativo para solucionar conflictos</skos:description>
+    <skos:altLabel xml:lang="es">conciliacion</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q231655"/>
+    <skos:broader rdf:resource="http://njh.me/"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5295931">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q814245"/>
+    <skos:prefLabel xml:lang="de">Befristetes Arbeitsverhältnis</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fixed-term employment contract</skos:prefLabel>
+    <skos:description xml:lang="en">employment contract</skos:description>
+    <skos:altLabel xml:lang="de">Befristung (Arbeitsverhältnis)</skos:altLabel>
+    <skos:altLabel xml:lang="de">Befristungskontrolle</skos:altLabel>
+    <skos:altLabel xml:lang="de">Entfristungsklage</skos:altLabel>
+    <skos:narrower rdf:resource="http://njh.me/"/>
+    <skos:broader rdf:resource="http://njh.me/"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9879637">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q1047513"/>
+    <skos:prefLabel xml:lang="de">Cashflow</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Cash flow</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Flujo de caja</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Kasstroom</skos:prefLabel>
+    <skos:description xml:lang="de">wirtschaftliche Messgröße</skos:description>
+    <skos:description xml:lang="en">movement of money into or out of a business, project, or financial product</skos:description>
+    <skos:altLabel xml:lang="de">Cash Drain</skos:altLabel>
+    <skos:altLabel xml:lang="de">Cash flow</skos:altLabel>
+    <skos:altLabel xml:lang="de">Cash Flow</skos:altLabel>
+    <skos:altLabel xml:lang="de">Cash-Drain</skos:altLabel>
+    <skos:altLabel xml:lang="de">Cash-Flow</skos:altLabel>
+    <skos:altLabel xml:lang="de">Free Cash Flow</skos:altLabel>
+    <skos:altLabel xml:lang="de">Free Cash-Flow</skos:altLabel>
+    <skos:altLabel xml:lang="de">Freier Cash Flow</skos:altLabel>
+    <skos:altLabel xml:lang="de">Freier Cashflow</skos:altLabel>
+    <skos:altLabel xml:lang="de">Kapitalfluss</skos:altLabel>
+    <skos:altLabel xml:lang="de">Kassenzufluss</skos:altLabel>
+    <skos:altLabel xml:lang="de">Konzern-Kapitalflussrechnung</skos:altLabel>
+    <skos:altLabel xml:lang="de">Zahlungsüberschuss</skos:altLabel>
+    <skos:altLabel xml:lang="es">Cash flow</skos:altLabel>
+    <skos:altLabel xml:lang="es">Flujo de Caja</skos:altLabel>
+    <skos:altLabel xml:lang="es">Net operating cash flow</skos:altLabel>
+    <skos:altLabel xml:lang="es">Net Operating Cash Flow</skos:altLabel>
+    <skos:altLabel xml:lang="es">NOPCAF</skos:altLabel>
+    <skos:altLabel xml:lang="nl">Cash flow</skos:altLabel>
+    <skos:narrower rdf:resource="http://njh.me/"/>
+    <skos:broader rdf:resource="http://njh.me/"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8119822">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q2839009"/>
+    <skos:prefLabel xml:lang="de">Anschuldigung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Allegation</skos:prefLabel>
+    <skos:description xml:lang="en">statement of a fact in a pleading, that will be attempted to be proven</skos:description>
+    <skos:altLabel xml:lang="de">Anschuldigung</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q4731243"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q2684591"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3243830">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q703087"/>
+    <skos:prefLabel xml:lang="de">Rückstellung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Provision (accounting)</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Voorzieningen (boekhouden)</skos:prefLabel>
+    <skos:description xml:lang="en">account which records a present liability of an entity</skos:description>
+    <skos:description xml:lang="nl">boekhouden</skos:description>
+    <skos:altLabel xml:lang="de">Accruals</skos:altLabel>
+    <skos:altLabel xml:lang="de">Aufwandsrückstellung</skos:altLabel>
+    <skos:altLabel xml:lang="de">Aufwandsrückstellungen</skos:altLabel>
+    <skos:altLabel xml:lang="de">Rückstellungen</skos:altLabel>
+    <skos:altLabel xml:lang="de">Rueckstellung</skos:altLabel>
+    <skos:altLabel xml:lang="de">Schuldrückstellung</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1664668"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q546972"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5527669">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q329777"/>
+    <skos:prefLabel xml:lang="de">Berufung (Recht)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Appeals</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Appeal</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recurso de apelación</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Hoger beroep</skos:prefLabel>
+    <skos:description xml:lang="en">resort to a superior court to review the decision of an inferior court or administrative agency</skos:description>
+    <skos:description xml:lang="nl">gang naar een bovenliggend rechtsorgaan om het besluit van een lagere rechtbank te doen herzien</skos:description>
+    <skos:altLabel xml:lang="de">Berufungsbehörde</skos:altLabel>
+    <skos:altLabel xml:lang="en">appellate process</skos:altLabel>
+    <skos:altLabel xml:lang="en">appellate</skos:altLabel>
+    <skos:altLabel xml:lang="en">court appeal</skos:altLabel>
+    <skos:altLabel xml:lang="es">apelable</skos:altLabel>
+    <skos:altLabel xml:lang="es">apelacion</skos:altLabel>
+    <skos:altLabel xml:lang="es">apelaciones</skos:altLabel>
+    <skos:altLabel xml:lang="es">apelado</skos:altLabel>
+    <skos:altLabel xml:lang="es">apelante</skos:altLabel>
+    <skos:altLabel xml:lang="es">apelar</skos:altLabel>
+    <skos:altLabel xml:lang="es">recurso de Apelacion</skos:altLabel>
+    <skos:altLabel xml:lang="es">recurso de apelación</skos:altLabel>
+    <skos:altLabel xml:lang="nl">appel</skos:altLabel>
+    <skos:altLabel xml:lang="nl">appèl</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3620854"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q4780981"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q11249540"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q42873535"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q48832765"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q1301203"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6737510">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q1221208"/>
+    <skos:prefLabel xml:lang="de">Dienstvertrag (Deutschland)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Employment contract</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Contrato individual de trabajo</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Arbeidsovereenkomst</skos:prefLabel>
+    <skos:description xml:lang="de">Dienstvertrag</skos:description>
+    <skos:description xml:lang="en">agreement between employer and employee on terms of work and compensation</skos:description>
+    <skos:description xml:lang="es">contrato de empleo</skos:description>
+    <skos:altLabel xml:lang="de">Dienstleistungsvertrag</skos:altLabel>
+    <skos:altLabel xml:lang="en">employment agreement</skos:altLabel>
+    <skos:altLabel xml:lang="es">Contratacion temporal</skos:altLabel>
+    <skos:altLabel xml:lang="es">Contratación temporal</skos:altLabel>
+    <skos:altLabel xml:lang="es">Contrato de trabajo (individual)</skos:altLabel>
+    <skos:altLabel xml:lang="es">Contrato temporal</skos:altLabel>
+    <skos:altLabel xml:lang="es">Derecho individual del trabajo</skos:altLabel>
+    <skos:altLabel xml:lang="es">Derecho Individual del Trabajo</skos:altLabel>
+    <skos:altLabel xml:lang="es">Derecho laboral individual</skos:altLabel>
+    <skos:altLabel xml:lang="es">Trabajador temporal</skos:altLabel>
+    <skos:altLabel xml:lang="es">Trabajadores temporales</skos:altLabel>
+    <skos:altLabel xml:lang="nl">arbeidscontract</skos:altLabel>
+    <skos:altLabel xml:lang="nl">werkovereenkomst</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q187115"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q465778"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2209434"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q7858783"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q11104487"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q93288"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7480092">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q277436"/>
+    <skos:prefLabel xml:lang="de">Bankfeiertag</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Bank holiday</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Bank holiday</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Bank holiday</skos:prefLabel>
+    <skos:description xml:lang="de">Tage, an denen Kreditinstitute keine Bankgeschäfte abwickeln</skos:description>
+    <skos:description xml:lang="en">type of public holiday in certain countries, closing many banks, schools and workplaces</skos:description>
+    <skos:description xml:lang="es">feriado público</skos:description>
+    <skos:altLabel xml:lang="de">Bank Holiday</skos:altLabel>
+    <skos:altLabel xml:lang="de">Bankenfeiertag</skos:altLabel>
+    <skos:altLabel xml:lang="de">Spring Bank Holiday</skos:altLabel>
+    <skos:altLabel xml:lang="de">Summer Bank Holiday</skos:altLabel>
+    <skos:altLabel xml:lang="es">Bank holiday</skos:altLabel>
+    <skos:altLabel xml:lang="nl">Bank holidays</skos:altLabel>
+    <skos:narrower rdf:resource="http://njh.me/"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q1197685"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3532988">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q1030121"/>
+    <skos:prefLabel xml:lang="de">Gerichtshof</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Court of Justice</skos:prefLabel>
+    <skos:description xml:lang="de">Wikimedia-Begriffsklärungsseite</skos:description>
+    <skos:description xml:lang="en">Wikipedia disambiguation page</skos:description>
+    <skos:narrower rdf:resource="http://njh.me/"/>
+    <skos:broader rdf:resource="http://njh.me/"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1770694">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q2063826"/>
+    <skos:prefLabel xml:lang="en">Election deposit</skos:prefLabel>
+    <skos:description xml:lang="e">in politics</skos:description>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6433589">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q645883"/>
+    <skos:prefLabel xml:lang="de">Operation (Militär)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Military operation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Operación militar</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Militaire operatie</skos:prefLabel>
+    <skos:description xml:lang="de">koordinierte militärische Handlungen</skos:description>
+    <skos:description xml:lang="en">coordinated military actions of a state in response to a developing situation</skos:description>
+    <skos:description xml:lang="es">acción armada y coordinada por parte de un Estado en respuesta a una situación en desarrollo</skos:description>
+    <skos:altLabel xml:lang="de">Militäroperation</skos:altLabel>
+    <skos:altLabel xml:lang="de">Militärische Operation</skos:altLabel>
+    <skos:altLabel xml:lang="de">Offensivoperation</skos:altLabel>
+    <skos:altLabel xml:lang="de">Operative Ebene</skos:altLabel>
+    <skos:altLabel xml:lang="de">Operative Führung</skos:altLabel>
+    <skos:altLabel xml:lang="de">Operative Führungsebene</skos:altLabel>
+    <skos:altLabel xml:lang="en">mission</skos:altLabel>
+    <skos:altLabel xml:lang="es">Operaciones militares</skos:altLabel>
+    <skos:altLabel xml:lang="nl">operatie</skos:altLabel>
+    <skos:altLabel xml:lang="nl">gevechtsoperatie</skos:altLabel>
+    <skos:altLabel xml:lang="nl">legermissie</skos:altLabel>
+    <skos:altLabel xml:lang="nl">legeroperatie</skos:altLabel>
+    <skos:altLabel xml:lang="nl">militaire actie</skos:altLabel>
+    <skos:altLabel xml:lang="nl">militaire missie</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q17149403"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q23036198"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q29913079"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q44005284"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q188686"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q251741"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q256905"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q273976"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q328475"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q357104"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q360632"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q476807"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q539241"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q582956"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q646740"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q678146"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q818545"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q831663"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q898242"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1060062"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1070938"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1384277"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1456466"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1546073"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1609633"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1760704"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1884278"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2001676"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2280140"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3354777"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3354924"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3735153"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6878284"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q11558718"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q12055541"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q15104954"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q16467788"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q17051901"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q180684"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q650711"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q1656682"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6399771">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q58600553"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></skos:prefLabel>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5118628">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q352450"/>
+    <skos:prefLabel xml:lang="de">Agentur</skos:prefLabel>
+    <skos:description xml:lang="de">professionelle Dienstleistung</skos:description>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1144447"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1341230"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6864113"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q11722943"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q12018442"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q13434535"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q17175443"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q3402645"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5598940">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q163887"/>
+    <skos:prefLabel xml:lang="de">Tarifvertrag</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Collective agreement</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Contrato colectivo de trabajo</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Collectieve arbeidsovereenkomst</skos:prefLabel>
+    <skos:description xml:lang="de">Vertragliche Regelung der Arbeitsverhältnisse zwischen Arbeitgebern und Arbeitnehmern</skos:description>
+    <skos:description xml:lang="en">agreement between employers and employees</skos:description>
+    <skos:altLabel xml:lang="de">Rahmentarifvertrag</skos:altLabel>
+    <skos:altLabel xml:lang="de">Tarifrecht</skos:altLabel>
+    <skos:altLabel xml:lang="de">Tarifvertragsrecht</skos:altLabel>
+    <skos:altLabel xml:lang="en">collective bargaining agreement</skos:altLabel>
+    <skos:altLabel xml:lang="en">collective contract</skos:altLabel>
+    <skos:altLabel xml:lang="es">Contrato de trabajo</skos:altLabel>
+    <skos:altLabel xml:lang="es">Convencion colectiva de trabajo</skos:altLabel>
+    <skos:altLabel xml:lang="es">Convención colectiva de trabajo</skos:altLabel>
+    <skos:altLabel xml:lang="es">Convenio Colectivo</skos:altLabel>
+    <skos:altLabel xml:lang="es">Convenio Colectivo de Trabajo</skos:altLabel>
+    <skos:altLabel xml:lang="es">Convenio laboral</skos:altLabel>
+    <skos:altLabel xml:lang="es">Convenios Colectivos</skos:altLabel>
+    <skos:altLabel xml:lang="nl">Cao</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q256641"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1701209"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q31367299"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q93288"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7658065">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q2679151"/>
+    <skos:prefLabel xml:lang="nl">Zorgplan</skos:prefLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2743610"/>
+    <skos:broader rdf:resource="http://njh.me/"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7167002">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q1646605"/>
+    <skos:prefLabel xml:lang="de">Mitgliedstaat</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Member state</skos:prefLabel>
+    <skos:description xml:lang="en">state that is a member of an international organisation</skos:description>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q160016"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q185441"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q595841"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q628363"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1757823"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2745501"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3055369"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6316828"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6505795"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814224"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814225"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814228"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814229"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814230"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814231"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814232"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814233"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814234"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814236"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814237"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814239"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814241"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814242"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814244"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q6814245"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q17093009"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q20982723"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q7275"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q9200127"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4699884">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q61667227"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></skos:prefLabel>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6253276">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q1218236"/>
+    <skos:prefLabel xml:lang="en">Liability</skos:prefLabel>
+    <skos:description xml:lang="e">Wikimedia disambiguation page</skos:description>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1522174">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/P108"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></skos:prefLabel>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4154902">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q5176610"/>
+    <skos:prefLabel xml:lang="en">Counsel (journal)</skos:prefLabel>
+    <skos:description xml:lang="e">monthly Journal of the Bar of England and Wales</skos:description>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9066970">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q231043"/>
+    <skos:prefLabel xml:lang="de">Zustimmung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Category:Consent</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Consent</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Consentimiento</skos:prefLabel>
+    <skos:description xml:lang="en">expression granting permission; indication of agreement with a proposal; acknowledgement that an item meets requirements</skos:description>
+    <skos:description xml:lang="es">expresión otorgando permiso; indicación de acuerdo con una propuesta; reconocimiento de que un artículo cumple con los requisitos</skos:description>
+    <skos:altLabel xml:lang="en">permission</skos:altLabel>
+    <skos:altLabel xml:lang="en">sanction</skos:altLabel>
+    <skos:altLabel xml:lang="en">approval</skos:altLabel>
+    <skos:altLabel xml:lang="en">saying yes</skos:altLabel>
+    <skos:altLabel xml:lang="en">authorization</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q193170"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q764527"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2823451"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q2994426"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q7269961"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q51728733"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q56515356"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q57699905"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q62642942"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q451967"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q628523"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5584554">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q326498"/>
+    <skos:prefLabel xml:lang="de">Wettbewerbsrecht</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Competition law</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Derecho de la competencia</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Mededingingsrecht</skos:prefLabel>
+    <skos:description xml:lang="en">law that promotes or seeks to maintain market competition by regulating anti-competitive conduct by companies</skos:description>
+    <skos:description xml:lang="es">disposiciones legislativas y reglamentarias orientadas a garantizar el respeto a la libertad de comercio y de la industria, en una economía de libre mercado</skos:description>
+    <skos:altLabel xml:lang="es">Antitrust</skos:altLabel>
+    <skos:altLabel xml:lang="es">Derecho de competencia</skos:altLabel>
+    <skos:altLabel xml:lang="es">Derecho de competir</skos:altLabel>
+    <skos:altLabel xml:lang="es">Derecho para competir</skos:altLabel>
+    <skos:altLabel xml:lang="es">Regulacion antimonopolio</skos:altLabel>
+    <skos:altLabel xml:lang="nl">Antitrust</skos:altLabel>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1660020"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q1805439"/>
+    <skos:narrower rdf:resource="http://www.wikidata.org/entity/Q3258259"/>
+    <skos:broader rdf:resource="http://www.wikidata.org/entity/Q7748"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6475724">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q6881762"/>
+    <skos:prefLabel xml:lang="en">Mitigation (law)</skos:prefLabel>
+    <skos:description xml:lang="e">in law, the principle that a party who suffers loss must take action to minimize the amount of loss</skos:description>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3977194">
+    <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q630642"/>
+    <skos:prefLabel xml:lang="de">Convention (Métro Paris)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Convention (Paris Métro)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Category:Convention (Paris Metro)</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Estación de Convention</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Convention (metrostation)</skos:prefLabel>
+    <skos:description xml:lang="de">Station der Métro Paris</skos:description>
+    <skos:description xml:lang="en">Paris Métro station</skos:description>
+    <skos:description xml:lang="es">estación del metro de París</skos:description>
+    <skos:description xml:lang="nl">metrostation in Parijs</skos:description>
+    <skos:altLabel xml:lang="es">Estacion de Convention</skos:altLabel>
+    <skos:narrower rdf:resource="http://njh.me/"/>
+    <skos:broader rdf:resource="http://njh.me/"/>
+  </skos:Concept>
+
+</rdf:RDF>

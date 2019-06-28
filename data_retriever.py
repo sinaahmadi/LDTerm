@@ -286,7 +286,6 @@ def skos_converter(entry, wiki_data):
 
     if ", ".join(desc_lang):
         body = desc_template.replace("CONCAT1", ", ".join(desc_lang))
-    else:
         body = ""
 
     if ", ".join(altLabel_lang):
@@ -313,7 +312,7 @@ def skos_converter(entry, wiki_data):
 source_language = "english"
 source_file_dir = "original_datasets/100term.csv"
 source_file = open(source_file_dir, "r")
-terms = [t for t in source_file.read().split("\n")][0:10]
+terms = [t for t in source_file.read().split("\n")]
 # print(terms)
 
 # Giving an ID to each term and saving the dict in a csv file
