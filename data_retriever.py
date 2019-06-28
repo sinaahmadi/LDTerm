@@ -6,6 +6,11 @@ Created on Mon May  13 16:45:08 2019
 """
 import requests
 from random import randint
+import os
+import requests
+import json
+# header for Wikidata queries
+headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 # =========================================
 # Clean text by removing noisy characters
 # =========================================
@@ -19,6 +24,94 @@ def sctmid_creator():
 
     SCTMID = "LT" + str(numb)
     return SCTMID
+# =========================================
+# Given a term, get the synonyms from different languages on ConcetpNet
+# =========================================
+def get_conceptNet_synonyms(term, lang="en"):
+    synonyms = dict()
+    obj = requests.get("http://api.conceptnet.io/query?start=/c/%s/%s&rel=/r/Synonym&limit=1000"%(lang, term)).json()
+    for edge_index in range(len(obj['edges'])):
+        syn_lang = obj['edges'][edge_index]["end"]["language"]
+        if syn_lang not in synonyms:
+            synonyms[syn_lang] = [obj['edges'][edge_index]["end"]["label"]]
+        else:
+            synonyms[syn_lang].append(obj['edges'][edge_index]["end"]["label"])
+    return synonyms
+
+def inducer(T, A, S):
+    # Gets T, the list of preferred labels and A, the list of alternative labels
+    # Using synonyms of T, S, it induces the semantic relationship that exists between T and A. 
+    # S is a dictionary of word as term and dictionary {lang: synonyms} as values.
+    semantic_relationship = None
+
+    if len(A) and len(T):
+        invalid = False
+        if len(T) == len(A):
+            case_check = list()
+            for t in T:
+                if t in A:
+                    case_check.append(True)
+                else:
+                    # check if the language exists
+                    if lang in S[t]:
+                        print(S[t][lang])
+                        if True in [True for s_t in S[t][lang] if s_t in A]:
+                            case_check.append(True)
+                        else:
+                            case_check.append(False)
+                    else:
+                        invalid = True
+
+            if case_check.count(True) < len(T):
+                semantic_relationship = "related"
+            if not invalid and False not in case_check: 
+                semantic_relationship = "synonymy"
+
+        elif len(T) < len(A):
+            case_check = list()
+            for t in T:
+                print(S[t][lang])
+                if t in A:
+                    case_check.append(True)
+                else:
+                    # check if the language exists
+                    if lang in S[t]:
+                        if True in [True for s_t in S[t][lang] if s_t in A]:
+                            case_check.append(True)
+                        else:
+                            case_check.append(False)
+                    else:
+                        case_check.append(False)
+
+            # print(case_check)
+            if False not in case_check:
+                semantic_relationship = "narrower"
+
+        elif len(T) > len(A):
+            case_check = True
+            for a in A:
+                # Find all the synonyms of the existing terms
+                syns = list()
+                for term_syn in S.values():
+                    if lang in term_syn:
+                        syns = syns + term_syn[lang]
+                    else:
+                        pass
+
+                syns = list(set(syns))
+                if len(syns):
+                    if not (a in T or True in [True for s_t in syns if a in s_t]):
+                        case_check = False
+                else:
+                    invalid = True
+
+            if not invalid and case_check:
+                semantic_relationship = "broader"
+
+        else:
+            pass
+
+    return semantic_relationship
 # =========================================
 # Extract multiLabel
 # =========================================
@@ -115,7 +208,7 @@ def wikidata_retriever(term, lang):
     query = retrieve_query.replace("TERM", term).replace("LANG", lang)
     SRCTERM = "\"" + term + "\"" + "@" + lang
     #print(SRCTERM) We have to save this in the skos as well
-    r = requests.get(url, params={'format': 'json', 'query': query})
+    r = requests.get(url, params={'format': 'json', 'query': query}, headers=headers)
     data = r.json()
 
     if len(data['results']['bindings']) != 0:
@@ -124,7 +217,7 @@ def wikidata_retriever(term, lang):
         retrieved_subjects = dict()
         for subject in subjects:
             query = class_checker.replace("WDTMID", item_id).replace("SUBJECT", subjects[subject])
-            r = requests.get(url, params={'format': 'json', 'query': query})
+            r = requests.get(url, params={'format': 'json', 'query': query}, headers=headers)
             data = r.json()
             if data['boolean'] == True:
                 retrieved_subjects[subjects[subject]] = data['boolean']
@@ -133,27 +226,27 @@ def wikidata_retriever(term, lang):
 
         if True in retrieved_subjects.values():
             query = original_query.replace("WDTMID", item_id)
-            r = requests.get(url, params={'format': 'json', 'query': query})
+            r = requests.get(url, params={'format': 'json', 'query': query}, headers=headers)
             data = r.json()
             # print(data)
 
             # Alternative labels
             query = altLabel_query.replace("WDTMID", item_id)
-            r = requests.get(url, params={'format': 'json', 'query': query})
+            r = requests.get(url, params={'format': 'json', 'query': query}, headers=headers)
             altLabel_response = r.json()
             altLabel_dict = extract_multiLabel(altLabel_response, "altLabel")
             # print(altLabel_dict)
 
             # Narrower terms
             query = naTerm_query.replace("WDTMID", item_id)
-            r = requests.get(url, params={'format': 'json', 'query': query})
+            r = requests.get(url, params={'format': 'json', 'query': query}, headers=headers)
             naTerm_response = r.json()
             naTerm_dict = extract_multiLabel(naTerm_response, "naTerm")
             # print(naTerm_dict)
 
             # Broader terms
             query = brTerm_query.replace("WDTMID", item_id)
-            r = requests.get(url, params={'format': 'json', 'query': query})
+            r = requests.get(url, params={'format': 'json', 'query': query}, headers=headers)
             brTerm_response = r.json()
             brTerm_dict = extract_multiLabel(brTerm_response, "brTerm")
             # print(brTerm_dict)         
@@ -186,7 +279,6 @@ def wikidata_retriever(term, lang):
         retrieved_data = {}
 
     return retrieved_data
-
 # =========================================
 # SKOS template
 # =========================================
@@ -315,40 +407,82 @@ source_file = open(source_file_dir, "r")
 terms = [t for t in source_file.read().split("\n")]
 # print(terms)
 
-# Giving an ID to each term and saving the dict in a csv file
+term_id_file_dir = 'scterm_dict.csv'
 TERM_ID_MAP = dict()
-a = open('scterm_dict.csv','w+')
-for t in terms:
-    TERM_ID_MAP[t] = sctmid_creator()
-    a.write(t+ ', '+ TERM_ID_MAP[t] + '\n')
-a.close()
+# Check if ID-term file exists
+if os.path.isfile(term_id_file_dir):
+    id_term = open(term_id_file_dir,'r').read().split("\n")
+    TERM_ID_MAP = {t.split(", ")[0]: t.split(", ")[1] for t in id_term}
+# otherwise create a new one
+else:
+    a = open('scterm_dict.csv','w+')
+    for t in terms:
+        TERM_ID_MAP[t] = sctmid_creator()
+        a.write(t+ ', '+ TERM_ID_MAP[t] + '\n')
+    a.close()
+# ================
+if False:
+    output_file_name = "populated_datasets/results.rdf"
+    not_found_file_name = "populated_datasets/not_found.txt"
 
-output_file_name = "populated_datasets/results.rdf"
-not_found_file_name = "populated_datasets/not_found.txt"
+    # # Creating the output file and writing the prefixes
+    # with open(output_file_name, "a") as output_file:
+    #     output_file.write(prefixes_templates)
+    #     output_file.write("\n\n")
 
-# Creating the output file and writing the prefixes
-with open(output_file_name, "a") as output_file:
-    output_file.write(prefixes_templates)
-    output_file.write("\n\n")
+    not_found = list()
+    for entry in terms[1:2]:
+        retrieved_data = wikidata_retriever(entry, lang=source_language[0:2])
+        print(retrieved_data)
+        # if len(retrieved_data):
+        #     skos_text = skos_converter(entry, retrieved_data)
+        #     with open(output_file_name, "a") as output_file:
+        #       output_file.write(skos_text)
+        #       output_file.write("\n\n")
+        # else:
+        #     not_found.append(entry)
 
-not_found = list()
-for entry in terms:
-    retrieved_data = wikidata_retriever(entry, lang=source_language[0:2])
-    # print(retrieved_data)
-    if len(retrieved_data):
-        skos_text = skos_converter(entry, retrieved_data)
-        with open(output_file_name, "a") as output_file:
-          output_file.write(skos_text)
-          output_file.write("\n\n")
-    else:
-        not_found.append(entry)
+    # Writing those words which could not be found
+    # with open(not_found_file_name, "w") as output_file:
+    #     output_file.write("\n".join(not_found))
+# ================
+# with open("example.json", 'r') as f:
+#     example = json.load(f)
 
-# Writing those words which could not be found
-with open(not_found_file_name, "w") as output_file:
-    output_file.write("\n".join(not_found))
+# for trans in example["translations"]:
+#     for key, value in trans.items():
+#         print(key, value)
+# print(example.keys())
+# synonyms = get_conceptNet_synonyms("en", "discrimination")
+# print(synonyms)
 
+lang = "en"
+T = "employment agreement".split()
+S = dict()
+for t in T:
+    if t not in S:
+        S[t] = get_conceptNet_synonyms(t)
 
+print(S)
+# test
+# A = "employment contract".split()
+# # S = {"employement":["job", "position", "work"], "agreement":["contract", "compromise", "binding"]}
+# print("T:", T, "A: ", A)
+# print(inducer(T, A, S))
 
+# A = "rental contract".split()
+# print("T:", T, "A: ", A)
+# print(inducer(T, A, S))
+
+# A = "temporary work contract".split()
+# print("T:", T, "A: ", A)
+# print(inducer(T, A, S))
+
+# A = "contract".split()
+# print("T:", T, "A: ", A)
+# print(inducer(T, A, S))
+
+# ================
 # Ignore category
 # Remove duplicates
 
