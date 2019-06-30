@@ -1,0 +1,88 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iso639: <http://lexvo.org/id/iso639-1/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix : <#> .
+
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8214590> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q169207> ;
+        skos:prefLabel "Diskriminierung"@de, "Discrimination"@en, "Discrimination"@en, "Discriminación"@es, "Discriminatie"@nl, "Categorie:Discriminatie"@nl ;
+
+        skos:description "Verhalten gegenüber einer bestimmten Gruppe von Menschen"@de, "prejudicial treatment based on membership in a certain group"@en, "comportamiento perjudicial respecto a un grupo específico de personas"@es;
+
+        skos:altLabel "Antidiskriminierung"@de, "Diskriminieren"@de, "Gesellschaftliche Diskriminierung"@de, "Religiöse Diskriminierung"@de, "Soziale Diskriminierung"@de, "Discriminacion"@es, "Discriminacion de genero"@es, "Discriminacion de género"@es, "Discriminación de genero"@es, "Discriminación de género"@es, "Discriminacion social"@es, "Discriminación social"@es, "Discriminador"@es, "Discriminatorio"@es, "Discrimatie"@nl, "Discriminatiewetgeving"@nl, "Discrimineren"@nl, "Gediscrimineerd"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q7533438>, <http://www.wikidata.org/entity/Q11311549>, <http://www.wikidata.org/entity/Q11446451>, <http://www.wikidata.org/entity/Q16242983>, <http://www.wikidata.org/entity/Q22126538>, <http://www.wikidata.org/entity/Q28001435>, <http://www.wikidata.org/entity/Q53610342>, <http://www.wikidata.org/entity/Q56697518>, <http://www.wikidata.org/entity/Q49649>, <http://www.wikidata.org/entity/Q93200>, <http://www.wikidata.org/entity/Q214244>, <http://www.wikidata.org/entity/Q383316>, <http://www.wikidata.org/entity/Q438946>, <http://www.wikidata.org/entity/Q976277>, <http://www.wikidata.org/entity/Q1137326>, <http://www.wikidata.org/entity/Q1463434>, <http://www.wikidata.org/entity/Q1587631>, <http://www.wikidata.org/entity/Q2029282>, <http://www.wikidata.org/entity/Q2352121>, <http://www.wikidata.org/entity/Q2606784>, <http://www.wikidata.org/entity/Q2797937>, <http://www.wikidata.org/entity/Q2916372>, <http://www.wikidata.org/entity/Q3216180>, <http://www.wikidata.org/entity/Q4162330>, <http://www.wikidata.org/entity/Q4162333>, <http://www.wikidata.org/entity/Q4162334>, <http://www.wikidata.org/entity/Q5282081>, <http://www.wikidata.org/entity/Q5282083>, <http://www.wikidata.org/entity/Q5282086>, <http://www.wikidata.org/entity/Q5333457>, <http://www.wikidata.org/entity/Q5532888>, <http://www.wikidata.org/entity/Q5916202>, <http://www.wikidata.org/entity/Q7239889> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q9332>, <http://www.wikidata.org/entity/Q160232>, <http://www.wikidata.org/entity/Q1920219> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1834586> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q441328> ;
+        skos:prefLabel "Mutterschaftsurlaub"@de, "Zwangerschaps- en bevallingsverlof"@nl ;
+
+        skos:altLabel "Schwangerschaftsurlaub"@de, "bevallingsverlof"@nl, "moederschapsrust"@nl, "moederschapsverlof"@nl, "nabevallingsrust"@nl, "voorbevallingsrust"@nl ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q2993245>, <http://www.wikidata.org/entity/Q41667733> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q328566> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1194226> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q546113> ;
+        skos:prefLabel "Public Policy"@de, "Public policy"@en, "Public policy"@en, "Políticas públicas"@es ;
+
+        skos:description "principled guide to action taken by the administrative executive branches of the state with regard to a class of issues"@en, "políticas"@es;
+
+        skos:altLabel "Staatstätigkeit"@de, "government policy"@en, "state policy"@en, "politicas publicas"@es ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q86757>, <http://www.wikidata.org/entity/Q161500>, <http://www.wikidata.org/entity/Q178564>, <http://www.wikidata.org/entity/Q329499>, <http://www.wikidata.org/entity/Q582577>, <http://www.wikidata.org/entity/Q610018>, <http://www.wikidata.org/entity/Q956002>, <http://www.wikidata.org/entity/Q1260003>, <http://www.wikidata.org/entity/Q1573035>, <http://www.wikidata.org/entity/Q5418327>, <http://www.wikidata.org/entity/Q7572612>, <http://www.wikidata.org/entity/Q7858691>, <http://www.wikidata.org/entity/Q7923600>, <http://www.wikidata.org/entity/Q7980969>, <http://www.wikidata.org/entity/Q12059623>, <http://www.wikidata.org/entity/Q15064326>, <http://www.wikidata.org/entity/Q17082008>, <http://www.wikidata.org/entity/Q29091078>, <http://www.wikidata.org/entity/Q59687191> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q1156854> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1017837> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q11022655> ;
+        skos:prefLabel "Fallrecht"@de, "Case law"@en, "Jurisprudencia"@es, "Jurisprudentie"@nl ;
+
+        skos:description "kasuistische Rechtsordnung ohne Kodifikation"@de, "set of past rulings by tribunals that meet their respective jurisdictions' rules to be cited as precedent"@en, "conjunto de resoluciones judiciales emitidas en un mismo sentido por los órganos judiciales de un ordenamiento jurídico determinado"@es;
+
+        skos:narrower <> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q846882> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2872196> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q33126993> ;
+        skos:prefLabel "Appellanten"@de ;
+
+        skos:description "Wikimedia-Begriffsklärungsseite"@de;
+
+        skos:narrower <> ;
+
+        skos:broader <> .
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4651909> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q7169289> ;
+        skos:prefLabel "Permanent residence"@en ;
+
+        skos:description "Wikipedia disambiguation page"@e.
+
+
+    <http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8418911> a skos:Concept ;
+        skos:closeMatch <https://www.wikidata.org/wiki/Q3240539> ;
+        skos:prefLabel "Harassment"@en, "Hostigamiento"@es ;
+
+        skos:description "wide range of behaviours of an offensive nature"@en, "amplia gama de comportamientos ofensivos"@es;
+
+        skos:altLabel "harass"@en, "acoso"@es ;
+
+        skos:narrower <http://www.wikidata.org/entity/Q163942>, <http://www.wikidata.org/entity/Q240126>, <http://www.wikidata.org/entity/Q3858303>, <http://www.wikidata.org/entity/Q5654274>, <http://www.wikidata.org/entity/Q7132716>, <http://www.wikidata.org/entity/Q11386999>, <http://www.wikidata.org/entity/Q29097457> ;
+
+        skos:broader <http://www.wikidata.org/entity/Q1920219>, <http://www.wikidata.org/entity/Q3769299> .
+
