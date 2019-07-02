@@ -9,6 +9,7 @@ from random import randint
 import os
 import requests
 import json
+import time
 
 # header for Wikidata queries
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
@@ -422,7 +423,7 @@ def skos_converter(entry, wiki_data):
 # =========================================xx
 ## List of words
 source_language = "english"
-source_file_dir = "original_datasets/100term.csv"
+source_file_dir = "original_datasets/300term.csv"
 source_file = open(source_file_dir, "r")
 terms = [t for t in source_file.read().split("\n")]
 # print(terms)
@@ -486,6 +487,7 @@ if False:
     # with open(not_found_file_name, "w") as output_file:
     #     output_file.write("\n".join(not_found))
 # ================
+print("ConceptNet retrieval")
 if True:
     with open("retrieved_wikidata.json", 'r') as f:
         retrieved_wikidata = json.load(f)
@@ -518,8 +520,7 @@ if True:
             
             induced_relationships.append({"T":" ".join(T), "lang": lang, "S": S, "A": altLabel_induction})
             # Not to get timeout from ConceptNet API
-            for i in range(0,1000):
-                i
+            time.sleep(2)
         all_inductions.append(induced_relationships)
     
     with open("induction_results.json", "w") as f:
