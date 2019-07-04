@@ -488,8 +488,8 @@ if False:
     # with open(not_found_file_name, "w") as output_file:
     #     output_file.write("\n".join(not_found))
 # ================
-print("ConceptNet retrieval")
-if True:
+if False:
+    print("ConceptNet retrieval")
     with open("300_retrieved_wikidata.json", 'r') as f:
         retrieved_wikidata = json.load(f)
 
@@ -535,7 +535,46 @@ if True:
     # print(synonyms)
 
 
+# Analysis
+if True:
+    with open("induction_results.json", 'r') as f:
+        retrieved_wikidata = json.load(f)
 
+    item_empty = 0
+    all_trans, all_valids, A_empty, S_all_empty = 0, 0, 0, 0
+    valid_items = list()
+    for item in retrieved_wikidata:
+        item_valid = True
+
+        if not len(item):
+            item_empty += 1
+            item_valid = False
+        else:
+            for trans in item:
+                all_trans += 1
+                if not len(trans["A"]):
+                    item_valid = False
+                    A_empty += 1
+                
+                S_is_empty = True
+                for s in list(trans["S"].values()):
+                    if len(s):
+                        S_is_empty = False
+                if S_is_empty:
+                    item_valid = False
+                    S_all_empty += 1
+
+        if item_valid:
+            all_valids += len(item)
+            valid_items.append(item)
+
+    print("All translations", all_trans)
+    print("Empty items:", item_empty)
+    print("Empty A:", A_empty)
+    print("Empty S:", S_all_empty)
+    print("All valids:", all_valids)
+    with open("valid_items.json", "w") as f:
+        json.dump(valid_items, f)
 
 # Induction test
 # lang = "en"
