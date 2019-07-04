@@ -118,7 +118,8 @@ def inducer(T, A, S):
 
 
         if " ".join(A).lower() == " ".join(T).lower():
-            semantic_relationship = "synonymy"
+            # They are identical. No semantic relationship should be induced. 
+            pass
         
         elif len(T) == len(A):
             case_check = list()
@@ -489,7 +490,7 @@ if False:
 # ================
 print("ConceptNet retrieval")
 if True:
-    with open("retrieved_wikidata.json", 'r') as f:
+    with open("300_retrieved_wikidata.json", 'r') as f:
         retrieved_wikidata = json.load(f)
 
     all_inductions = list()
