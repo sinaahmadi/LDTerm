@@ -10,7 +10,7 @@
       },
       "A": {
         "allgemeines völkerrecht": "narrower",
-        "internationales recht": null
+        "internationales recht": "related"
       }
     },
     {
@@ -36,9 +36,10 @@
         ]
       },
       "A": {
-        "international law, law of nations": "narrower"
+        "international law, law of nations": "synonymy"
       }
     },
+   
     {
       "T": "derecho internacional",
       "lang": "es",
@@ -91,8 +92,8 @@
         ]
       },
       "A": {
-        "internationaal publiekrecht": "related",
-        "volkenrecht": null
+        "internationaal publiekrecht": "narrower",
+        "volkenrecht": "synonymy"
       }
     }
   ],
@@ -112,9 +113,9 @@
       },
       "A": {
         "mitarbeiter": "synonymy",
-        "beschäftigte": "related",
-        "arbeitnehmerin": "related",
-        "dienstnehmer": "related",
+        "beschäftigte": "synonymy",
+        "arbeitnehmerin": "synonymy",
+        "dienstnehmer": "synonymy",
         "beschäftigter": "synonymy"
       }
     },
@@ -159,9 +160,9 @@
         ]
       },
       "A": {
-        "militäroperation": "null",
-        "militärische operation": "related",
-        "offensivoperation": null,
+        "militäroperation": "synonymy",
+        "militärische operation": "synonymy",
+        "offensivoperation": "related",
         "operative ebene": "related",
         "operative führung": "related",
         "operative führungsebene": "related"
@@ -225,11 +226,11 @@
       },
       "A": {
         "operatie": "broader",
-        "gevechtsoperatie": null,
-        "legermissie": null,
-        "legeroperatie": null,
-        "militaire actie": "related",
-        "militaire missie": "related"
+        "gevechtsoperatie": "related",
+        "legermissie": "synonymy",
+        "legeroperatie": "synonymy",
+        "militaire actie": "synonymy",
+        "militaire missie": "synonymy"
       }
     }
   ],
@@ -246,7 +247,7 @@
         ]
       },
       "A": {
-        "counsellor at law": null
+        "counsellor at law": "narrower"
       }
     }
   ],
@@ -325,7 +326,7 @@
         ]
       },
       "A": {
-        "kriminalfall": "related",
+        "kriminalfall": "synonymy",
         "strafsache": "related",
         "leichte straftat": "narrower",
         "tatausführung": "related",
@@ -367,12 +368,12 @@
         "rechtsanwaltsgehilfe": "related",
         "anwaltsfachangestellte": "related",
         "anwaltsgehilfe": "synonymy",
-        "paralegal": "related",
-        "rechtsanwaltfachangestellte": "related",
-        "rechtsanwaltsfachangestellte": "related",
-        "rechtsanwaltsgehilfin": "related",
-        "rechtsassistent": "related",
-        "rechtsassistentin": "related"
+        "paralegal": "synonymy",
+        "rechtsanwaltfachangestellte": "synonymy",
+        "rechtsanwaltsfachangestellte": "synonymy",
+        "rechtsanwaltsgehilfin": "synonymy",
+        "rechtsassistent": "synonymy",
+        "rechtsassistentin": "synonymy"
       }
     },
     {
@@ -399,7 +400,7 @@
         ]
       },
       "A": {
-        "paralegal": null
+        "paralegal": "synonymy"
       }
     }
   ],
@@ -441,7 +442,7 @@
         ]
       },
       "A": {
-        "commercial office": "related",
+        "commercial office": "synonymy",
         "trade mission": "related",
         "trade representation": "related"
       }
@@ -459,10 +460,10 @@
         "(logik)": []
       },
       "A": {
-        "klauselresolution": null,
-        "resolutionskalkül": null,
-        "resolutionsprinzip": null,
-        "resolutionsverfahren": null,
+        "klauselresolution": "narrower",
+        "resolutionskalkül": "narrower",
+        "resolutionsprinzip": "narrower",
+        "resolutionsverfahren": "narrower",
         "resolvent": null
       }
     },
@@ -523,11 +524,8 @@
       "T": "dienstbote",
       "lang": "de",
       "S": {
-        "dienstbote": [
-          "hausangestellter",
-          "domestik",
-          "hausdiener",
-          "bimbo"
+        "dienstboten": [
+          "personal"
         ]
       },
       "A": {
@@ -559,14 +557,14 @@
       },
       "A": {
         "servant": "broader",
-        "domestic employee": "related",
-        "domestic helper": "related",
-        "domestic servant": "related",
-        "domestic staff": "related",
-        "household employee": "related",
-        "household servant": "related",
-        "household staff": "related",
-        "household worker": "related"
+        "domestic employee": "synonymy",
+        "domestic helper": "synonymy",
+        "domestic servant": "synonymy",
+        "domestic staff": "synonymy",
+        "household employee": "synonymy",
+        "household servant": "synonymy",
+        "household staff": "synonymy",
+        "household worker": "synonymy"
       }
     },
     {
@@ -585,17 +583,17 @@
         ]
       },
       "A": {
-        "empleada del hogar": null,
-        "empleada domestica": "related",
-        "empleada doméstica": "related",
-        "empleado del hogar": null,
-        "empleado domestico": "related",
-        "empleado doméstico": "related",
+        "empleada del hogar": "synonymy",
+        "empleada domestica": "synonymy",
+        "empleada doméstica": "synonymy",
+        "empleado del hogar": "synonymy",
+        "empleado domestico": "synonymy",
+        "empleado doméstico": "synonymy",
         "interna": null,
         "interno": null,
-        "trabajador domestico": "related",
-        "trabajadora domestica": "related",
-        "trabajadora doméstica": "related"
+        "trabajador domestico": "synonymy",
+        "trabajadora domestica": "synonymy",
+        "trabajadora doméstica": "synonymy"
       }
     },
     {
@@ -620,11 +618,11 @@
         ]
       },
       "A": {
-        "werkster": null,
+        "werkster": "synonymy",
         "poets": null,
         "interieurverzorgster": null,
-        "kuisvrouw": null,
-        "poetsvrouw": null
+        "kuisvrouw": "related",
+        "poetsvrouw": "related"
       }
     }
   ],
@@ -640,7 +638,7 @@
         ]
       },
       "A": {
-        "arbeitnehmerorganisation": "related",
+        "arbeitnehmerorganisation": "synonymy",
         "gewerkschaften": "related"
       }
     },
@@ -703,8 +701,8 @@
         ]
       },
       "A": {
-        "organizacion sindical": null,
-        "organización sindical": null,
+        "organizacion sindical": "synonymy",
+        "organización sindical": "synonymy",
         "sindical": "related",
         "sindicato obrero": "narrower"
       }
@@ -724,7 +722,7 @@
         "vakbeweging": "related",
         "vakbonden": "related",
         "vakvereniging": "synonymy",
-        "werknemersvereniging": "related"
+        "werknemersvereniging": "synonymy"
       }
     }
   ]
