@@ -536,7 +536,7 @@ if False:
 
 
 # Analysis
-if True:
+if False:
     with open("induction_results.json", 'r') as f:
         retrieved_wikidata = json.load(f)
 
@@ -575,6 +575,77 @@ if True:
     print("All valids:", all_valids)
     with open("valid_items.json", "w") as f:
         json.dump(valid_items, f)
+
+
+# Comparison of the gold-standard with the output of the script
+# and also I'd like to know which of the "wrong" matches (A) contain a token that is not present within the list of synonyms (S)
+
+
+
+if True:
+    with open("valid_items.json", 'r') as f:
+        retrieved_wikidata = json.load(f)
+    with open("goldstandard.json", 'r') as f:
+        goldstandard = json.load(f)
+
+    correct_predictions = dict()
+    all_pred = dict()
+    missing_synonym = dict()
+
+    results = "T \t A \t Prediction \t Gold-standard"
+    for item_ind in range(len(retrieved_wikidata)):
+        for trans_ind in range(len(retrieved_wikidata[item_ind])):
+            A_re = retrieved_wikidata[item_ind][trans_ind]["A"]
+            A_gold = goldstandard[item_ind][trans_ind]["A"]
+            T = retrieved_wikidata[item_ind][trans_ind]["T"]
+            lang = retrieved_wikidata[item_ind][trans_ind]["lang"]
+            for a in A_re:
+                if lang not in all_pred:
+                    all_pred[lang] = 1
+                else:
+                    all_pred[lang] += 1
+                if A_re[a] == A_gold[a]:
+                    if lang not in correct_predictions:
+                        correct_predictions[lang] = 1
+                    else:
+                        correct_predictions[lang] += 1
+                    # correct_predictions += 1
+                    results = results + "\n" + T + "\t" +  a + "\t" + str(A_re[a])
+                else:
+                    # count "wrong" matches (A) containing a token that is not present within the list of synonyms (S)
+                    S = retrieved_wikidata[item_ind][trans_ind]["S"]
+                    S_values = list()
+                    for s in S.values():
+                        for ss in s:
+                            S_values.append(ss)
+
+
+                    for token in a.split():
+                        if token not in S_values:
+                            if lang not in missing_synonym:
+                                missing_synonym[lang] = 1
+                            else:
+                                missing_synonym[lang] += 1
+                            break
+
+                results = results + "\n" + T + "\t" + a + "\t" + str(A_re[a]) + "\t" + str(A_gold[a])
+
+    accuracy = dict()
+    for lang in all_pred:
+        accuracy[lang] = correct_predictions[lang]*100 / all_pred[lang]
+    sum_acc = 0
+    for acc in accuracy.values():
+        sum_acc += acc
+    accuracy["all"] = sum_acc / 4
+
+    results += "\n" + "-"*50
+    results += "\n All: " + json.dumps(all_pred)
+    results += "\n Correct: " + json.dumps(correct_predictions)
+    results += "\n Missing: " + json.dumps(missing_synonym)
+    results += "\n Accuracy: " + json.dumps(accuracy)
+
+    with open("evaluation.txt", "w") as f:
+        f.write(results)
 
 # Induction test
 # lang = "en"

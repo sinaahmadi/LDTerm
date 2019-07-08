@@ -1,0 +1,177 @@
+T 	 A 	 Prediction 	 Gold-standard
+völkerrecht	allgemeines völkerrecht	narrower
+völkerrecht	allgemeines völkerrecht	narrower	narrower
+völkerrecht	internationales recht	None	related
+international law	international law, law of nations	narrower	synonymy
+derecho internacional	derecho internacional publico	narrower
+derecho internacional	derecho internacional publico	narrower	narrower
+derecho internacional	derecho internacional público	narrower
+derecho internacional	derecho internacional público	narrower	narrower
+derecho internacional público	derecho internacional publico	related
+derecho internacional público	derecho internacional publico	related	related
+derecho internacional público	derecho internacional público	None
+derecho internacional público	derecho internacional público	None	None
+internationaal recht	internationaal publiekrecht	related	narrower
+internationaal recht	volkenrecht	None	synonymy
+arbeitnehmer	mitarbeiter	synonymy
+arbeitnehmer	mitarbeiter	synonymy	synonymy
+arbeitnehmer	beschäftigte	related	synonymy
+arbeitnehmer	arbeitnehmerin	related	synonymy
+arbeitnehmer	dienstnehmer	related	synonymy
+arbeitnehmer	beschäftigter	synonymy
+arbeitnehmer	beschäftigter	synonymy	synonymy
+werknemer	medewerker	synonymy
+werknemer	medewerker	synonymy	synonymy
+operation militär	militäroperation	null	synonymy
+operation militär	militärische operation	related	synonymy
+operation militär	offensivoperation	None	related
+operation militär	operative ebene	related
+operation militär	operative ebene	related	related
+operation militär	operative führung	related
+operation militär	operative führung	related	related
+operation militär	operative führungsebene	related
+operation militär	operative führungsebene	related	related
+military operation	mission	None
+military operation	mission	None	None
+operación militar	operaciones militares	related
+operación militar	operaciones militares	related	related
+militaire operatie	operatie	broader
+militaire operatie	operatie	broader	broader
+militaire operatie	gevechtsoperatie	None	related
+militaire operatie	legermissie	None	synonymy
+militaire operatie	legeroperatie	None	synonymy
+militaire operatie	militaire actie	related	synonymy
+militaire operatie	militaire missie	related	synonymy
+counsel	counsellor at law	None	narrower
+social worker	social assistant	related
+social worker	social assistant	related	related
+legitimacy (family law)	biological child	None
+legitimacy (family law)	biological child	None	None
+legitimacy (family law)	legitimacy in family law	None
+legitimacy (family law)	legitimacy in family law	None	None
+public procurator	procurator	broader
+public procurator	procurator	broader	broader
+straftat	kriminalfall	related	synonymy
+straftat	strafsache	related
+straftat	strafsache	related	related
+straftat	leichte straftat	narrower
+straftat	leichte straftat	narrower	narrower
+straftat	tatausführung	related
+straftat	tatausführung	related	related
+straftat	tathandlung	related
+straftat	tathandlung	related	related
+strafbaar feit	delict	None
+strafbaar feit	delict	None	None
+strafbaar feit	onwettig	broader
+strafbaar feit	onwettig	broader	broader
+strafbaar feit	strafbaar	broader
+strafbaar feit	strafbaar	broader	broader
+strafbaar feit	wetsovertreding	None
+strafbaar feit	wetsovertreding	None	None
+rechtsanwaltsfachangestellter	rechtsanwaltsgehilfe	related
+rechtsanwaltsfachangestellter	rechtsanwaltsgehilfe	related	related
+rechtsanwaltsfachangestellter	anwaltsfachangestellte	related
+rechtsanwaltsfachangestellter	anwaltsfachangestellte	related	related
+rechtsanwaltsfachangestellter	anwaltsgehilfe	synonymy
+rechtsanwaltsfachangestellter	anwaltsgehilfe	synonymy	synonymy
+rechtsanwaltsfachangestellter	paralegal	related	synonymy
+rechtsanwaltsfachangestellter	rechtsanwaltfachangestellte	related	synonymy
+rechtsanwaltsfachangestellter	rechtsanwaltsfachangestellte	related	synonymy
+rechtsanwaltsfachangestellter	rechtsanwaltsgehilfin	related	synonymy
+rechtsanwaltsfachangestellter	rechtsassistent	related	synonymy
+rechtsanwaltsfachangestellter	rechtsassistentin	related	synonymy
+paralegal	legal assistant	synonymy
+paralegal	legal assistant	synonymy	synonymy
+juridisch medewerker	paralegal	None	synonymy
+trade office	commercial office	related	synonymy
+trade office	trade mission	related
+trade office	trade mission	related	related
+trade office	trade representation	related
+trade office	trade representation	related	related
+resolution (logik)	klauselresolution	None	narrower
+resolution (logik)	resolutionskalkül	None	narrower
+resolution (logik)	resolutionsprinzip	None	narrower
+resolution (logik)	resolutionsverfahren	None	narrower
+resolution (logik)	resolvent	None
+resolution (logik)	resolvent	None	None
+resolution (logic)	resolution principle	related
+resolution (logic)	resolution principle	related	related
+resolución (lógica)	resolucion	None
+resolución (lógica)	resolucion	None	None
+resolutie (logica)	resolvent	None
+resolutie (logica)	resolvent	None	None
+dienstbote	diener	related
+dienstbote	diener	related	related
+dienstbote	bedienstete	related
+dienstbote	bedienstete	related	related
+dienstbote	dienerin	related
+dienstbote	dienerin	related	related
+dienstbote	dienstmädchen	related
+dienstbote	dienstmädchen	related	related
+domestic worker	servant	broader
+domestic worker	servant	broader	broader
+domestic worker	domestic employee	related	synonymy
+domestic worker	domestic helper	related	synonymy
+domestic worker	domestic servant	related	synonymy
+domestic worker	domestic staff	related	synonymy
+domestic worker	household employee	related	synonymy
+domestic worker	household servant	related	synonymy
+domestic worker	household staff	related	synonymy
+domestic worker	household worker	related	synonymy
+trabajador doméstico	empleada del hogar	None	synonymy
+trabajador doméstico	empleada domestica	related	synonymy
+trabajador doméstico	empleada doméstica	related	synonymy
+trabajador doméstico	empleado del hogar	None	synonymy
+trabajador doméstico	empleado domestico	related	synonymy
+trabajador doméstico	empleado doméstico	related	synonymy
+trabajador doméstico	interna	None
+trabajador doméstico	interna	None	None
+trabajador doméstico	interno	None
+trabajador doméstico	interno	None	None
+trabajador doméstico	trabajador domestico	related	synonymy
+trabajador doméstico	trabajadora domestica	related	synonymy
+trabajador doméstico	trabajadora doméstica	related	synonymy
+huishoudelijke hulp	werkster	None	synonymy
+huishoudelijke hulp	poets	None
+huishoudelijke hulp	poets	None	None
+huishoudelijke hulp	interieurverzorgster	None
+huishoudelijke hulp	interieurverzorgster	None	None
+huishoudelijke hulp	kuisvrouw	None	related
+huishoudelijke hulp	poetsvrouw	None	related
+gewerkschaft	arbeitnehmerorganisation	related	synonymy
+gewerkschaft	gewerkschaften	related
+gewerkschaft	gewerkschaften	related	related
+trade union	labor union	related
+trade union	labor union	related	related
+trade union	labour union	related
+trade union	labour union	related	related
+trade union	union	broader
+trade union	union	broader	broader
+trade union	work union	related
+trade union	work union	related	related
+trade union	worker's union	related
+trade union	worker's union	related	related
+trade union	workers union	related
+trade union	workers union	related	related
+sindicato	organizacion sindical	None	synonymy
+sindicato	organización sindical	None	synonymy
+sindicato	sindical	related
+sindicato	sindical	related	related
+sindicato	sindicato obrero	narrower
+sindicato	sindicato obrero	narrower	narrower
+vakbond	syndicaat	synonymy
+vakbond	syndicaat	synonymy	synonymy
+vakbond	syndicaliteit	related
+vakbond	syndicaliteit	related	related
+vakbond	vakbeweging	related
+vakbond	vakbeweging	related	related
+vakbond	vakbonden	related
+vakbond	vakbonden	related	related
+vakbond	vakvereniging	synonymy
+vakbond	vakvereniging	synonymy	synonymy
+vakbond	werknemersvereniging	related	synonymy
+--------------------------------------------------
+ All: {"de": 38, "en": 27, "es": 21, "nl": 26}
+ Correct: {"de": 19, "es": 10, "nl": 14, "en": 16}
+ Missing: {"de": 19, "en": 11, "nl": 12, "es": 11}
+ Accuracy: {"de": 50.0, "en": 59.25925925925926, "es": 47.61904761904762, "nl": 53.84615384615385, "all": 52.68111518111518}
