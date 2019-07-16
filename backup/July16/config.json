@@ -1,0 +1,9 @@
+{
+	"source_language": "english",
+	"run_id": "300", 
+	"source_file_dir": "original_datasets/300term.csv",
+	"categories_dir": "subjects.json",
+	"retrieve_wikidata": false,
+	"retrieve_ConceptNe": false,
+	"evaluate": false
+}

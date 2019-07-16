@@ -1,0 +1,729 @@
+[
+  [
+    {
+      "T": "völkerrecht",
+      "lang": "de",
+      "S": {
+        "völkerrecht": [
+          "jus gentium"
+        ]
+      },
+      "A": {
+        "allgemeines völkerrecht": "narrower",
+        "internationales recht": "related"
+      }
+    },
+    {
+      "T": "international law",
+      "lang": "en",
+      "S": {
+        "international": [
+          "outside",
+          "external"
+        ],
+        "law": [
+          "books of moses",
+          "law",
+          "law of nature",
+          "natural law",
+          "act",
+          "pentateuch",
+          "torah",
+          "order",
+          "police",
+          "practice of law",
+          "jurisprudence"
+        ]
+      },
+      "A": {
+        "international law, law of nations": "synonymy"
+      }
+    },
+   
+    {
+      "T": "derecho internacional",
+      "lang": "es",
+      "S": {
+        "derecho": [
+          "honorarios",
+          "directo",
+          "diestro",
+          "impuesto",
+          "jurisprudencia",
+          "legitimidad"
+        ],
+        "internacional": []
+      },
+      "A": {
+        "derecho internacional publico": "narrower",
+        "derecho internacional público": "narrower"
+      }
+    },
+    {
+      "T": "derecho internacional público",
+      "lang": "es",
+      "S": {
+        "derecho": [
+          "honorarios",
+          "directo",
+          "diestro",
+          "impuesto",
+          "jurisprudencia",
+          "legitimidad"
+        ],
+        "internacional": [],
+        "público": []
+      },
+      "A": {
+        "derecho internacional publico": "related",
+        "derecho internacional público": null
+      }
+    },
+    {
+      "T": "internationaal recht",
+      "lang": "nl",
+      "S": {
+        "internationaal": [
+          "international",
+          "grensoverschrijdend"
+        ],
+        "recht": [
+          "rechten"
+        ]
+      },
+      "A": {
+        "internationaal publiekrecht": "narrower",
+        "volkenrecht": "synonymy"
+      }
+    }
+  ],
+  [
+    {
+      "T": "arbeitnehmer",
+      "lang": "de",
+      "S": {
+        "arbeitnehmer": [
+          "lohnempfänger",
+          "angestellter",
+          "mitarbeiter",
+          "gehaltsempfänger",
+          "arbeiter",
+          "beschäftigter"
+        ]
+      },
+      "A": {
+        "mitarbeiter": "synonymy",
+        "beschäftigte": "synonymy",
+        "arbeitnehmerin": "synonymy",
+        "dienstnehmer": "synonymy",
+        "beschäftigter": "synonymy"
+      }
+    },
+    {
+      "T": "werknemer",
+      "lang": "nl",
+      "S": {
+        "werknemer": [
+          "employé",
+          "kracht",
+          "arbeidskracht",
+          "werkman",
+          "arbeider",
+          "werkkracht",
+          "medewerker",
+          "personeelslid"
+        ]
+      },
+      "A": {
+        "medewerker": "synonymy"
+      }
+    }
+  ],
+  [
+    {
+      "T": "operation militär",
+      "lang": "de",
+      "S": {
+        "operation": [
+          "unternehmen",
+          "manöver",
+          "eingriff",
+          "verknüpfung"
+        ],
+        "militär": [
+          "fahne",
+          "befehlen",
+          "milit",
+          "militarmaschine",
+          "armee",
+          "vbied"
+        ]
+      },
+      "A": {
+        "militäroperation": "synonymy",
+        "militärische operation": "synonymy",
+        "offensivoperation": "related",
+        "operative ebene": "related",
+        "operative führung": "related",
+        "operative führungsebene": "related"
+      }
+    },
+    {
+      "T": "military operation",
+      "lang": "en",
+      "S": {
+        "military": [
+          "militaric",
+          "militarical",
+          "armed forces",
+          "military machine",
+          "war machine",
+          "military",
+          "armed services"
+        ],
+        "operation": [
+          "surgical procedure",
+          "military operation",
+          "surgical process",
+          "surgical operation",
+          "functioning",
+          "agency",
+          "surgery",
+          "mathematical process",
+          "process",
+          "procedure",
+          "performance",
+          "function"
+        ]
+      },
+      "A": {
+        "mission": null
+      }
+    },
+    {
+      "T": "operación militar",
+      "lang": "es",
+      "S": {
+        "operación": [],
+        "militar": [
+          "milico",
+          "soldado"
+        ]
+      },
+      "A": {
+        "operaciones militares": "related"
+      }
+    },
+    {
+      "T": "militaire operatie",
+      "lang": "nl",
+      "S": {
+        "militaire": [],
+        "operatie": [
+          "bewerking",
+          "ingreep"
+        ]
+      },
+      "A": {
+        "operatie": "broader",
+        "gevechtsoperatie": "related",
+        "legermissie": "synonymy",
+        "legeroperatie": "synonymy",
+        "militaire actie": "synonymy",
+        "militaire missie": "synonymy"
+      }
+    }
+  ],
+  [
+    {
+      "T": "counsel",
+      "lang": "en",
+      "S": {
+        "counsel": [
+          "guidance",
+          "advocate",
+          "advise",
+          "advice"
+        ]
+      },
+      "A": {
+        "counsellor at law": "narrower"
+      }
+    }
+  ],
+  [
+    {
+      "T": "social worker",
+      "lang": "en",
+      "S": {
+        "social": [
+          "neighborly",
+          "societal",
+          "sociable",
+          "shag"
+        ],
+        "worker": [
+          "proletarian",
+          "actor",
+          "labourer",
+          "operative",
+          "working man",
+          "laborer"
+        ]
+      },
+      "A": {
+        "social assistant": "related"
+      }
+    }
+  ],
+  [
+    {
+      "T": "legitimacy (family law)",
+      "lang": "en",
+      "S": {
+        "legitimacy": [
+          "legitimateness",
+          "legitimacy",
+          "liceity",
+          "authenticity"
+        ],
+        "(family": [],
+        "law)": []
+      },
+      "A": {
+        "biological child": null,
+        "legitimacy in family law": null
+      }
+    }
+  ],
+  [
+    {
+      "T": "public procurator",
+      "lang": "en",
+      "S": {
+        "public": [
+          "populace",
+          "public purse"
+        ],
+        "procurator": [
+          "proxy"
+        ]
+      },
+      "A": {
+        "procurator": "broader"
+      }
+    }
+  ],
+  [
+    {
+      "T": "straftat",
+      "lang": "de",
+      "S": {
+        "straftat": [
+          "delikt",
+          "verbrechen",
+          "tat"
+        ]
+      },
+      "A": {
+        "kriminalfall": "synonymy",
+        "strafsache": "related",
+        "leichte straftat": "narrower",
+        "tatausführung": "related",
+        "tathandlung": "related"
+      }
+    },
+    {
+      "T": "strafbaar feit",
+      "lang": "nl",
+      "S": {
+        "strafbaar": [
+          "onwettig",
+          "verboden",
+          "illegaal"
+        ],
+        "feit": [
+          "daadzaak",
+          "feitelijkheid"
+        ]
+      },
+      "A": {
+        "delict": null,
+        "onwettig": "broader",
+        "strafbaar": "broader",
+        "wetsovertreding": null
+      }
+    }
+  ],
+  [
+    {
+      "T": "rechtsanwaltsfachangestellter",
+      "lang": "de",
+      "S": {
+        "rechtsanwaltsfachangestellter": [
+          "anwaltsgehilfe"
+        ]
+      },
+      "A": {
+        "rechtsanwaltsgehilfe": "related",
+        "anwaltsfachangestellte": "related",
+        "anwaltsgehilfe": "synonymy",
+        "paralegal": "synonymy",
+        "rechtsanwaltfachangestellte": "synonymy",
+        "rechtsanwaltsfachangestellte": "synonymy",
+        "rechtsanwaltsgehilfin": "synonymy",
+        "rechtsassistent": "synonymy",
+        "rechtsassistentin": "synonymy"
+      }
+    },
+    {
+      "T": "paralegal",
+      "lang": "en",
+      "S": {
+        "paralegal": [
+          "legal assistant",
+          "paralegal"
+        ]
+      },
+      "A": {
+        "legal assistant": "synonymy"
+      }
+    },
+    {
+      "T": "juridisch medewerker",
+      "lang": "nl",
+      "S": {
+        "juridisch": [],
+        "medewerker": [
+          "werknemer",
+          "bijdrager"
+        ]
+      },
+      "A": {
+        "paralegal": "synonymy"
+      }
+    }
+  ],
+  [
+    {
+      "T": "trade office",
+      "lang": "en",
+      "S": {
+        "trade": [
+          "patronage",
+          "commerce",
+          "deal",
+          "craft",
+          "swop",
+          "trade",
+          "switch",
+          "merchandise",
+          "quid pro quo",
+          "barter",
+          "trade wind",
+          "trade in",
+          "swap"
+        ],
+        "office": [
+          "position",
+          "service",
+          "pulpit",
+          "shop",
+          "department",
+          "agency",
+          "good offices",
+          "surgery",
+          "power",
+          "office staff",
+          "divine office",
+          "business office",
+          "part",
+          "function"
+        ]
+      },
+      "A": {
+        "commercial office": "synonymy",
+        "trade mission": "related",
+        "trade representation": "related"
+      }
+    }
+  ],
+  [
+    {
+      "T": "resolution (logik)",
+      "lang": "de",
+      "S": {
+        "resolution": [
+          "beschluss",
+          "entschliessung"
+        ],
+        "(logik)": []
+      },
+      "A": {
+        "klauselresolution": "narrower",
+        "resolutionskalkül": "narrower",
+        "resolutionsprinzip": "narrower",
+        "resolutionsverfahren": "narrower",
+        "resolvent": null
+      }
+    },
+    {
+      "T": "resolution (logic)",
+      "lang": "en",
+      "S": {
+        "resolution": [
+          "resolving",
+          "resolving power",
+          "solution",
+          "settlement",
+          "declaration",
+          "resoluteness",
+          "decision",
+          "resolve",
+          "solving"
+        ],
+        "(logic)": []
+      },
+      "A": {
+        "resolution principle": "related"
+      }
+    },
+    {
+      "T": "resolución (lógica)",
+      "lang": "es",
+      "S": {
+        "resolución": [
+          "decisión",
+          "acuerdo",
+          "juicio"
+        ],
+        "(lógica)": []
+      },
+      "A": {
+        "resolucion": null
+      }
+    },
+    {
+      "T": "resolutie (logica)",
+      "lang": "nl",
+      "S": {
+        "resolutie": [
+          "beeldscherpte",
+          "besluit",
+          "motie"
+        ],
+        "(logica)": []
+      },
+      "A": {
+        "resolvent": null
+      }
+    }
+  ],
+  [
+    {
+      "T": "dienstbote",
+      "lang": "de",
+      "S": {
+        "dienstboten": [
+          "personal"
+        ]
+      },
+      "A": {
+        "diener": "related",
+        "bedienstete": "related",
+        "dienerin": "related",
+        "dienstmädchen": "related"
+      }
+    },
+    {
+      "T": "domestic worker",
+      "lang": "en",
+      "S": {
+        "domestic": [
+          "domesticated",
+          "house servant",
+          "household appliance",
+          "domestic help",
+          "bourgeois"
+        ],
+        "worker": [
+          "proletarian",
+          "actor",
+          "labourer",
+          "operative",
+          "working man",
+          "laborer"
+        ]
+      },
+      "A": {
+        "servant": "broader",
+        "domestic employee": "synonymy",
+        "domestic helper": "synonymy",
+        "domestic servant": "synonymy",
+        "domestic staff": "synonymy",
+        "household employee": "synonymy",
+        "household servant": "synonymy",
+        "household staff": "synonymy",
+        "household worker": "synonymy"
+      }
+    },
+    {
+      "T": "trabajador doméstico",
+      "lang": "es",
+      "S": {
+        "trabajador": [
+          "obrero",
+          "activo",
+          "currante",
+          "laborioso"
+        ],
+        "doméstico": [
+          "cívico",
+          "fámulo"
+        ]
+      },
+      "A": {
+        "empleada del hogar": "synonymy",
+        "empleada domestica": "synonymy",
+        "empleada doméstica": "synonymy",
+        "empleado del hogar": "synonymy",
+        "empleado domestico": "synonymy",
+        "empleado doméstico": "synonymy",
+        "interna": null,
+        "interno": null,
+        "trabajador domestico": "synonymy",
+        "trabajadora domestica": "synonymy",
+        "trabajadora doméstica": "synonymy"
+      }
+    },
+    {
+      "T": "huishoudelijke hulp",
+      "lang": "nl",
+      "S": {
+        "huishoudelijke": [],
+        "hulp": [
+          "handreiking",
+          "assistentie",
+          "heul",
+          "hulpmiddel",
+          "steun",
+          "toeverlaat",
+          "toedoen",
+          "behulp",
+          "medewerking",
+          "famulus",
+          "helper",
+          "assistent",
+          "bijstand"
+        ]
+      },
+      "A": {
+        "werkster": "synonymy",
+        "poets": null,
+        "interieurverzorgster": null,
+        "kuisvrouw": "related",
+        "poetsvrouw": "related"
+      }
+    }
+  ],
+  [
+    {
+      "T": "gewerkschaft",
+      "lang": "de",
+      "S": {
+        "gewerkschaft": [
+          "arbeitnehmerverband",
+          "gesellenschaft",
+          "syndikat"
+        ]
+      },
+      "A": {
+        "arbeitnehmerorganisation": "synonymy",
+        "gewerkschaften": "related"
+      }
+    },
+    {
+      "T": "trade union",
+      "lang": "en",
+      "S": {
+        "trade": [
+          "patronage",
+          "commerce",
+          "deal",
+          "craft",
+          "swop",
+          "trade",
+          "switch",
+          "merchandise",
+          "quid pro quo",
+          "barter",
+          "trade wind",
+          "trade in",
+          "swap"
+        ],
+        "union": [
+          "conglutination",
+          "sum",
+          "alliance",
+          "North",
+          "uniting",
+          "unification",
+          "labor union",
+          "union",
+          "0 10 2",
+          "coupling",
+          "trade union",
+          "marriage",
+          "join",
+          "brotherhood",
+          "Federal",
+          "junction",
+          "trades union",
+          "jointure",
+          "conjugation"
+        ]
+      },
+      "A": {
+        "labor union": "related",
+        "labour union": "related",
+        "union": "broader",
+        "work union": "related",
+        "worker's union": "related",
+        "workers union": "related"
+      }
+    },
+    {
+      "T": "sindicato",
+      "lang": "es",
+      "S": {
+        "sindicato": [
+          "asociación"
+        ]
+      },
+      "A": {
+        "organizacion sindical": "synonymy",
+        "organización sindical": "synonymy",
+        "sindical": "related",
+        "sindicato obrero": "narrower"
+      }
+    },
+    {
+      "T": "vakbond",
+      "lang": "nl",
+      "S": {
+        "vakbond": [
+          "vakvereniging",
+          "syndicaat"
+        ]
+      },
+      "A": {
+        "syndicaat": "synonymy",
+        "syndicaliteit": "related",
+        "vakbeweging": "related",
+        "vakbonden": "related",
+        "vakvereniging": "synonymy",
+        "werknemersvereniging": "synonymy"
+      }
+    }
+  ]
+]

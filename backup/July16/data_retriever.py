@@ -423,18 +423,15 @@ def skos_converter(entry, wiki_data):
 # main
 # =========================================
 # Read the configuration file
-print("============ Reading the configuration file")
 with open("configuration.json", 'r') as f:
     configuration = json.load(f)
 
 term_id_file_dir = 'IDs/scterm_dict_%s.csv'%configuration["run_id"]
 wikidata_output_file_name = "Wikidata/%s.json"%configuration["run_id"]
-not_found_file_name = "Log/not_found_%s.txt"%configuration["run_id"]
+not_found_file_name = "ConceptNet/not_found_%s.txt"%configuration["run_id"]
 induction_dir = "Induction/%s.json"%configuration["run_id"]
-filtered_output_dir = "Output/%s.json"%configuration["run_id"]
-evaluation_results_dir = "Evaluation/%s.txt"%configuration["run_id"]
 
-source_file = open(configuration["source_file_dir"], "r")
+source_file = open(source_file_dir, "r")
 terms = [t for t in source_file.read().split("\n")]
 # print(terms)
 
@@ -451,10 +448,10 @@ else:
         a.write(t+ ', '+ TERM_ID_MAP[t] + '\n')
     a.close()
 # ================
-if configuration["retrieve_wikidata"]:
-    print("====== Retrieving data from Wikidata:")
+if retrieve_wikidata:
+    print("Wikidata retrieval")
     # Read subjects JSON file
-    with open(configuration["gold_concepts_dir"], 'r') as f:
+    with open(categories_dir, 'r') as f:
         subjects = json.load(f)
 
     not_found = list()
@@ -468,7 +465,7 @@ if configuration["retrieve_wikidata"]:
             output_file.write("\n\n")
 
         for entry in terms:
-            retrieved_data = wikidata_retriever(entry, subjects, lang=configuration["source_language"][0:2])
+            retrieved_data = wikidata_retriever(entry, subjects, lang=source_language[0:2])
             if len(retrieved_data):
                 skos_text = skos_converter(entry, retrieved_data)
                 with open(wikidata_output_file_name, "a") as output_file:
@@ -480,7 +477,7 @@ if configuration["retrieve_wikidata"]:
     if save_as_json:
         retrieved_data = list()
         for entry in terms:
-            entry_retrieved_data = wikidata_retriever(entry, subjects, lang=configuration["source_language"][0:2])
+            entry_retrieved_data = wikidata_retriever(entry, subjects, lang=source_language[0:2])
             if len(entry_retrieved_data):
                 retrieved_data.append(entry_retrieved_data)
             else:
@@ -492,11 +489,11 @@ if configuration["retrieve_wikidata"]:
             json.dump(retrieved_data, f)
 
     # # Writing those words which could not be found
-    with open(not_found_file_name, "w") as output_file:
-        output_file.write("\n".join(not_found))
+    # with open(not_found_file_name, "w") as output_file:
+    #     output_file.write("\n".join(not_found))
 # ================
-if configuration["retrieve_ConceptNet"]:
-    print("====== Retrieving data from ConceptNet:")
+if retrieve_ConceptNet:
+    print("ConceptNet retrieval")
     with open(wikidata_output_file_name, 'r') as f:
         retrieved_wikidata = json.load(f)
 
@@ -531,7 +528,6 @@ if configuration["retrieve_ConceptNet"]:
             time.sleep(2)
         all_inductions.append(induced_relationships)
     
-    print("==== Saving induced data.")
     with open(induction_dir, "w") as f:
         json.dump(all_inductions, f)
     # print(json.dumps(all_inductions, indent=4, sort_keys=True))
@@ -542,10 +538,10 @@ if configuration["retrieve_ConceptNet"]:
     # synonyms = get_conceptNet_synonyms("en", "discrimination")
     # print(synonyms)
 
+
 # Analysis
-if configuration["analysis"]:
-    print("====== Analysing valid outputs")
-    with open(induction_dir, 'r') as f:
+if evaluate:
+    with open("induction_results.json", 'r') as f:
         retrieved_wikidata = json.load(f)
 
     item_empty = 0
@@ -581,19 +577,17 @@ if configuration["analysis"]:
     print("Empty A:", A_empty)
     print("Empty S:", S_all_empty)
     print("All valids:", all_valids)
-
-    with open(filtered_output_dir, "w") as f:
+    with open("valid_items.json", "w") as f:
         json.dump(valid_items, f)
 
 
 # Comparison of the gold-standard with the output of the script
 # and also I'd like to know which of the "wrong" matches (A) contain a token that is not present within the list of synonyms (S)
 
-if configuration["evaluate"]:
-    print("====== Evaluating the performance")
-    with open(filtered_output_dir, 'r') as f:
+if True:
+    with open("valid_items.json", 'r') as f:
         retrieved_wikidata = json.load(f)
-    with open(configuration["gold_concepts_dir"], 'r') as f:
+    with open("goldstandard.json", 'r') as f:
         goldstandard = json.load(f)
 
     correct_predictions = dict()
@@ -627,6 +621,7 @@ if configuration["evaluate"]:
                         for ss in s:
                             S_values.append(ss)
 
+
                     for token in a.split():
                         if token not in S_values:
                             if lang not in missing_synonym:
@@ -651,12 +646,9 @@ if configuration["evaluate"]:
     results += "\n Missing: " + json.dumps(missing_synonym)
     results += "\n Accuracy: " + json.dumps(accuracy)
 
-    print("=== Saving evaluation results.")
-    with open(evaluation_results_dir, "w") as f:
+    with open("evaluation.txt", "w") as f:
         f.write(results)
 
-
-print("============ Finished.")
 # Induction test
 # lang = "en"
 # T = "employment agreement".split()
