@@ -3,8 +3,9 @@
 	"run_id": "6",
 	"source_file_dir": "Input/6term.csv",
 	"gold_concepts_dir": "gold_concepts.json",
-	"retrieve_wikidata": true,
-	"retrieve_ConceptNet": true,
-	"analysis": true,
-	"evaluate": true
+	"retrieve_wikidata": false,
+	"retrieve_ConceptNet": false,
+	"analysis": false,
+	"evaluate": false,
+	"convert_to_SKOS": true
 }

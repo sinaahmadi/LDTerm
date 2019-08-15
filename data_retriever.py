@@ -656,6 +656,10 @@ if configuration["evaluate"]:
         f.write(results)
 
 
+if configuration["convert_to_SKOS"]:
+	print("====== Evaluating the performance")
+	
+
 print("============ Finished.")
 # Induction test
 # lang = "en"
