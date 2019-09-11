@@ -27,23 +27,20 @@ prefixes_templates = """
 concept_template = """
     <http://lkg.lynx-project.eu/kos/labourlaw_terms/SCTMID> a skos:Concept ;
         skos:closeMatch <https://www.wikidata.org/wiki/WDTMID> ;
-        skos:prefLabel CONCAT ;
-"""
+        skos:prefLabel "CONCAT"@LANG ;"""
 
 desc_template = """
         skos:description CONCAT1;
 """
 
 alt_template = """
-        skos:altLabel CONCAT2 ;
+        skos:altLabel "CONCAT2"@LANG ;
 """
 
-br_template = """
-        skos:broader WDBRTMID ; 
+br_template = """        skos:broader WDBRTMID ; 
 """
 
-naTerm_template = """
-        skos:narrower WDNRTMID ;
+naTerm_template = """        skos:narrower WDNRTMID ;
 """
 re_template = """
         skos:related <https://www.wikidata.org/wiki/WDRLTMID>; 
@@ -365,7 +362,7 @@ def wikidata_retriever(term, subjects, lang):
 # Creation of SKOS model with the collected Wikidata_dataset
 # he quitado el zip. no faltaría un return?  naTerm_lang
 # =========================================
-def skos_converter(entry, wiki_data):
+def skos_converter_Wiki(entry, wiki_data):
     name_lang, desc_lang, altLabel_lang, narrower_terms, broader_terms = list(), list(), list(), list(), list()
     translations = wiki_data["translations"]
     for i in translations:
@@ -419,6 +416,35 @@ def skos_converter(entry, wiki_data):
         broader_concepts = ""
 
     return str(header + body + alternative_labels + narrower_concepts + broader_concepts)[:-3] + "."
+
+# Conversion of the goldstandard file
+def skos_converter(entry):
+    SKOS_triples = ""
+    if entry["T"] not in TERM_ID_MAP:
+        TERM_ID_MAP[entry["T"]] = sctmid_creator()
+    SKOS_triples += concept_template.replace("SCTMID", TERM_ID_MAP[entry["T"]]).replace("CONCAT", entry["T"])
+
+    alt_labels, broader_labels, narrower_labels = list(), list(), list()
+    for k in entry["S"]:
+        alt_labels = alt_labels + entry["S"][k]
+
+    for k in entry["A"]:
+        if entry["A"][k] == "related":
+            alt_labels.append(k)
+        elif entry["A"][k] == "narrower":
+            narrower_labels.append(k)
+        elif entry["A"][k] == "broader":
+            broader_labels.append(k)
+
+    alt_labels = "\"" +  "\", \"".join( list(set(alt_labels)) ) + "\""
+    narrower_labels = "\"" + "\", \"".join( list(set(narrower_labels)) ) + "\""
+    broader_labels = "\"" + "\", \"".join( list(set(broader_labels)) ) + "\""
+    
+    SKOS_triples += alt_template.replace("CONCAT2", alt_labels)
+    SKOS_triples += naTerm_template.replace("WDNRTMID", narrower_labels)
+    SKOS_triples += br_template.replace("WDBRTMID", broader_labels)
+    return SKOS_triples.replace("LANG", entry["lang"]).replace("        skos:broader \"\" ; ", "")
+
 # =========================================
 # main
 # =========================================
@@ -656,9 +682,6 @@ if configuration["evaluate"]:
         f.write(results)
 
 
-if configuration["convert_to_SKOS"]:
-	print("====== Evaluating the performance")
-	
 
 print("============ Finished.")
 # Induction test

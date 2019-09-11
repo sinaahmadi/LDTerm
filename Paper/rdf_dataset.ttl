@@ -1,0 +1,2339 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iso639: <http://lexvo.org/id/iso639-1/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix lynx: <http://lkg.lynx-project.eu/kos/labourlaw_terms/> .
+@prefix : <#> .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms> a skos:ConceptScheme; 
+    skos:prefLabel "LabourLaw Terms Scheme".
+
+# ##########################################################
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2281825> a skos:Concept ;
+skos:prefLabel "Diskriminierung"@de, "Discrimination"@en, "Discrimination"@en, "Discriminación"@es, "Discriminatie"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Verhalten gegenüber einer bestimmten Gruppe von Menschen"@de, "prejudicial treatment based on membership in a certain group"@en, "prejudicial treatment based on membership in a certain group"@en, "comportamiento perjudicial respecto a un grupo específico de personas"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q169207> ;
+skos:narrower lynx:LT5486050 ;	
+skos:narrower lynx:LT4116956 ;	
+skos:narrower lynx:LT3435686 ;	
+skos:narrower lynx:LT7190210 ;	
+skos:narrower lynx:LT8423000 ;	
+skos:narrower lynx:LT1418186 ;
+skos:related lynx:LT7066918 ;	
+skos:related lynx:LT4165053 ;	
+skos:related lynx:LT7862867 ;	
+skos:related lynx:LT9068965 ;	
+skos:related lynx:LT9347864 ;	
+skos:related lynx:LT3476064 ;	
+skos:related lynx:LT1068047 ;	
+skos:related lynx:LT3873116 ;	
+skos:related lynx:LT5602543 .
+
+lynx:LT7066918 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "antidiskriminierung"@de .
+lynx:LT4165053 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "diskriminieren"@de .
+lynx:LT5486050 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "gesellschaftliche diskriminierung"@de .
+lynx:LT4116956 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "religiöse diskriminierung"@de .
+lynx:LT3435686 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "soziale diskriminierung"@de .
+lynx:LT7862867 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "discriminacion"@es .
+lynx:LT7190210 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "discriminación de genero"@es .
+lynx:LT8423000 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "discriminación de género"@es .
+lynx:LT1418186 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "discriminación social"@es .
+lynx:LT9068965 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "discriminador"@es .
+lynx:LT9347864 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "discriminatorio"@es .
+lynx:LT3476064 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "discrimatie"@nl .
+lynx:LT1068047 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "discriminatiewetgeving"@nl .
+lynx:LT3873116 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "discrimineren"@nl .
+lynx:LT5602543 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gediscrimineerd"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4775014> a skos:Concept ;
+skos:prefLabel "Mutterschaftsurlaub"@de, "Zwangerschaps- en bevallingsverlof"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q441328> ;
+skos:related lynx:LT2626198 .
+
+lynx:LT2626198 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "schwangerschaftsurlaub"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2034057> a skos:Concept ;
+skos:prefLabel "Public Policy"@de, "Public policy"@en, "Public policy"@en, "Políticas públicas"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "principled guide to action taken by the administrative executive branches of the state with regard to a class of issues"@en, "principled guide to action taken by the administrative executive branches of the state with regard to a class of issues"@en, "políticas"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q546113> ;
+skos:related lynx:LT4400032 ;	
+skos:related lynx:LT2416385 ;	
+skos:related lynx:LT6317607 ;	
+skos:related lynx:LT9432516 ;	
+skos:related lynx:LT7915814 .
+
+lynx:LT4400032 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "government policy"@en .
+lynx:LT2416385 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "state policy"@en .
+lynx:LT6317607 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "government policy"@en .
+lynx:LT9432516 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "state policy"@en .
+lynx:LT7915814 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "politicas publicas"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8591440> a skos:Concept ;
+skos:prefLabel "Fallrecht"@de, "Case law"@en, "Jurisprudencia"@es, "Jurisprudentie"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "kasuistische Rechtsordnung ohne Kodifikation"@de, "set of past rulings by tribunals that meet their respective jurisdictions' rules to be cited as precedent"@en, "conjunto de resoluciones judiciales emitidas en un mismo sentido por los órganos judiciales de un ordenamiento jurídico determinado"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q11022655> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1972240> a skos:Concept ;
+skos:prefLabel "Permanent residence"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Wikipedia disambiguation page"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q7169289> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5328625> a skos:Concept ;
+skos:prefLabel "Harassment"@en, "Hostigamiento"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "wide range of behaviours of an offensive nature"@en, "amplia gama de comportamientos ofensivos"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q3240539> ;
+skos:related lynx:LT1475920 ;	
+skos:related lynx:LT4068313 .
+
+lynx:LT1475920 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "harass"@en .
+lynx:LT4068313 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "acoso"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2996400> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/P569> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2361623> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/P2130> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1851866> a skos:Concept ;
+skos:prefLabel "Völkerrecht"@de, "International law"@en, "International law"@en, "Derecho internacional"@es, "Derecho internacional público"@es, "Internationaal recht"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "derecho internacional público"@es ;
+skos:definition "Rechtsordnung, durch die die Beziehungen zwischen den Völkerrechtssubjekten (meist Staaten) geregelt werden"@de, "regulations governing international relations"@en, "regulations governing international relations"@en, "conjunto de normas jurídicas y principios, destinado a regular las relaciones externas entre Estados y/o otras entidades (también con calidad de ser sujeto de derecho internacional)."@es, "conjunto de normas jurídicas y principios, destinado a regular las relaciones externas entre Estados y/o otras entidades (también con calidad de ser sujeto de derecho internacional)."@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q4394526> ;
+skos:narrower lynx:LT2816033 ;	
+skos:narrower lynx:LT2224665 ;	
+skos:narrower lynx:LT4628800 ;	
+skos:narrower lynx:LT2190297 ;	
+skos:narrower lynx:LT6158527 ;
+skos:related lynx:LT1141540 ;	
+skos:related lynx:LT8740988 .
+
+lynx:LT2816033 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "allgemeines völkerrecht"@de .
+lynx:LT2224665 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "international law, law of nations"@en .
+lynx:LT4628800 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "international law, law of nations"@en .
+lynx:LT2190297 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "derecho internacional publico"@es .
+lynx:LT6158527 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "derecho internacional público"@es .
+lynx:LT1141540 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "derecho internacional publico"@es .
+lynx:LT8740988 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "internationaal publiekrecht"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7548667> a skos:Concept ;
+skos:prefLabel "Arbeitnehmer"@de, "Werknemer"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "mitarbeiter"@de, "beschäftigter"@de, "medewerker"@nl ;
+skos:definition "Person, die bei einem Arbeitgeber arbeitet"@de ;
+skos:closeMatch <https://www.wikidata.org/entity/Q703534> ;
+skos:related lynx:LT3871909 ;	
+skos:related lynx:LT9560948 ;	
+skos:related lynx:LT1938705 .
+
+lynx:LT3871909 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "beschäftigte"@de .
+lynx:LT9560948 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "arbeitnehmerin"@de .
+lynx:LT1938705 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "dienstnehmer"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3953907> a skos:Concept ;
+skos:prefLabel "Notice"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "official notification of legal process"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q7063001> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4462888> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q5009984> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1536358> a skos:Concept ;
+skos:prefLabel "Dismissal (Cricket)"@de, "Dismissal (cricket)"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "out in the game of cricket"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q489322> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1351389> a skos:Concept ;
+skos:prefLabel "Economic entity"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "accounting term; one of the assumptions made in generally accepted accounting principles"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q12569864> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1496303> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/P169> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5797245> a skos:Concept ;
+skos:prefLabel "Ertragsteuer"@de, "Income tax"@en, "Impuesto sobre la renta"@es, "Inkomstenbelasting"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "ertragsteuer"@de, "income taxation"@en ;
+skos:definition "Oberbegriff für Einkommen-, Körperschaft- und Gewerbesteuer"@de, "tax imposed on individuals or entities (taxpayers) that varies with respective income or profits (taxable income)."@en, "impuesto que grava la utilidad de las personas, empresas, u otras entidades legales"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q179222> ;
+skos:related lynx:LT2421831 ;	
+skos:related lynx:LT7381828 ;	
+skos:related lynx:LT3530502 ;	
+skos:related lynx:LT7116103 ;	
+skos:related lynx:LT4881729 ;	
+skos:related lynx:LT8950658 .
+
+lynx:LT2421831 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "einkommenssteuer"@de .
+lynx:LT7381828 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "ertragssteuer"@de .
+lynx:LT3530502 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "periodizitätsprinzip"@de .
+lynx:LT7116103 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "impuesto a la renta"@es .
+lynx:LT4881729 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "impuesto a las ganancias"@es .
+lynx:LT8950658 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "impuesto de la renta"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7636244> a skos:Concept ;
+skos:prefLabel "Offizierspatent"@de, "Commission (document)"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "document which appoints a person to a military force as an officer or a named person to high office"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q60918> ;
+skos:related lynx:LT4692719 ;	
+skos:related lynx:LT2703601 .
+
+lynx:LT4692719 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "offizierbrief"@de .
+lynx:LT2703601 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "offiziersbrevet"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2518819> a skos:Concept ;
+skos:prefLabel "Schlichtung"@de, "Conciliation"@en, "Conciliación (Derecho)"@es, "Conciliatie"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "die außergerichtliche Beilegung eines Rechtsstreites zwischen streitenden Parteien"@de, "alternative dispute resolution (ADR) process"@en, "medio alternativo para solucionar conflictos"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q13479560> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4950660> a skos:Concept ;
+skos:prefLabel "Cashflow"@de, "Cash flow"@en, "Cash flow"@en, "Flujo de caja"@es, "Kasstroom"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "flujo de caja"@es ;
+skos:definition "wirtschaftliche Messgröße"@de, "movement of money into or out of a business, project, or financial product"@en, "movement of money into or out of a business, project, or financial product"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1047513> ;
+skos:narrower lynx:LT1000949 ;
+skos:related lynx:LT4672891 ;	
+skos:related lynx:LT6883900 ;	
+skos:related lynx:LT1232409 ;	
+skos:related lynx:LT1673102 ;	
+skos:related lynx:LT6436030 ;	
+skos:related lynx:LT4567835 .
+
+lynx:LT4672891 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "cash-drain"@de .
+lynx:LT6883900 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "cash-flow"@de .
+lynx:LT1000949 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "freier cashflow"@de .
+lynx:LT1232409 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "kapitalfluss"@de .
+lynx:LT1673102 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "kassenzufluss"@de .
+lynx:LT6436030 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "konzern-kapitalflussrechnung"@de .
+lynx:LT4567835 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "zahlungsüberschuss"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6701416> a skos:Concept ;
+skos:prefLabel "Anschuldigung"@de, "Allegation"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "anschuldigung"@de ;
+skos:definition "statement of a fact in a pleading, that will be attempted to be proven"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q2839009> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1926624> a skos:Concept ;
+skos:prefLabel "Rückstellung"@de, "Provision (accounting)"@en, "Voorzieningen (boekhouden)"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "account which records a present liability of an entity"@en, "boekhouden"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q703087> ;
+skos:related lynx:LT3563206 ;	
+skos:related lynx:LT5508826 ;	
+skos:related lynx:LT6502816 ;	
+skos:related lynx:LT5045043 ;	
+skos:related lynx:LT7324054 ;	
+skos:related lynx:LT7413977 .
+
+lynx:LT3563206 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "accruals"@de .
+lynx:LT5508826 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "aufwandsrückstellung"@de .
+lynx:LT6502816 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "aufwandsrückstellungen"@de .
+lynx:LT5045043 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "rückstellungen"@de .
+lynx:LT7324054 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "rueckstellung"@de .
+lynx:LT7413977 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "schuldrückstellung"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3682475> a skos:Concept ;
+skos:prefLabel "Berufung (Recht)"@de, "Appeals"@en, "Appeal"@en, "Recurso de apelación"@es, "Hoger beroep"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "recurso de apelación"@es ;
+skos:definition "resort to a superior court to review the decision of an inferior court or administrative agency"@en, "resort to a superior court to review the decision of an inferior court or administrative agency"@en, "gang naar een bovenliggend rechtsorgaan om het besluit van een lagere rechtbank te doen herzien"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q329777> ;
+skos:narrower lynx:LT6578030 ;
+skos:related lynx:LT2294959 ;	
+skos:related lynx:LT2131147 ;	
+skos:related lynx:LT5876233 .
+
+lynx:LT2294959 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "appellate"@en .
+lynx:LT2131147 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "appellate"@en .
+lynx:LT6578030 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "court appeal"@en .
+lynx:LT5876233 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "recurso de apelacion"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3651463> a skos:Concept ;
+skos:prefLabel "Dienstvertrag (Deutschland)"@de, "Employment contract"@en, "Contrato individual de trabajo"@es, "Arbeidsovereenkomst"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "employment agreement"@en ;
+skos:definition "Dienstvertrag"@de, "agreement between employer and employee on terms of work and compensation"@en, "contrato de empleo"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1221208> ;
+skos:related lynx:LT6280384 ;	
+skos:related lynx:LT7700142 ;	
+skos:related lynx:LT4777347 ;	
+skos:related lynx:LT7129002 .
+
+lynx:LT6280384 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "contrato de trabajo (individual)"@es .
+lynx:LT7700142 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "derecho individual del trabajo"@es .
+lynx:LT4777347 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "arbeidscontract"@nl .
+lynx:LT7129002 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "werkovereenkomst"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8648170> a skos:Concept ;
+skos:prefLabel "Bankfeiertag"@de, "Bank holiday"@en, "Bank holiday"@es, "Bank holiday"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "bank holiday"@es ;
+skos:definition "Tage, an denen Kreditinstitute keine Bankgeschäfte abwickeln"@de, "type of public holiday in certain countries, closing many banks, schools and workplaces"@en, "feriado público"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q277436> ;
+skos:related lynx:LT1128545 ;	
+skos:related lynx:LT5895717 .
+
+lynx:LT1128545 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "bankenfeiertag"@de .
+lynx:LT5895717 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "bank holidays"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1432407> a skos:Concept ;
+skos:prefLabel "Election deposit"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "in politics"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q2063826> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8068199> a skos:Concept ;
+skos:prefLabel "Operation (Militär)"@de, "Military operation"@en, "Operación militar"@es, "Militaire operatie"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "koordinierte militärische Handlungen"@de, "coordinated military actions of a state in response to a developing situation"@en, "acción armada y coordinada por parte de un Estado en respuesta a una situación en desarrollo"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q645883> ;
+skos:broader lynx:LT4088016 ;
+skos:related lynx:LT2805199 ;	
+skos:related lynx:LT7273964 ;	
+skos:related lynx:LT7620464 ;	
+skos:related lynx:LT7742658 ;	
+skos:related lynx:LT6197624 ;	
+skos:related lynx:LT1809773 ;	
+skos:related lynx:LT5343616 .
+
+lynx:LT2805199 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "militärische operation"@de .
+lynx:LT7273964 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "operative ebene"@de .
+lynx:LT7620464 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "operative führung"@de .
+lynx:LT7742658 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "operative führungsebene"@de .
+lynx:LT6197624 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "operaciones militares"@es .
+lynx:LT4088016 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "operatie"@nl .
+lynx:LT1809773 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "militaire actie"@nl .
+lynx:LT5343616 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "militaire missie"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2035122> a skos:Concept ;
+skos:prefLabel "Unfähigkeit"@de, "Behinderung"@de, "Disability"@en, "Disability"@en, "Discapacidad"@es, "Handicap (medisch)"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "behinderter"@de, "handicap"@en, "handicap"@en ;
+skos:definition "körperliche oder psychische Funktionsstörung einer Person"@de, "körperliche oder psychische Funktionsstörung einer Person"@de, "impairments, activity limitations, and participation restrictions"@en, "impairments, activity limitations, and participation restrictions"@en, "condición bajo la cual ciertas personas presentan deficiencias físicas, mentales, intelectuales o sensoriales"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q12131> ;
+skos:narrower lynx:LT1788260 ;	
+skos:narrower lynx:LT3540191 ;
+skos:related lynx:LT6229577 ;	
+skos:related lynx:LT6008919 ;	
+skos:related lynx:LT7966750 ;	
+skos:related lynx:LT9006222 ;	
+skos:related lynx:LT3333055 ;	
+skos:related lynx:LT8660937 ;	
+skos:related lynx:LT7714585 ;	
+skos:related lynx:LT9048202 ;	
+skos:related lynx:LT7261044 .
+
+lynx:LT6229577 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "behindert"@de .
+lynx:LT6008919 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "sorgenkind"@de .
+lynx:LT7966750 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "behinderter"@de .
+lynx:LT9006222 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "behinderte"@de .
+lynx:LT3333055 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "schwerbeschädigung"@de .
+lynx:LT8660937 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "behindert"@de .
+lynx:LT7714585 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "sorgenkind"@de .
+lynx:LT9048202 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "behinderte"@de .
+lynx:LT1788260 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "menschen mit beeinträchtigung"@de .
+lynx:LT3540191 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "menschen mit behinderung"@de .
+lynx:LT7261044 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "schwerbeschädigung"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8047913> a skos:Concept ;
+skos:prefLabel "Agentur"@de ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "professionelle Dienstleistung"@de ;
+skos:closeMatch <https://www.wikidata.org/entity/Q352450> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5580211> a skos:Concept ;
+skos:prefLabel "Tarifvertrag"@de, "Collective agreement"@en, "Contrato colectivo de trabajo"@es, "Collectieve arbeidsovereenkomst"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "collective contract"@en ;
+skos:definition "Vertragliche Regelung der Arbeitsverhältnisse zwischen Arbeitgebern und Arbeitnehmern"@de, "agreement between employers and employees"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q163887> ;
+skos:broader lynx:LT2063745 ;
+skos:narrower lynx:LT6572477 ;
+skos:related lynx:LT5033664 ;	
+skos:related lynx:LT2353808 ;	
+skos:related lynx:LT7162914 ;	
+skos:related lynx:LT4744499 ;	
+skos:related lynx:LT7259872 ;	
+skos:related lynx:LT3658188 .
+
+lynx:LT5033664 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "rahmentarifvertrag"@de .
+lynx:LT2353808 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "tarifrecht"@de .
+lynx:LT7162914 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "tarifvertragsrecht"@de .
+lynx:LT6572477 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "collective bargaining agreement"@en .
+lynx:LT2063745 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "contrato de trabajo"@es .
+lynx:LT4744499 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "convencion colectiva de trabajo"@es .
+lynx:LT7259872 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "convención colectiva de trabajo"@es .
+lynx:LT3658188 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "convenio colectivo de trabajo"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9367946> a skos:Concept ;
+skos:prefLabel "Zorgplan"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q2679151> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4045903> a skos:Concept ;
+skos:prefLabel "Mitgliedstaat"@de, "Member state"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "state that is a member of an international organisation"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1646605> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5328625> a skos:Concept ;
+skos:prefLabel "Harassment"@en, "Hostigamiento"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "wide range of behaviours of an offensive nature"@en, "amplia gama de comportamientos ofensivos"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q3240539> ;
+skos:related lynx:LT9055356 ;	
+skos:related lynx:LT8156482 .
+
+lynx:LT9055356 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "harass"@en .
+lynx:LT8156482 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "acoso"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3529790> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q61667227> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2223425> a skos:Concept ;
+skos:prefLabel "Passiva"@de, "Liability (financial accounting)"@en, "Pasivo"@es, "Passiva"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Summe des verfügbaren Kapitals eines Unternehmens, Mittelherkunft, Fälligkeiten"@de, "sum of the equity and the liabilities"@en, "concepto en contabilidad y finanzas"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q546972> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4119901> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/P108> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7361203> a skos:Concept ;
+skos:prefLabel "Counsel"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "legal profession in english-speaking countries"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q17131110> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9775610> a skos:Concept ;
+skos:prefLabel "Zustimmung"@de, "Consent"@en, "Consent"@en, "Consentimiento"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "permission"@en, "approval"@en, "permission"@en, "approval"@en ;
+skos:definition "expression granting permission; indication of agreement with a proposal; acknowledgement that an item meets requirements"@en, "expression granting permission; indication of agreement with a proposal; acknowledgement that an item meets requirements"@en, "expresión otorgando permiso; indicación de acuerdo con una propuesta; reconocimiento de que un artículo cumple con los requisitos"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q231043> ;
+skos:related lynx:LT6147071 ;	
+skos:related lynx:LT6284653 ;	
+skos:related lynx:LT6370342 ;	
+skos:related lynx:LT2187066 .
+
+lynx:LT6147071 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "sanction"@en .
+lynx:LT6284653 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "authorization"@en .
+lynx:LT6370342 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "sanction"@en .
+lynx:LT2187066 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "authorization"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7974343> a skos:Concept ;
+skos:prefLabel "Wettbewerbsrecht"@de, "Competition law"@en, "Derecho de la competencia"@es, "Mededingingsrecht"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "law that promotes or seeks to maintain market competition by regulating anti-competitive conduct by companies"@en, "disposiciones legislativas y reglamentarias orientadas a garantizar el respeto a la libertad de comercio y de la industria, en una economía de libre mercado"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q326498> ;
+skos:broader lynx:LT8562784 ;
+skos:related lynx:LT6685542 .
+
+lynx:LT8562784 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "derecho de competencia"@es .
+lynx:LT6685542 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "antitrust"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8000189> a skos:Concept ;
+skos:prefLabel "Mitigation (law)"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "in law, the principle that a party who suffers loss must take action to minimize the amount of loss"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q6881762> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4341308> a skos:Concept ;
+skos:prefLabel "Konvention"@de, "Convention (norm)"@en, "Convención (norma)"@es, "Conventie"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Regel, die von einer Gruppe von Menschen aufgrund eines beschlossenen Konsenses eingehalten wird"@de, "set of agreed, stipulated, or generally accepted standards"@en, "conjunto de estándares, reglas, normas o criterios que son de aceptación general para un determinado grupo social"@es, "het geheel van als passend aanvaarde vormen, gebruiken"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q367293> ;
+skos:broader lynx:LT9290628 ;
+skos:related lynx:LT3543851 ;	
+skos:related lynx:LT8073249 ;	
+skos:related lynx:LT2349657 ;	
+skos:related lynx:LT2520380 .
+
+lynx:LT9290628 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "norm"@en .
+lynx:LT3543851 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "social norms"@en .
+lynx:LT8073249 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "overeenkomst"@nl .
+lynx:LT2349657 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gebruik"@nl .
+lynx:LT2520380 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "norm"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9866519> a skos:Concept ;
+skos:prefLabel "Gleichstellung der Geschlechter"@de, "Gender equality"@en, "Igualdad de género"@es, "Gendergelijkheid"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "sex equality"@en ;
+skos:definition "view that men and women should receive equal treatment, and should not be discriminated against based on gender"@en, "Igualdad entre hombre y mujer"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q113453> ;
+skos:related lynx:LT2799458 ;	
+skos:related lynx:LT6735987 ;	
+skos:related lynx:LT7404808 ;	
+skos:related lynx:LT3999261 ;	
+skos:related lynx:LT5883294 ;	
+skos:related lynx:LT8345141 .
+
+lynx:LT2799458 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gender balance"@en .
+lynx:LT6735987 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gender egalitarianism"@en .
+lynx:LT7404808 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gender equity"@en .
+lynx:LT3999261 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "sexual equality"@en .
+lynx:LT5883294 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "igualdad de genero"@es .
+lynx:LT8345141 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "geslachtsgelijkheid"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5193254> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/P6794> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5644508> a skos:Concept ;
+skos:prefLabel "Social worker"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "person who performs social work"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q7019111> ;
+skos:related lynx:LT1892066 .
+
+lynx:LT1892066 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "social assistant"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6413760> a skos:Concept ;
+skos:prefLabel "Legitimacy (family law)"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "legal status of a child born to parents who are legally married"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q378505> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5791750> a skos:Concept ;
+skos:prefLabel "Misconduct"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "legal term; form of wrongful, improper, or unlawful conduct"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q6875295> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5257832> a skos:Concept ;
+skos:prefLabel "Auftragnehmer"@de, "Contratista"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "berufliche Tätigkeit"@de ;
+skos:closeMatch <https://www.wikidata.org/entity/Q15982656> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1889570> a skos:Concept ;
+skos:prefLabel "Ruhestand"@de, "Retirement"@en, "Retirement"@en, "Jubilación"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "point where a person ceases employment permanently"@en, "point where a person ceases employment permanently"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q946865> ;
+skos:related lynx:LT1620587 .
+
+lynx:LT1620587 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "jubilacion"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7645576> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q64700236> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9214149> a skos:Concept ;
+skos:prefLabel "Mutatis mutandis"@en, "Mutatis mutandis"@es, "Mutatis mutandis"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Medieval Latin phrase"@en, "latijnse uitdrukking"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q153046> ;
+skos:related lynx:LT4465968 ;	
+skos:related lynx:LT4713611 .
+
+lynx:LT4465968 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "mutatis mutandi"@es .
+lynx:LT4713611 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "mut. mut."@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5683854> a skos:Concept ;
+skos:prefLabel "Sanktion"@de, "Sanction"@en, "Sanctions (law)"@en, "Sanción (derecho)"@es, "Sanctie (straf)"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Erteilung der Gesetzeskraft"@de, "penalty or other mean of enforcement used to provide incentives for obedience with the law"@en, "penalty or other mean of enforcement used to provide incentives for obedience with the law"@en, "término legal, en Derecho, que tiene varias acepciones"@es, "straf"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q32098> ;
+skos:related lynx:LT3498050 ;	
+skos:related lynx:LT5281134 ;	
+skos:related lynx:LT9780260 ;	
+skos:related lynx:LT7500639 ;	
+skos:related lynx:LT9627462 .
+
+lynx:LT3498050 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "sanktionierung"@de .
+lynx:LT5281134 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "sanktionen"@de .
+lynx:LT9780260 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "penalty"@en .
+lynx:LT7500639 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "economische sancties"@nl .
+lynx:LT9627462 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "economische sanctie"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1736688> a skos:Concept ;
+skos:prefLabel "Kritik"@de, "Kritik"@de, "Criticism"@en, "Criticism"@en, "Criticism"@en, "Crítica"@es, "Crítica"@es, "Kritiek"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "critique"@en, "critique"@en, "critique"@en ;
+skos:definition "Beurteilung eines Gegenstandes oder einer Handlung"@de, "Beurteilung eines Gegenstandes oder einer Handlung"@de, "practice of judging the merits and faults of something or someone"@en, "practice of judging the merits and faults of something or someone"@en, "practice of judging the merits and faults of something or someone"@en, "práctica de juzgar los méritos y defectos de algo o alguien"@es, "práctica de juzgar los méritos y defectos de algo o alguien"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q17955> ;
+skos:related lynx:LT3225040 ;	
+skos:related lynx:LT2270281 .
+
+lynx:LT3225040 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "critica"@es .
+lynx:LT2270281 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "critica"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1550722> a skos:Concept ;
+skos:prefLabel "Erholungsurlaub"@de, "Annual leave"@en, "Wettelijke vakantiedagen"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "wichtigste Form des gesetzlich geregelten Urlaubs"@de, "paid time off work granted by employers to employees"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q5338673> ;
+skos:broader lynx:LT5382965 ;	
+skos:broader lynx:LT1087298 ;
+skos:related lynx:LT3595518 ;	
+skos:related lynx:LT7946016 ;	
+skos:related lynx:LT6395275 .
+
+lynx:LT3595518 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "mindesturlaub"@de .
+lynx:LT7946016 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "urlaubsanspruch"@de .
+lynx:LT5382965 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "holiday"@en .
+lynx:LT1087298 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "leave"@en .
+lynx:LT6395275 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "paid holidays"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2162806> a skos:Concept ;
+skos:prefLabel "Anonymität"@de, "Anonymity"@en, "Anonymity"@en, "How to Protect your Internet Anonymity and Privacy"@en, "Seudonimato y anonimato"@es, "Anonimato y privacidad en internet"@es, "Anonimiteit"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "seudonimato y anonimato"@es ;
+skos:definition "Situation, in der Person oder Gruppe nicht identifiziert werden kann"@de, "situation in which a person is non-identifiable, unreachable, or untrackable"@en, "situation in which a person is non-identifiable, unreachable, or untrackable"@en, "situation in which a person is non-identifiable, unreachable, or untrackable"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q308859> ;
+skos:related lynx:LT7093465 ;	
+skos:related lynx:LT2434174 ;	
+skos:related lynx:LT1836949 ;	
+skos:related lynx:LT8024229 ;	
+skos:related lynx:LT9214298 .
+
+lynx:LT7093465 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "anonym"@de .
+lynx:LT2434174 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "anonymat"@de .
+lynx:LT1836949 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "namenlosigkeit"@de .
+lynx:LT8024229 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "anoniem"@nl .
+lynx:LT9214298 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "anon"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2060957> a skos:Concept ;
+skos:prefLabel "Diplomat"@de, "Diplomat"@en, "Diplomático"@es, "Diplomaat"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Regierungsbeauftragter, der seinen Staat auf Regierungsebene gegenüber ausländischen Staaten oder internationalen Organisationen völkerrechtlich vertritt"@de, "person appointed by a state to conduct diplomacy with another state or international organization"@en, "funcionario público dedicado a la diplomacia"@es, "beroep"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q193391> ;
+skos:narrower lynx:LT8946027 ;
+skos:related lynx:LT4954397 ;	
+skos:related lynx:LT6353368 ;	
+skos:related lynx:LT9795023 ;	
+skos:related lynx:LT2683784 ;	
+skos:related lynx:LT2784160 ;	
+skos:related lynx:LT4538790 ;	
+skos:related lynx:LT3961256 ;	
+skos:related lynx:LT1107143 ;	
+skos:related lynx:LT3853616 .
+
+lynx:LT4954397 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "diplomatin"@de .
+lynx:LT6353368 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "diplomática"@es .
+lynx:LT8946027 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "enviado diplomático"@es .
+lynx:LT9795023 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "diplomatico"@es .
+lynx:LT2683784 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "diplomatica"@es .
+lynx:LT2784160 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "diplomaticos"@es .
+lynx:LT4538790 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "diplomáticos"@es .
+lynx:LT3961256 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "attache"@nl .
+lynx:LT1107143 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "attaché"@nl .
+lynx:LT3853616 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "vredeshandhavers"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4736811> a skos:Concept ;
+skos:prefLabel "Respondent"@en, "Verweerder"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "reacting person in a lawsuit/court case"@en, "persoon die reageert op een eis in een dagvaarding of verzoekschrift"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q7315941> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6795801> a skos:Concept ;
+skos:prefLabel "Zeuge"@de, "Witnesses"@en, "Witness"@en, "Testigo"@es, "Testigo"@es, "Getuige"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "person who can attest to the reality of a fact"@en, "person who can attest to the reality of a fact"@en, "persona que es capaz de dar fe de un acontecimiento por tener conocimiento del mismo"@es, "persona que es capaz de dar fe de un acontecimiento por tener conocimiento del mismo"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q196939> ;
+skos:related lynx:LT1629729 ;	
+skos:related lynx:LT4791208 .
+
+lynx:LT1629729 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "testiga"@es .
+lynx:LT4791208 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "testiga"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2012913> a skos:Concept ;
+skos:prefLabel "Gefangener"@de, "Prisoner"@en, "Gevangene"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "captive"@en ;
+skos:definition "Person in Gefangenschaft"@de, "person who is deprived of liberty against their will"@en, "persoon die van zijn (bewegings)vrijheid is beroofd"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1862087> ;
+skos:related lynx:LT7877646 ;	
+skos:related lynx:LT2721466 ;	
+skos:related lynx:LT5395928 .
+
+lynx:LT7877646 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gefangene"@de .
+lynx:LT2721466 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "detainee"@en .
+lynx:LT5395928 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "inmate"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6182075> a skos:Concept ;
+skos:prefLabel "Ungehorsam (Pferd)"@de, "Refusal (horse)"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "the failure of a horse to jump an obstacle"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q665184> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1803463> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/P1437> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6231279> a skos:Concept ;
+skos:prefLabel "Nolo contendere"@de, "Nolo contendere"@en, "Nolo contendere"@es, "Nolo contendere"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Einlassung des Angeklagten in US-amerikanischen Strafprozessen, in der dieser die gegen ihn erhobenen Anklagevorwürfe weder bestätigt, noch abstreitet"@de, "plea where the defendant neither admits nor disputes a charge in criminal trials in certain United States jurisdictions"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1733896> ;
+skos:related lynx:LT7262638 ;	
+skos:related lynx:LT2726576 .
+
+lynx:LT7262638 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "no contest"@de .
+lynx:LT2726576 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "no contest"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1610929> a skos:Concept ;
+skos:prefLabel "Ethnische Minderheit"@de, "Minoría étnica"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "kleines Volk, dass mit einem anderen viel größeren Volk gemeinsam in einem Staat zusammenlebt"@de ;
+skos:closeMatch <https://www.wikidata.org/entity/Q351389> ;
+skos:related lynx:LT1668883 ;	
+skos:related lynx:LT6931130 .
+
+lynx:LT1668883 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "ethnische minderheiten"@de .
+lynx:LT6931130 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "minorías étnicas"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1220067> a skos:Concept ;
+skos:prefLabel "Secretary of state"@en, "Secretario de Estado"@es, "Staatssecretaris"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "senior civil servant in the government of a state"@en, "ministro o funcionario en el gobierno de un Estado"@es, "hoge ambtenaar in de regering van een staat"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q736559> ;
+skos:broader lynx:LT3197228 .
+
+lynx:LT3197228 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "state secretary"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7697964> a skos:Concept ;
+skos:prefLabel "Public procurator"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "officer of state who investigates and prosecutes crime in some continental jurisdictions"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q7257955> ;
+skos:broader lynx:LT3056811 .
+
+lynx:LT3056811 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "procurator"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8021000> a skos:Concept ;
+skos:prefLabel "Beamter"@de, "Staatsdiener"@de, "Funcionario"@es, "Ambtenaar"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "staatsdiener"@de, "staatsdiener"@de ;
+skos:definition "Person im öffentlichen Dienst"@de, "Person im öffentlichen Dienst"@de, "persona que trabaja en la administración pública o en el gobierno de un país"@es, "Persoon in dienst van de overheid"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q212238> ;
+skos:narrower lynx:LT7639209 ;	
+skos:narrower lynx:LT3732461 ;
+skos:related lynx:LT5989589 ;	
+skos:related lynx:LT8549184 ;	
+skos:related lynx:LT5324582 ;	
+skos:related lynx:LT8243184 ;	
+skos:related lynx:LT4773320 ;	
+skos:related lynx:LT1214290 ;	
+skos:related lynx:LT4222090 ;	
+skos:related lynx:LT3930014 ;	
+skos:related lynx:LT6741136 ;	
+skos:related lynx:LT7673998 ;	
+skos:related lynx:LT3448542 ;	
+skos:related lynx:LT8001348 ;	
+skos:related lynx:LT9469190 .
+
+lynx:LT5989589 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "bundesbeamter"@de .
+lynx:LT8549184 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "bundesbeamtin"@de .
+lynx:LT5324582 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "landesbeamter"@de .
+lynx:LT8243184 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "landesbeamtin"@de .
+lynx:LT4773320 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "bundesbeamter"@de .
+lynx:LT1214290 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "bundesbeamtin"@de .
+lynx:LT4222090 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "landesbeamter"@de .
+lynx:LT3930014 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "landesbeamtin"@de .
+lynx:LT6741136 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "funcionaria"@es .
+lynx:LT7673998 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "funcionarias"@es .
+lynx:LT7639209 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "funcionario publico"@es .
+lynx:LT3732461 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "funcionario público"@es .
+lynx:LT3448542 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "funcionarios"@es .
+lynx:LT8001348 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "ambtenaren"@nl .
+lynx:LT9469190 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "hoofdreferendaris"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6937937> a skos:Concept ;
+skos:prefLabel "Abfindungsvertrag"@de ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "ein Typ eines Vertrages"@de ;
+skos:closeMatch <https://www.wikidata.org/entity/Q320035> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4723353> a skos:Concept ;
+skos:prefLabel "Prima facie"@de, "Prima facie"@en, "Prima facie"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "nach dem ersten Anschein"@de, "Latin expression meaning on its first encounter or at first sight"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q837138> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2051235> a skos:Concept ;
+skos:prefLabel "Menschenrechte"@de, "Human rights"@en, "Human rights"@en, "Derechos humanos"@es, "Derechos humanos"@es, "Rechten van de mens"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "rechten van de mens"@nl ;
+skos:definition "Rechte, die jedem Menschen gleichermaßen zustehen"@de, "inalienable fundamental rights to which a person is inherently entitled"@en, "inalienable fundamental rights to which a person is inherently entitled"@en, "derechos básicos inalienables inherentes a todo ser humano"@es, "derechos básicos inalienables inherentes a todo ser humano"@es, "fundamentele rechten en vrijheden die ieder mens zou moeten beschikken"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q8458> ;
+skos:narrower lynx:LT3375668 ;
+skos:related lynx:LT8932977 ;	
+skos:related lynx:LT9928817 ;	
+skos:related lynx:LT6402105 ;	
+skos:related lynx:LT3104492 ;	
+skos:related lynx:LT5123428 .
+
+lynx:LT8932977 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "menschenrecht"@de .
+lynx:LT3375668 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "menschenrechte als verfassungsrechte"@de .
+lynx:LT9928817 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "menschenrechtsverletzung"@de .
+lynx:LT6402105 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "menschrecht"@de .
+lynx:LT3104492 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "human right"@en .
+lynx:LT5123428 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "human right"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9378821> a skos:Concept ;
+skos:prefLabel "Beweis (Recht)"@de, "Evidence (law)"@en, "Prueba (derecho)"@es, "Bewijs (strafrecht)"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Richtigkeit einer Aussage durch sachliche Argumente zeigen"@de, "body of facts in a legal proceding"@en, "motivo aportado al proceso judicial por los medios y procedimientos aceptados en la ley"@es, "strafrecht"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q176763> ;
+skos:related lynx:LT1040725 .
+
+lynx:LT1040725 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "prueba civiles"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9429504> a skos:Concept ;
+skos:prefLabel "Öffentliches Interesse"@de, "Public interest"@en, "Interés público"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Wohl eines Gemeinwesens"@de, "common well-being" or "general welfare"@en, "bien común de la sociedad entera"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q29627> ;
+skos:related lynx:LT9917784 ;	
+skos:related lynx:LT7370278 ;	
+skos:related lynx:LT2685141 ;	
+skos:related lynx:LT8412953 ;	
+skos:related lynx:LT6756662 ;	
+skos:related lynx:LT4815180 ;	
+skos:related lynx:LT6251735 .
+
+lynx:LT9917784 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "interes colectivo"@es .
+lynx:LT7370278 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "interés colectivo"@es .
+lynx:LT2685141 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "interes general"@es .
+lynx:LT8412953 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "interés general"@es .
+lynx:LT6756662 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "interes nacional"@es .
+lynx:LT4815180 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "interés nacional"@es .
+lynx:LT6251735 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "interes publico"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4499291> a skos:Concept ;
+skos:prefLabel "Vergleich (Recht)"@de, "Settlement (litigation)"@en, "Avenencia"@es, "Schikking"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Vertrag, durch den der Streit oder die Ungewissheit der Parteien über ein Rechtsverhältnis im Wege gegenseitigen Nachgebens beseitigt wird"@de, "resolution between disputing parties about a legal case"@en, "transacción o acuerdo entre las partes litigantes sin necesidad de recurrir a una sentencia judicial"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q167412> ;
+skos:related lynx:LT2587517 .
+
+lynx:LT2587517 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "legal settlement"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8316178> a skos:Concept ;
+skos:prefLabel "Arbeitgeberverband"@de, "Employers' organization"@en, "Patronal"@es, "Werkgeversvereniging"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "werkgeversvereniging"@nl ;
+skos:definition "Zusammenschluss von Arbeitgebern (Unternehmen)"@de, "an association of employers for joint advocacy purposes towards trade unions and state"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q627272> ;
+skos:narrower lynx:LT5526638 ;	
+skos:narrower lynx:LT4982738 ;
+skos:related lynx:LT6206623 ;	
+skos:related lynx:LT5279308 ;	
+skos:related lynx:LT3181310 .
+
+lynx:LT6206623 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "unternehmerverband"@de .
+lynx:LT5526638 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "organización patronal"@es .
+lynx:LT5279308 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "empresariado"@es .
+lynx:LT4982738 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "organizacion patronal"@es .
+lynx:LT3181310 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "werkgeversbond"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3220890> a skos:Concept ;
+skos:prefLabel "Grundrechte"@de, "Fundamental rights"@en, "Grondrechten"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "wesentliche Rechte von Mitgliedern der Gesellschaft"@de, "basic rights protected and upheld by law"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q3237872> ;
+skos:narrower lynx:LT7115246 ;	
+skos:narrower lynx:LT7531473 ;
+skos:related lynx:LT6915837 ;	
+skos:related lynx:LT6976996 ;	
+skos:related lynx:LT9655937 ;	
+skos:related lynx:LT6880897 ;	
+skos:related lynx:LT1118567 ;	
+skos:related lynx:LT1246656 .
+
+lynx:LT6915837 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "basic rights"@en .
+lynx:LT6976996 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "inalienable rights"@en .
+lynx:LT9655937 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "afweerrechten"@nl .
+lynx:LT6880897 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gelijkheidsrechten"@nl .
+lynx:LT1118567 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "grondrecht"@nl .
+lynx:LT7115246 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "grondrechten (nederland)"@nl .
+lynx:LT1246656 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "participatierechten"@nl .
+lynx:LT7531473 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "sociale grondrechten"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9672106> a skos:Concept ;
+skos:prefLabel "Ableism"@de, "Ableism"@en, "Capacitismo"@es, "Validisme"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Diskriminierung oder Vorverurteilung gegen Menschen mit Behinderungen"@de, "discrimination against people with disabilities"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1192251> ;
+skos:related lynx:LT2604631 ;	
+skos:related lynx:LT5905541 ;	
+skos:related lynx:LT1064464 .
+
+lynx:LT2604631 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "physicalism"@en .
+lynx:LT5905541 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "disablism"@en .
+lynx:LT1064464 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "handicapism"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5052406> a skos:Concept ;
+skos:prefLabel "Act of God"@en, "Caso fortuito"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "usually-natural disaster for which no person is at fault"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1092953> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1534204> a skos:Concept ;
+skos:prefLabel "Gesellschaftsvertrag"@de, "Articles of association"@en, "Statuten"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "document that establishes the basic details of a corporation"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q3497659> ;
+skos:related lynx:LT4640371 .
+
+lynx:LT4640371 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "articles of incorporation"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4828232> a skos:Concept ;
+skos:prefLabel "Schaden"@de, "Damage"@en, "Schade"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "jeder Nachteil, den eine Person oder Sache durch ein Ereignis erleidet"@de, "loss or harm suffered from an action or event"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q481609> ;
+skos:related lynx:LT1001187 .
+
+lynx:LT1001187 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "aantasting"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7351497> a skos:Concept ;
+skos:prefLabel "Zwangsräumung"@de, "Eviction"@en, "Desahucio"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Maßnahme der Zwangsvollstreckung"@de, "removal of a tenant from rental property by the landlord"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1893186> ;
+skos:related lynx:LT7019141 ;	
+skos:related lynx:LT7516936 ;	
+skos:related lynx:LT5409593 .
+
+lynx:LT7019141 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "delogierung"@de .
+lynx:LT7516936 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "exmission"@de .
+lynx:LT5409593 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "räumungsklage"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9427032> a skos:Concept ;
+skos:prefLabel "Rechtsprechung"@de, "Jurisdiction"@en, "Jurisdiction"@en, "Jurisdicción"@es, "Jurisdictie"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "rechtsgebied"@nl ;
+skos:definition "legt im öffentlichen Recht fest, welche Behörde bzw. welches Gericht im Einzelfall rechtlich zu hoheitlichem Handeln ermächtigt und verpflichtet ist"@de, "practical authority granted to a formally constituted legal body or to a political leader to deal with legal matters"@en, "practical authority granted to a formally constituted legal body or to a political leader to deal with legal matters"@en, "potestad de aplicar el derecho, ejercida en forma exclusiva por los tribunales de justicia"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q471855> ;
+skos:narrower lynx:LT1769914 ;	
+skos:narrower lynx:LT4476664 ;
+skos:related lynx:LT8834889 ;	
+skos:related lynx:LT8997093 ;	
+skos:related lynx:LT1550011 ;	
+skos:related lynx:LT3235140 .
+
+lynx:LT8834889 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gerichtshoheit"@de .
+lynx:LT8997093 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "jurisdiccion"@es .
+lynx:LT1769914 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "jurisdicción civil"@es .
+lynx:LT4476664 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "jurisdicción criminal"@es .
+lynx:LT1550011 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "jurisdiccional"@es .
+lynx:LT3235140 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "jurisdicciones"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6472872> a skos:Concept ;
+skos:prefLabel "Magistrates"@en, "Magistrate"@en, "Magistrado"@es, "Magistraat"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "magistrado"@es ;
+skos:definition "officer of the state, usually judge"@en, "officer of the state, usually judge"@en, "funcionario público, normalmente juez o con potestad de juez"@es, "Bekleder van een bestuurlijk of rechterlijk ambt"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q4594605> ;
+skos:narrower lynx:LT9183472 .
+
+lynx:LT9183472 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "magistrado del tribunal"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8650631> a skos:Concept ;
+skos:prefLabel "Straftat"@de, "Strafbaar feit"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Handlungen, die verboten sind, werden mit Bestrafung geahndet"@de ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1456832> ;
+skos:broader lynx:LT5385735 ;	
+skos:broader lynx:LT4437384 ;
+skos:narrower lynx:LT9073250 ;
+skos:related lynx:LT7535792 ;	
+skos:related lynx:LT1574486 ;	
+skos:related lynx:LT3141144 ;	
+skos:related lynx:LT6470686 .
+
+lynx:LT7535792 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "kriminalfall"@de .
+lynx:LT1574486 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "strafsache"@de .
+lynx:LT9073250 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "leichte straftat"@de .
+lynx:LT3141144 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "tatausführung"@de .
+lynx:LT6470686 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "tathandlung"@de .
+lynx:LT5385735 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "onwettig"@nl .
+lynx:LT4437384 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "strafbaar"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8432702> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1272626> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3485365> a skos:Concept ;
+skos:prefLabel "Lage (Buch)"@de, "Section (bookbinding)"@en, "Katern"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "der einzelnen aufgeschnittene Druckbogen beim Buch"@de, "stacked papers in bookbinding"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1228599> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4403981> a skos:Concept ;
+skos:prefLabel "Wirkung (Physik)"@de, "Action (physics)"@en, "Acción (física)"@es, "Actie (natuurkunde)"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "physikalische Größe"@de, "a physical quantity with units of energy × time; the integral of the Lagrangian over a time interval; a functional of the trajectory of a physical system over time that is stationary under variation iff the equations of motion hold"@en, "magnitud física"@es, "natuurkunde"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q846785> ;
+skos:related lynx:LT3992097 ;	
+skos:related lynx:LT5701322 .
+
+lynx:LT3992097 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "physikalische wirkung"@de .
+lynx:LT5701322 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "acción fisica"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2486076> a skos:Concept ;
+skos:prefLabel "Legal instrument"@en, "Documento legal"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "documento legal"@es ;
+skos:definition "document, attributable to its author, that records and formally expresses—and evidences—a legally enforceable act, process, contractual duty, obligation or right; e.g. certificate, deed, bond, contract, will, legislative act, notarial act, court writ"@en, "página de desambiguación de Wikimedia"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1428955> ;
+skos:related lynx:LT6067625 .
+
+lynx:LT6067625 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "legal document"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6344677> a skos:Concept ;
+skos:prefLabel "Sozialpolitik"@de, "Social policy"@en, "Política social"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Bezeichnung für Maßnahmen zur Verbesserung der wirtschaftlichen und sozialen Situation"@de, "policy affecting human welfare"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q828395> ;
+skos:related lynx:LT6407263 ;	
+skos:related lynx:LT7073366 ;	
+skos:related lynx:LT7778357 ;	
+skos:related lynx:LT3369548 ;	
+skos:related lynx:LT4123496 ;	
+skos:related lynx:LT4350463 ;	
+skos:related lynx:LT9587650 ;	
+skos:related lynx:LT4096914 ;	
+skos:related lynx:LT2196555 ;	
+skos:related lynx:LT3265028 ;	
+skos:related lynx:LT4279965 ;	
+skos:related lynx:LT9459933 ;	
+skos:related lynx:LT3845440 ;	
+skos:related lynx:LT4540238 .
+
+lynx:LT6407263 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "sozialpolitiker"@de .
+lynx:LT7073366 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "wohlfahrtspolitik"@de .
+lynx:LT7778357 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "politica social"@es .
+lynx:LT3369548 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "agente social"@es .
+lynx:LT4123496 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "agentes sociales"@es .
+lynx:LT4350463 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "asunto social"@es .
+lynx:LT9587650 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "asuntos sociales"@es .
+lynx:LT4096914 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "necesidad social"@es .
+lynx:LT2196555 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "necesidades sociales"@es .
+lynx:LT3265028 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "politicas sociales"@es .
+lynx:LT4279965 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "políticas sociales"@es .
+lynx:LT9459933 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "problema social"@es .
+lynx:LT3845440 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "proteccion social"@es .
+lynx:LT4540238 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "protección social"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2415080> a skos:Concept ;
+skos:prefLabel "Information sensitivity"@en, "Información sensible"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "information sensitivity"@en ;
+skos:definition "information or knowledge that might result in loss of an advantage or level of security if disclosed to others"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q2587068> ;
+skos:related lynx:LT4593260 ;	
+skos:related lynx:LT4528401 .
+
+lynx:LT4593260 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "sensitive data"@en .
+lynx:LT4528401 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "informacion sensible"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2942975> a skos:Concept ;
+skos:prefLabel "Zuhörer"@de, "Auditive Wahrnehmung"@de, "Hearing"@en, "Hearing"@en, "Audición"@es, "Gehoor"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "die Sinneswahrnehmung von Schall durch Lebewesen"@de, "die Sinneswahrnehmung von Schall durch Lebewesen"@de, "sensory perception of sound by living organisms"@en, "sensory perception of sound by living organisms"@en, "percepción sensorial"@es, "zintuiglijke waarneming"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q160289> ;
+skos:related lynx:LT9543885 ;	
+skos:related lynx:LT4034904 ;	
+skos:related lynx:LT9282315 ;	
+skos:related lynx:LT3049580 ;	
+skos:related lynx:LT6082829 ;	
+skos:related lynx:LT3474535 ;	
+skos:related lynx:LT9948085 ;	
+skos:related lynx:LT5905767 ;	
+skos:related lynx:LT6560574 ;	
+skos:related lynx:LT9725742 ;	
+skos:related lynx:LT4336872 ;	
+skos:related lynx:LT4116587 ;	
+skos:related lynx:LT8964470 ;	
+skos:related lynx:LT6622820 ;	
+skos:related lynx:LT2890605 ;	
+skos:related lynx:LT8185564 ;	
+skos:related lynx:LT9485234 .
+
+lynx:LT9543885 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "auditiv"@de .
+lynx:LT4034904 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gehörsinn"@de .
+lynx:LT9282315 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "hörempfindlichkeit"@de .
+lynx:LT3049580 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "hörempfindung"@de .
+lynx:LT6082829 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "hören"@de .
+lynx:LT3474535 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "hörschall"@de .
+lynx:LT9948085 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "hörsinn"@de .
+lynx:LT5905767 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "hörvermögen"@de .
+lynx:LT6560574 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "hörwahrnehmung"@de .
+lynx:LT9725742 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "akustische wahrnehmung"@de .
+lynx:LT4336872 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "audicion"@es .
+lynx:LT4116587 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "auditiva"@es .
+lynx:LT8964470 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "auditivo"@es .
+lynx:LT6622820 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "oir"@es .
+lynx:LT2890605 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "oír"@es .
+lynx:LT8185564 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gehoorszintuig"@nl .
+lynx:LT9485234 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "horen"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3670203> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q16295132> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6621863> a skos:Concept ;
+skos:prefLabel "Entgeltfortzahlung im Krankheitsfall"@de, "Sick leave"@en, "Permiso por enfermedad"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "entgeltfortzahlung im krankheitsfall"@de ;
+skos:definition "type of leave from work intended for medical events"@en, "beneficio laboral"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q464163> ;
+skos:broader lynx:LT4999440 ;	
+skos:broader lynx:LT5610719 ;
+skos:related lynx:LT5100721 .
+
+lynx:LT4999440 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "entgeltfortzahlung"@de .
+lynx:LT5100721 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gehaltsfortzahlung im krankheitsfall"@de .
+lynx:LT5610719 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "lohnfortzahlung"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2108261> a skos:Concept ;
+skos:prefLabel "Arbeitsverhältnis"@de, "Labor relations"@en, "Relaciones laborales"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q608190> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1290685> a skos:Concept ;
+skos:prefLabel "Assessor"@de, "Assessor (law)"@en, "Assessor (functie)"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Absolvent einer zweiten oder grossen Staatspruefung"@de, "judge's or magistrate's assistant"@en, "ondersteunende functie"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q335757> ;
+skos:narrower lynx:LT3021717 ;	
+skos:narrower lynx:LT5707843 ;	
+skos:narrower lynx:LT7302006 ;	
+skos:narrower lynx:LT2600091 ;
+skos:related lynx:LT2758490 ;	
+skos:related lynx:LT7029015 ;	
+skos:related lynx:LT9370967 ;	
+skos:related lynx:LT3790891 ;	
+skos:related lynx:LT2489142 ;	
+skos:related lynx:LT9369326 ;	
+skos:related lynx:LT8558542 .
+
+lynx:LT2758490 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "accessist"@de .
+lynx:LT7029015 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "akzeßist"@de .
+lynx:LT3021717 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "assessor iur."@de .
+lynx:LT5707843 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "assessor iuris"@de .
+lynx:LT7302006 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "assessor jur."@de .
+lynx:LT2600091 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "assessor juris"@de .
+lynx:LT9370967 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "assessorin"@de .
+lynx:LT3790891 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "bergassessor"@de .
+lynx:LT2489142 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "lehramtsassessor"@de .
+lynx:LT9369326 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "regierungsassessor"@de .
+lynx:LT8558542 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "studienassessor"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT2538655> a skos:Concept ;
+skos:prefLabel "Pflichtverteidiger"@de, "Public defender"@en, "Turno de oficio"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q6528049> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3294406> a skos:Concept ;
+skos:prefLabel "Federal judge"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q9298846> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1244353> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/P1592> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9438838> a skos:Concept ;
+skos:prefLabel "Laboralista"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q9019735> ;
+skos:narrower lynx:LT6939909 .
+
+lynx:LT6939909 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "abogado laboralista"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7596112> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q21402631> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1204968> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q57398663> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1750265> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q46130101> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9857374> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q16474031> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9452487> a skos:Concept ;
+skos:prefLabel "Ratifikation"@de, "Ratification"@en, "Ratificación"@es, "Ratificatie"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "ratifizierung"@de ;
+skos:definition "Völkerrechtlicher Vertrag (lässt einen anderen Vertrag rechtsgültig werden)"@de, "process of giving effect to documentation in international law"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q193170> ;
+skos:related lynx:LT5409815 ;	
+skos:related lynx:LT3931119 ;	
+skos:related lynx:LT4633474 ;	
+skos:related lynx:LT6302920 ;	
+skos:related lynx:LT6749502 .
+
+lynx:LT5409815 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "ratifikationsurkunde"@de .
+lynx:LT3931119 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "ratifizieren"@de .
+lynx:LT4633474 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "ratifiziert"@de .
+lynx:LT6302920 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "ratifizierungsprozess"@de .
+lynx:LT6749502 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "ratifizierungsurkunde"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5205700> a skos:Concept ;
+skos:prefLabel "Sicherheitsüberprüfungsgesetz"@de, "Security clearance"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "status granted to individuals allowing them access to classified information or to restricted areas"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q161959> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1127165> a skos:Concept ;
+skos:prefLabel "Finanzmanagement"@de, "Financial management"@en, "Financial management"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Unter Finanzmanagement wird in Unternehmen die gesamte Ablaufplanung und -steuerung hinsichtlich des Einsatzes finanzieller Mittel verstanden."@de, "management of money in such a manner as to accomplish the objectives of the organization"@en, "management of money in such a manner as to accomplish the objectives of the organization"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q4738155> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3626676> a skos:Concept ;
+skos:prefLabel "Fleiß"@de, "Fleiß"@de, "Diligence"@en, "Diligence"@en, "Diligencia (virtud)"@es, "Vlijt"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "arbeitsame Zielstrebigkeit"@de, "arbeitsame Zielstrebigkeit"@de, "virtue"@en, "virtue"@en, "virtud cardinal con la que se combate la pereza"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1427962> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5131771> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q15978181> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6238501> a skos:Concept ;
+skos:prefLabel "Rechtsanwaltsfachangestellter"@de, "Paralegal"@en, "Juridisch medewerker"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "anwaltsgehilfe"@de ;
+skos:definition "Berufsbezeichnung"@de, "paraprofessional who assists qualified lawyers in their legal work"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q620413> ;
+skos:related lynx:LT7365392 ;	
+skos:related lynx:LT4346329 ;	
+skos:related lynx:LT6920912 ;	
+skos:related lynx:LT6382516 ;	
+skos:related lynx:LT9039155 ;	
+skos:related lynx:LT3392569 ;	
+skos:related lynx:LT6934050 ;	
+skos:related lynx:LT7355115 .
+
+lynx:LT7365392 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "rechtsanwaltsgehilfe"@de .
+lynx:LT4346329 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "anwaltsfachangestellte"@de .
+lynx:LT6920912 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "paralegal"@de .
+lynx:LT6382516 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "rechtsanwaltfachangestellte"@de .
+lynx:LT9039155 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "rechtsanwaltsfachangestellte"@de .
+lynx:LT3392569 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "rechtsanwaltsgehilfin"@de .
+lynx:LT6934050 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "rechtsassistent"@de .
+lynx:LT7355115 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "rechtsassistentin"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1211164> a skos:Concept ;
+skos:prefLabel "Zivilprozessrecht"@de, "Civil procedure"@en, "Derecho procesal civil"@es, "Burgerlijk procesrecht"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "alle gesetzlichen Bestimmungen, die den formalen Ablauf von Zivilverfahren bestimmen"@de, "body of law that sets out the rules and standards that courts follow when adjudicating civil lawsuits"@en, "rama del derecho procesal"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q206937> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4462888> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q5009984> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7043318> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/P91> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5620554> a skos:Concept ;
+skos:prefLabel "Unfair dismissal"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "act of employment termination made without good reason or contrary to the country's specific legislation"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q7884302> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9430131> a skos:Concept ;
+skos:prefLabel "Verhaltenskodex"@de, "Code of conduct"@en, "Code of conduct"@en, "Gedragscode"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "set of rules outlining the responsibilities of, or proper practices for, an individual, party or organization"@en, "set of rules outlining the responsibilities of, or proper practices for, an individual, party or organization"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q2119819> ;
+skos:related lynx:LT9257837 .
+
+lynx:LT9257837 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gedragsregel"@nl .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6538740> a skos:Concept ;
+skos:prefLabel "Persona non grata"@de, "Persona non grata"@en, "Persona non grata"@es, "Persona non grata"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Status eines Angehörigen des diplomatischen Dienstes oder einer anderen Person"@de, "foreign person whose entering or remaining in a particular country is prohibited by that country's government"@en, "término utilizado en diplomacia que significa "persona no bienvenida"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q183424> ;
+skos:related lynx:LT6746897 .
+
+lynx:LT6746897 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "persona non gradita"@de .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8829324> a skos:Concept ;
+skos:prefLabel "Auslandsvertretungen"@de, "Auslandsvertretung"@de, "Diplomatic missions"@en, "Diplomatic mission"@en, "Misiones diplomáticas"@es, "Misión diplomática"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "group of people from one state present in another state to represent the sending state"@en, "group of people from one state present in another state to represent the sending state"@en, "grupo de personas de un Estado presentes en otro Estado para representar al primero"@es, "grupo de personas de un Estado presentes en otro Estado para representar al primero"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q213283> ;
+skos:related lynx:LT6360933 ;	
+skos:related lynx:LT2148172 ;	
+skos:related lynx:LT9390268 ;	
+skos:related lynx:LT5350693 .
+
+lynx:LT6360933 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "mission"@de .
+lynx:LT2148172 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "mission"@de .
+lynx:LT9390268 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "mision diplomatica"@es .
+lynx:LT5350693 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "mision diplomatica"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4906022> a skos:Concept ;
+skos:prefLabel "Trade office"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "official establishment that promotes a government's commercial interests in a foreign capital"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q4461020> ;
+skos:related lynx:LT6990759 ;	
+skos:related lynx:LT3198573 ;	
+skos:related lynx:LT6460488 .
+
+lynx:LT6990759 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "commercial office"@en .
+lynx:LT3198573 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "trade mission"@en .
+lynx:LT6460488 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "trade representation"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5131771> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q15978181> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7166506> a skos:Concept ;
+skos:prefLabel "Solicitor"@de, "Solicitor"@en, "Solicitor"@es, "Juridisch adviseur"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Sonderform eines Anwalts im angelächsischen Raum"@de, "type of legal practitioner"@en, "tipo de abogado en el sistema jurídico inglés"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q14284> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT7053438> a skos:Concept ;
+skos:prefLabel "Resolution (Logik)"@de, "Resolution (logic)"@en, "Resolución (lógica)"@es, "Resolutie (logica)"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Verfahren der formalen Logik, um eine logische Formel auf Gültigkeit zu testen"@de, "in logic, rule of inference"@en, "regla de inferencia"@es, "logica"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1051925> ;
+skos:related lynx:LT2043397 .
+
+lynx:LT2043397 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "resolution principle"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT5408808> a skos:Concept ;
+skos:prefLabel "Schikane"@de, "Bullying"@en, "Bullying"@en, "Acoso psicológico"@es, "Pesten (gedrag)"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "acoso psicológico"@es ;
+skos:definition "Maßnahme, durch die jemandem unnötig Schwierigkeiten bereitet werden"@de, "use of force or coercion to abuse or intimidate others"@en, "use of force or coercion to abuse or intimidate others"@en, "trato vejatorio y descalificador hacia una persona"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q240126> ;
+skos:related lynx:LT4526675 ;	
+skos:related lynx:LT9673204 ;	
+skos:related lynx:LT8392051 ;	
+skos:related lynx:LT8554672 .
+
+lynx:LT4526675 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "harassment"@en .
+lynx:LT9673204 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "harassment"@en .
+lynx:LT8392051 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "acoso moral"@es .
+lynx:LT8554672 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "acoso psicologico"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1204968> a skos:Concept ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:closeMatch <https://www.wikidata.org/entity/Q57398663> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT1264368> a skos:Concept ;
+skos:prefLabel "Wrongs"@en, "Wrongdoing"@en ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "act that is illegal or immoral"@en, "act that is illegal or immoral"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q6765918> ;
+skos:related lynx:LT9991322 ;	
+skos:related lynx:LT2813774 .
+
+lynx:LT9991322 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "wrong"@en .
+lynx:LT2813774 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "wrong"@en .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT4540154> a skos:Concept ;
+skos:prefLabel "Wirtschaftspolitik"@de, "Economic policy"@en, "Política económica"@es, "Economische politiek"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "Politikfeld, das sich mit der Wirtschaft befasst"@de, "refers to the actions that governments take in the economic field"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q582577> ;
+skos:related lynx:LT3795494 ;	
+skos:related lynx:LT8077058 .
+
+lynx:LT3795494 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "economic policies"@en .
+lynx:LT8077058 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "politica economica"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT6626685> a skos:Concept ;
+skos:prefLabel "Ungerechtigkeit"@de, "Ungerechtigkeit"@de, "Injustice"@en, "Injustice"@en, "Injusticia"@es, "Injusticia"@es ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "quality relating to unfairness or undeserved outcomes"@en, "quality relating to unfairness or undeserved outcomes"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q770480> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT3913815> a skos:Concept ;
+skos:prefLabel "Dienstboten"@de, "Dienstbote"@de, "Domestic worker"@en, "Domestic worker"@en, "Trabajador doméstico"@es, "Huishoudelijke hulp"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "ständig im Haushalt wohnende angestellte Hilfskraft für Arbeiten in der Haus- und Landwirtschaft"@de, "ständig im Haushalt wohnende angestellte Hilfskraft für Arbeiten in der Haus- und Landwirtschaft"@de, "person who works within the employer's household"@en, "person who works within the employer's household"@en, "persona asalariada que trabaja en tareas domésticas"@es, "beroep, is iemand, die tegen betaling huishoudelijk werk voor een particulier verricht"@nl ;
+skos:closeMatch <https://www.wikidata.org/entity/Q54128> ;
+skos:broader lynx:LT2717157 ;	
+skos:broader lynx:LT5624594 ;
+skos:related lynx:LT7261491 ;	
+skos:related lynx:LT8355849 ;	
+skos:related lynx:LT5384217 ;	
+skos:related lynx:LT4191152 ;	
+skos:related lynx:LT5200236 ;	
+skos:related lynx:LT7640120 ;	
+skos:related lynx:LT9084048 ;	
+skos:related lynx:LT4903639 ;	
+skos:related lynx:LT1439578 ;	
+skos:related lynx:LT1928970 ;	
+skos:related lynx:LT3899730 ;	
+skos:related lynx:LT6081754 ;	
+skos:related lynx:LT3300840 ;	
+skos:related lynx:LT7520923 ;	
+skos:related lynx:LT4088129 ;	
+skos:related lynx:LT9198646 ;	
+skos:related lynx:LT5921455 ;	
+skos:related lynx:LT7951073 ;	
+skos:related lynx:LT9524988 ;	
+skos:related lynx:LT2637204 ;	
+skos:related lynx:LT3298493 ;	
+skos:related lynx:LT5176786 ;	
+skos:related lynx:LT4004699 ;	
+skos:related lynx:LT9932780 ;	
+skos:related lynx:LT2503126 ;	
+skos:related lynx:LT4322204 ;	
+skos:related lynx:LT5200334 ;	
+skos:related lynx:LT7363960 ;	
+skos:related lynx:LT2953279 ;	
+skos:related lynx:LT7578287 ;	
+skos:related lynx:LT9209444 .
+
+lynx:LT7261491 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "diener"@de .
+lynx:LT8355849 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "bedienstete"@de .
+lynx:LT5384217 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "dienerin"@de .
+lynx:LT4191152 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "dienstmädchen"@de .
+lynx:LT5200236 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "diener"@de .
+lynx:LT7640120 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "bedienstete"@de .
+lynx:LT9084048 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "dienerin"@de .
+lynx:LT4903639 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "dienstmädchen"@de .
+lynx:LT2717157 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "servant"@en .
+lynx:LT1439578 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "domestic employee"@en .
+lynx:LT1928970 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "domestic helper"@en .
+lynx:LT3899730 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "domestic servant"@en .
+lynx:LT6081754 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "domestic staff"@en .
+lynx:LT3300840 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "household employee"@en .
+lynx:LT7520923 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "household servant"@en .
+lynx:LT4088129 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "household staff"@en .
+lynx:LT9198646 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "household worker"@en .
+lynx:LT5624594 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "servant"@en .
+lynx:LT5921455 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "domestic employee"@en .
+lynx:LT7951073 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "domestic helper"@en .
+lynx:LT9524988 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "domestic servant"@en .
+lynx:LT2637204 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "domestic staff"@en .
+lynx:LT3298493 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "household employee"@en .
+lynx:LT5176786 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "household servant"@en .
+lynx:LT4004699 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "household staff"@en .
+lynx:LT9932780 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "household worker"@en .
+lynx:LT2503126 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "empleada domestica"@es .
+lynx:LT4322204 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "empleada doméstica"@es .
+lynx:LT5200334 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "empleado domestico"@es .
+lynx:LT7363960 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "empleado doméstico"@es .
+lynx:LT2953279 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "trabajador domestico"@es .
+lynx:LT7578287 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "trabajadora domestica"@es .
+lynx:LT9209444 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "trabajadora doméstica"@es .
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT8246868> a skos:Concept ;
+skos:prefLabel "Tribunal"@de, "Tribunal"@en, "Vierschaar"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:definition "person or institution with the authority to judge, adjudicate or determine claims or disputes"@en ;
+skos:closeMatch <https://www.wikidata.org/entity/Q1412224> .
+
+
+
+<http://lkg.lynx-project.eu/kos/labourlaw_terms/LT9327018> a skos:Concept ;
+skos:prefLabel "Gewerkschaft"@de, "Trade unions"@en, "Trade union"@en, "Trade unions"@en, "Sindicato"@es, "Vakbond"@nl ;
+skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+skos:altLabel "syndicaat"@nl, "vakvereniging"@nl ;
+skos:definition "Vereinigung von abhängigen Erwerbspersonen zur Vertretung ihrer wirtschaftlichen und sozialen Interessen"@de, "organization of workers with common goals"@en, "organization of workers with common goals"@en, "organization of workers with common goals"@en, "organización de trabajadores en defensa y promoción de sus intereses"@es ;
+skos:closeMatch <https://www.wikidata.org/entity/Q178790> ;
+skos:broader lynx:LT5756126 ;
+skos:narrower lynx:LT6794092 ;
+skos:related lynx:LT5298139 ;	
+skos:related lynx:LT5988489 ;	
+skos:related lynx:LT4695779 ;	
+skos:related lynx:LT7295943 ;	
+skos:related lynx:LT7200856 ;	
+skos:related lynx:LT3372394 ;	
+skos:related lynx:LT9150474 ;	
+skos:related lynx:LT2638381 ;	
+skos:related lynx:LT1119502 ;	
+skos:related lynx:LT7375646 ;	
+skos:related lynx:LT1434090 ;	
+skos:related lynx:LT8291272 ;	
+skos:related lynx:LT3847038 ;	
+skos:related lynx:LT5246214 ;	
+skos:related lynx:LT7352007 ;	
+skos:related lynx:LT3649535 ;	
+skos:related lynx:LT5164415 ;	
+skos:related lynx:LT2066933 ;	
+skos:related lynx:LT2537828 ;	
+skos:related lynx:LT6762779 ;	
+skos:related lynx:LT4747255 ;	
+skos:related lynx:LT2915674 .
+
+lynx:LT5298139 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "arbeitnehmerorganisation"@de .
+lynx:LT5988489 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "gewerkschaften"@de .
+lynx:LT4695779 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "labor union"@en .
+lynx:LT7295943 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "labour union"@en .
+lynx:LT7200856 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "work union"@en .
+lynx:LT3372394 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "worker's union"@en .
+lynx:LT9150474 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "workers union"@en .
+lynx:LT2638381 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "labor union"@en .
+lynx:LT1119502 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "labour union"@en .
+lynx:LT5756126 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "union"@en .
+lynx:LT7375646 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "work union"@en .
+lynx:LT1434090 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "worker's union"@en .
+lynx:LT8291272 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "workers union"@en .
+lynx:LT3847038 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "labor union"@en .
+lynx:LT5246214 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "labour union"@en .
+lynx:LT7352007 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "work union"@en .
+lynx:LT3649535 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "worker's union"@en .
+lynx:LT5164415 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "workers union"@en .
+lynx:LT2066933 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "sindical"@es .
+lynx:LT6794092 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	 skos:prefLabel "sindicato obrero"@es .
+lynx:LT2537828 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "syndicaliteit"@nl .
+lynx:LT6762779 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "vakbeweging"@nl .
+lynx:LT4747255 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "vakbonden"@nl .
+lynx:LT2915674 a skos:Concept;
+	skos:inScheme <http://lkg.lynx-project.eu/kos/labourlaw_terms> ;
+	skos:prefLabel "werknemersvereniging"@nl .

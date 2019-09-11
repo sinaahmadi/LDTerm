@@ -30,6 +30,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+backup/
+bakup/July16
 # End of https://www.gitignore.io/api/macos
 
 .idea

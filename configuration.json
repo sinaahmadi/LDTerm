@@ -1,11 +1,11 @@
 {
 	"source_language": "english",
-	"run_id": "6",
-	"source_file_dir": "Input/6term.csv",
-	"gold_concepts_dir": "gold_concepts.json",
+	"run_id": "10",
+	"source_file_dir": "/Users/sina/My_GitHub/LDTerm/backup/July16/scterm_dict.csv",
+	"gold_concepts_dir": "/Users/sina/My_GitHub/LDTerm/backup/July16/goldstandard.json",
 	"retrieve_wikidata": false,
 	"retrieve_ConceptNet": false,
 	"analysis": false,
 	"evaluate": false,
-	"convert_to_SKOS": true
+	"convert_to_SKOS": false
 }

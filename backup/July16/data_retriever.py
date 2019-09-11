@@ -423,7 +423,7 @@ def skos_converter(entry, wiki_data):
 # main
 # =========================================
 # Read the configuration file
-with open("configuration.json", 'r') as f:
+with open("config.json", 'r') as f:
     configuration = json.load(f)
 
 term_id_file_dir = 'IDs/scterm_dict_%s.csv'%configuration["run_id"]
@@ -431,7 +431,7 @@ wikidata_output_file_name = "Wikidata/%s.json"%configuration["run_id"]
 not_found_file_name = "ConceptNet/not_found_%s.txt"%configuration["run_id"]
 induction_dir = "Induction/%s.json"%configuration["run_id"]
 
-source_file = open(source_file_dir, "r")
+source_file = open(configuration["source_file_dir"], "r")
 terms = [t for t in source_file.read().split("\n")]
 # print(terms)
 
@@ -584,7 +584,7 @@ if evaluate:
 # Comparison of the gold-standard with the output of the script
 # and also I'd like to know which of the "wrong" matches (A) contain a token that is not present within the list of synonyms (S)
 
-if True:
+if False:
     with open("valid_items.json", 'r') as f:
         retrieved_wikidata = json.load(f)
     with open("goldstandard.json", 'r') as f:
